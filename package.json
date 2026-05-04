@@ -1,0 +1,23 @@
+{
+  "name": "kolo",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "scrape": "node scripts/scrape-webflow.mjs",
+    "scrape:single": "node scripts/scrape-single.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@vercel/speed-insights": "^1.0.0",
+    "@vercel/analytics": "^1.0.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "typescript": "^5.4.0"
+  }
+}

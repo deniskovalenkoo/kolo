@@ -1,0 +1,50 @@
+---
+// Renders a 1:1 mirror of an original Webflow page.
+// Takes the full HTML string scraped from kolo.xyz, splits head/body,
+// and outputs them inside a fresh Astro document.
+
+interface Props {
+  rawHtml: string;
+  lang?: string;
+}
+
+const { rawHtml, lang } = Astro.props;
+
+// Extract <html> attributes (lang, data-wf-page, etc.)
+const htmlMatch = rawHtml.match(/<html([^>]*)>/i);
+const htmlAttrs = htmlMatch?.[1]?.trim() ?? '';
+
+// Extract <head> inner HTML
+const headMatch = rawHtml.match(/<head[^>]*>([\s\S]*?)<\/head>/i);
+const headHtml = headMatch?.[1] ?? '';
+
+// Extract <body> attributes and inner HTML
+const bodyMatch = rawHtml.match(/<body([^>]*)>([\s\S]*?)<\/body>/i);
+const bodyAttrsRaw = bodyMatch?.[1]?.trim() ?? '';
+const bodyHtml = bodyMatch?.[2] ?? '';
+
+// Parse body attributes → object so Astro renders them correctly
+function parseAttrs(s: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  const re = /([a-zA-Z_:][\w:.-]*)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+)))?/g;
+  let m;
+  while ((m = re.exec(s)) !== null) {
+    out[m[1]] = m[2] ?? m[3] ?? m[4] ?? '';
+  }
+  return out;
+}
+const bodyAttrs = parseAttrs(bodyAttrsRaw);
+
+// Resolve <html lang>
+const htmlAttrsObj = parseAttrs(htmlAttrs);
+const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
+---
+<!DOCTYPE html>
+<html lang={resolvedLang} {...Object.fromEntries(Object.entries(htmlAttrsObj).filter(([k]) => k !== 'lang'))}>
+  <head>
+    <Fragment set:html={headHtml} />
+  </head>
+  <body {...bodyAttrs}>
+    <Fragment set:html={bodyHtml} />
+  </body>
+</html>

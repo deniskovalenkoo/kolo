@@ -3,6 +3,8 @@
 A 1:1 mirror of [kolo.xyz](https://kolo.xyz) built with Astro.
 Same stack as the eResidency site so we don't maintain two different setups.
 
+> **Migrating a different Webflow site?** Read [`MIGRATION-PLAYBOOK.md`](./MIGRATION-PLAYBOOK.md) — it's the generic version of how this repo was built and takes ~35 min for a fresh site once you've done it once.
+
 ## Quick start
 
 ```bash

@@ -43,76 +43,17 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
 <html lang={resolvedLang} {...Object.fromEntries(Object.entries(htmlAttrsObj).filter(([k]) => k !== 'lang'))}>
   <head>
     <Fragment set:html={headHtml} />
-    <!-- Site-wide overrides on top of the scraped Webflow head.
-         is:inline so the rules land in the HTML and beat Webflow's own CSS
-         via source order (last wins) without any Astro processing.       -->
+    <!-- Site-wide override on top of the scraped Webflow head.
+         is:inline so the rule lands in the HTML and beats Webflow's own
+         stylesheet via source order, without any Astro processing.        -->
     <style is:inline>
-      /* ---------- Dark logo + dark hamburger icon ---------- */
+      /* Logo + hamburger icon: flatten the white SVGs to solid black so
+         they're visible on the light pill nav. Everything else (menu blur,
+         transitions, layout) reverts to Webflow's defaults. */
       .n-logo,
       .n-menu-icn,
       .n-menu-icn-out {
         filter: brightness(0) !important;
-      }
-
-      /* ---------- Lighter, glassier opened menu ----------
-         Light translucent white background + stronger blur + saturate.
-         Webflow's default panel was darker; user wants a frosted-light look. */
-      .n-menu-container-bg,
-      .n-menu-bg {
-        background: rgba(255, 255, 255, 0.55) !important;
-        backdrop-filter: blur(44px) saturate(180%) !important;
-        -webkit-backdrop-filter: blur(44px) saturate(180%) !important;
-      }
-      .n-menu-container {
-        background: transparent !important;
-      }
-
-      /* ---------- Open-menu performance — aggressive isolation ----------
-         The earlier translateZ + contain hints alone weren't enough. Now:
-         (1) isolation: isolate creates a fresh stacking context per layer
-             so the blurred area is rasterised once and just blitted as the
-             panel scales/fades in.
-         (2) contain: strict on the wrapper fully decouples the menu from
-             the rest of the page — neither layout nor paint of the page
-             behind it triggers re-work in the menu, and vice versa.
-         (3) translate3d (instead of translateZ) is a stronger hint to put
-             the element on its own GPU layer in older Chromium builds.    */
-      .n-menu-wrap,
-      .n-menu-animation-wrap,
-      .n-menu-bg,
-      .n-menu-container,
-      .n-menu-container-bg,
-      .n-menu-body-wrap {
-        transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        isolation: isolate;
-      }
-      .n-menu-animation-wrap {
-        contain: strict;
-        /* Reserve the full viewport for the menu wrapper so `contain: strict`
-           doesn't collapse it during the closed state. */
-        width: 100vw;
-        height: 100vh;
-        height: 100dvh;
-      }
-      .n-menu-bg,
-      .n-menu-container,
-      .n-menu-container-bg,
-      .n-menu-body-wrap {
-        will-change: opacity, transform;
-      }
-      .n-menu-wrap {
-        will-change: transform;
-      }
-
-      /* Avoid re-rendering the page behind the menu while it animates —
-         transform-only changes don't repaint, but Webflow may also tweak
-         opacity on parents. Locking transition properties prevents the
-         expensive backdrop-filter from being interpolated frame-by-frame. */
-      .n-menu-bg,
-      .n-menu-container-bg {
-        transition-property: opacity, transform !important;
       }
     </style>
   </head>

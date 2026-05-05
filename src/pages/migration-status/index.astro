@@ -1,0 +1,232 @@
+---
+import status from '../../data/migration-status.json';
+
+const formatBytes = (b: number) => {
+  if (b < 1024) return `${b} B`;
+  if (b < 1024 * 1024) return `${(b / 1024).toFixed(1)} KB`;
+  return `${(b / 1024 / 1024).toFixed(1)} MB`;
+};
+
+const generated = new Date(status.generatedAt);
+const ageMinutes = Math.round((Date.now() - generated.getTime()) / 60000);
+const ageLabel = ageMinutes < 60 ? `${ageMinutes} min ago` : ageMinutes < 1440 ? `${Math.round(ageMinutes / 60)} h ago` : `${Math.round(ageMinutes / 1440)} d ago`;
+
+const health = status.overview.healthScore;
+const healthColor = health >= 80 ? '#22c55e' : health >= 50 ? '#f59e0b' : '#ef4444';
+
+const checklistByCategory: Record<string, typeof status.checklist> = {};
+for (const c of status.checklist) {
+  if (!checklistByCategory[c.category]) checklistByCategory[c.category] = [];
+  checklistByCategory[c.category].push(c);
+}
+
+const pagesByCategory: Record<string, typeof status.pages> = {};
+for (const p of status.pages) {
+  if (!pagesByCategory[p.category]) pagesByCategory[p.category] = [];
+  pagesByCategory[p.category].push(p);
+}
+
+const statusIcon = (s: string) => (s === 'done' ? '✅' : s === 'warn' ? '⚠️' : '⏳');
+const statusColor = (s: string) => (s === 'done' ? '#22c55e' : s === 'warn' ? '#f59e0b' : '#94a3b8');
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Migration Status — {status.site.name}</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      padding: 32px;
+      background: #0a0a0c;
+      color: #e4e4e7;
+      line-height: 1.5;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #27272a; }
+    header h1 { font-size: 24px; margin: 0; font-weight: 600; }
+    header .meta { font-size: 13px; color: #71717a; }
+    header .meta a { color: #a78bfa; text-decoration: none; }
+    header .meta a:hover { text-decoration: underline; }
+
+    .grid-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .card { background: #18181b; border: 1px solid #27272a; border-radius: 12px; padding: 20px; }
+    .card .label { font-size: 12px; color: #71717a; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+    .card .value { font-size: 28px; font-weight: 600; color: #fafafa; line-height: 1.1; }
+    .card .sub { font-size: 13px; color: #71717a; margin-top: 4px; }
+
+    .health-card .value { color: var(--health-color); }
+
+    section { margin-bottom: 40px; }
+    section h2 { font-size: 18px; margin: 0 0 16px; font-weight: 600; }
+
+    .checklist { background: #18181b; border: 1px solid #27272a; border-radius: 12px; overflow: hidden; }
+    .checklist-category { border-bottom: 1px solid #27272a; }
+    .checklist-category:last-child { border-bottom: none; }
+    .checklist-category-title { padding: 12px 20px; font-size: 12px; color: #71717a; text-transform: uppercase; letter-spacing: 0.05em; background: #0f0f12; }
+    .checklist-item { display: flex; gap: 12px; padding: 14px 20px; border-top: 1px solid #27272a; }
+    .checklist-item:first-child { border-top: none; }
+    .checklist-icon { font-size: 16px; line-height: 1.4; flex-shrink: 0; }
+    .checklist-body { flex: 1; min-width: 0; }
+    .checklist-label { font-weight: 500; color: #fafafa; }
+    .checklist-details { font-size: 13px; color: #a1a1aa; margin-top: 4px; }
+
+    .filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .filter-btn { background: #18181b; border: 1px solid #27272a; color: #e4e4e7; padding: 6px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; transition: all 0.15s; }
+    .filter-btn:hover { background: #27272a; }
+    .filter-btn.active { background: #a78bfa; color: #18181b; border-color: #a78bfa; }
+
+    .pages-table { width: 100%; border-collapse: collapse; background: #18181b; border-radius: 12px; overflow: hidden; border: 1px solid #27272a; }
+    .pages-table th { text-align: left; padding: 12px 16px; font-size: 11px; color: #71717a; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; background: #0f0f12; border-bottom: 1px solid #27272a; }
+    .pages-table td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid #27272a; }
+    .pages-table tr:last-child td { border-bottom: none; }
+    .pages-table tr:hover { background: #1f1f23; }
+    .pages-table a { color: #a78bfa; text-decoration: none; }
+    .pages-table a:hover { text-decoration: underline; }
+    .lang-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; background: #27272a; color: #d4d4d8; }
+    .issues-cell { color: #f59e0b; font-size: 12px; }
+    .issues-cell.zero { color: #71717a; }
+    .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 320px; display: inline-block; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Migration Status — {status.site.name}</h1>
+        <div class="meta">
+          Audit: {ageLabel} ·
+          <a href={status.site.deployUrl} target="_blank" rel="noopener">Deploy</a> ·
+          <a href={status.site.sourceUrl} target="_blank" rel="noopener">Source</a> ·
+          <a href={status.site.repoUrl} target="_blank" rel="noopener">Repo</a>
+        </div>
+      </div>
+      <div class="meta" style="text-align: right">
+        Run <code>npm run audit</code> to refresh
+      </div>
+    </header>
+
+    <!-- Overview -->
+    <section>
+      <div class="grid-overview">
+        <div class="card health-card" style={`--health-color: ${healthColor}`}>
+          <div class="label">Health</div>
+          <div class="value">{health}/100</div>
+          <div class="sub">{status.overview.checklistDone}/{status.overview.checklistTotal} checklist · {status.overview.totalIssues} page issues</div>
+        </div>
+        <div class="card">
+          <div class="label">Pages</div>
+          <div class="value">{status.overview.totalPages}</div>
+          <div class="sub">{status.overview.uniquePaths} unique × {status.overview.languages.length} langs</div>
+        </div>
+        <div class="card">
+          <div class="label">Languages</div>
+          <div class="value">{status.overview.languages.length}</div>
+          <div class="sub">{status.overview.languages.join(', ')}</div>
+        </div>
+        <div class="card">
+          <div class="label">Self-hosted assets</div>
+          <div class="value">{status.overview.assetsCount}</div>
+          <div class="sub">{formatBytes(status.overview.assetsSizeBytes)}</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-flight checklist -->
+    <section>
+      <h2>Pre-launch checklist</h2>
+      <div class="checklist">
+        {Object.entries(checklistByCategory).map(([cat, items]) => (
+          <div class="checklist-category">
+            <div class="checklist-category-title">{cat}</div>
+            {items.map((item) => (
+              <div class="checklist-item">
+                <div class="checklist-icon" style={`color: ${statusColor(item.status)}`}>
+                  {statusIcon(item.status)}
+                </div>
+                <div class="checklist-body">
+                  <div class="checklist-label">{item.label}</div>
+                  {item.details && <div class="checklist-details">{item.details}</div>}
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Pages -->
+    <section>
+      <h2>Pages</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-lang="all">All ({status.overview.totalPages})</button>
+        {status.overview.languages.map((l) => (
+          <button class="filter-btn" data-lang={l}>{l.toUpperCase()} ({status.pages.filter((p) => p.lang === l).length})</button>
+        ))}
+        <button class="filter-btn" data-issues="only">With issues only ({status.pages.filter((p) => p.hasIssues).length})</button>
+      </div>
+      <table class="pages-table" id="pages-table">
+        <thead>
+          <tr>
+            <th>Path</th>
+            <th>Lang</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Size</th>
+            <th>Issues</th>
+          </tr>
+        </thead>
+        <tbody>
+          {status.pages.map((p) => (
+            <tr data-lang={p.lang} data-has-issues={p.hasIssues ? 'true' : 'false'}>
+              <td><a href={`${status.site.deployUrl}${p.path}`} target="_blank" rel="noopener">{p.path}</a></td>
+              <td><span class="lang-badge">{p.lang}</span></td>
+              <td><span class="truncate" title={p.title}>{p.title}</span></td>
+              <td><span class="truncate" title={p.description}>{p.descriptionLength > 0 ? `${p.descriptionLength}c` : '—'}</span></td>
+              <td>{formatBytes(p.sizeBytes)}</td>
+              <td class={p.issues.length === 0 ? 'issues-cell zero' : 'issues-cell'}>
+                {p.issues.length === 0 ? '—' : p.issues.join(', ')}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script is:inline>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const rows = document.querySelectorAll('#pages-table tbody tr');
+    let activeLang = 'all';
+    let onlyIssues = false;
+
+    function applyFilter() {
+      rows.forEach((r) => {
+        const langMatch = activeLang === 'all' || r.dataset.lang === activeLang;
+        const issueMatch = !onlyIssues || r.dataset.hasIssues === 'true';
+        r.style.display = langMatch && issueMatch ? '' : 'none';
+      });
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (btn.dataset.issues === 'only') {
+          onlyIssues = !onlyIssues;
+          btn.classList.toggle('active');
+        } else if (btn.dataset.lang) {
+          activeLang = btn.dataset.lang;
+          buttons.forEach((b) => {
+            if (b.dataset.lang) b.classList.toggle('active', b.dataset.lang === activeLang);
+          });
+        }
+        applyFilter();
+      });
+    });
+  </script>
+</body>
+</html>

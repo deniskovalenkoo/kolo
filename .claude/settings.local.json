@@ -5,7 +5,8 @@
       "Bash(curl -sIL https://kolo.xyz/)",
       "Bash(curl -s https://kolo.xyz/sitemap.xml)",
       "Bash(curl -sIL https://github.com/deniskovalenkoo/kolo)",
-      "Bash(curl -sI https://github.com/deniskovalenkoo)"
+      "Bash(curl -sI https://github.com/deniskovalenkoo)",
+      "Bash(npm run *)"
     ]
   }
 }

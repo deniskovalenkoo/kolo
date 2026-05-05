@@ -33,6 +33,38 @@ If the source isn't Webflow, skip the scrape step and adapt — the rest stays t
 
 ---
 
+## Phase 0.5 — Migration Status dashboard (10 min, every project)
+
+Each migration gets a **Migration Status** dashboard at `/migration-status` —
+password-gated, shows page inventory + pre-launch checklist + auto-detected
+issues. Run `npm run audit` to refresh the data.
+
+This is the central place to see "is this site ready to go live?" without
+clicking through 100+ pages manually.
+
+**To set up on a new project:**
+
+1. Copy these three files from this repo:
+   - `scripts/audit-migration.mjs`
+   - `src/pages/migration-status/index.astro`
+   - `middleware.js`
+2. Add `"audit": "node scripts/audit-migration.mjs"` to `package.json` scripts
+3. Update site name / URLs at the bottom of `audit-migration.mjs`
+4. Run `npm run audit` once to generate `src/data/migration-status.json`
+5. After deploying to Vercel, set `MIGRATION_STATUS_PASSWORD` in
+   Vercel → Settings → Environment Variables. Username is always `admin`.
+
+**To use:**
+
+- After every scrape, self-host pass, or significant edit: `npm run audit`
+- Open `/migration-status` in the browser, sign in with `admin` + your password
+- Work through the Pre-launch checklist before flipping DNS
+
+The audit script is read-only and never makes network calls — safe to run
+in CI on every push if you want a fresh dashboard on each deploy.
+
+---
+
 ## Phase 0 — Discovery (10 min)
 
 **Goal:** know what you're migrating before writing a single line of code.

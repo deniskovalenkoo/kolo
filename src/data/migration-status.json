@@ -1,0 +1,1975 @@
+{
+  "generatedAt": "2026-05-05T17:03:05.894Z",
+  "site": {
+    "name": "kolo",
+    "deployUrl": "https://kolo-seven.vercel.app",
+    "sourceUrl": "https://kolo.xyz",
+    "repoUrl": "https://github.com/deniskovalenkoo/kolo"
+  },
+  "overview": {
+    "totalPages": 114,
+    "uniquePaths": 40,
+    "languages": [
+      "en",
+      "ru",
+      "ua"
+    ],
+    "assetsCount": 287,
+    "assetsSizeBytes": 25224524,
+    "astroRoutes": 114,
+    "totalIssues": 175,
+    "checklistDone": 3,
+    "checklistTotal": 12,
+    "healthScore": 15
+  },
+  "pages": [
+    {
+      "path": "/",
+      "lang": "en",
+      "category": "Home",
+      "title": "Kolo — Crypto Visa Card &amp; USDT Wallet | Spend in 60+ Countries",
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual &amp; physical cards. The best crypto debit card for digital nomads, expats, and everyday spending in Europe, UAE, UK and beyond.",
+      "descriptionLength": 225,
+      "titleLength": 66,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
+      "canonical": null,
+      "sizeBytes": 124944,
+      "issues": [
+        "Title too long (66 > 60)",
+        "Description too long (225 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/buy",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin, USDT &amp; Crypto Instantly — Card or Bank Transfer | Kolo",
+      "description": "Buy Bitcoin, USDT, ETH and 50+ cryptocurrencies instantly with Kolo. Pay by card or bank transfer — funds land in your crypto wallet and Visa card. No KYC for small amounts. Best way to buy crypto in Europe, UAE and 60+ countries.",
+      "descriptionLength": 230,
+      "titleLength": 71,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47161,
+      "issues": [
+        "Title too long (71 > 60)",
+        "Description too long (230 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/buy-btc",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin (BTC) Instantly with Kolo | Crypto Card &amp; Wallet",
+      "description": "Buy Bitcoin instantly with Kolo — pay by card or bank transfer, BTC lands in your wallet immediately. Spend it with your Kolo crypto Visa card or earn 2% BTC cashback.",
+      "descriptionLength": 167,
+      "titleLength": 64,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 45798,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Description too long (167 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/buy-crypto",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Crypto with Kolo Card | Instant Purchase &amp; Storage",
+      "description": "Purchase any cryptocurrency in Kolo - from popular coins to memecoins. Instant card payments, secure storage, and easy spending. Join today!",
+      "descriptionLength": 140,
+      "titleLength": 58,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 44259,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/countries",
+      "lang": "en",
+      "category": "Countries",
+      "title": "Crypto Card Available in 60+ Countries — Europe, UAE, UK &amp; More | Kolo",
+      "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
+      "descriptionLength": 219,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24222,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Description too long (219 > 160)",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/cryptowallet",
+      "lang": "en",
+      "category": "Wallet",
+      "title": "Crypto Wallet — Store BTC, ETH, USDT &amp; Spend with Visa Card | Kolo",
+      "description": "Secure crypto wallet with built-in Visa card. Store BTC, ETH, USDT and 50+ coins, swap instantly, and spend anywhere Visa is accepted. Multi-platform — works on iOS, Android, Telegram and web.",
+      "descriptionLength": 192,
+      "titleLength": 70,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 45573,
+      "issues": [
+        "Title too long (70 > 60)",
+        "Description too long (192 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/docs/privacy-policy",
+      "lang": "en",
+      "category": "Legal",
+      "title": "Privacy Policy",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 19265,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/event",
+      "lang": "en",
+      "category": "Event",
+      "title": "Kolo event",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 18855,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/exchange-crypto",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Kolo Crypto Exchange | Trade Any Crypto",
+      "description": "Exchange any cryptocurrency instantly on Kolo&#x27;s secure platform. Swap tokens at best rates with AML protection. Start trading now!",
+      "descriptionLength": 135,
+      "titleLength": 39,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 41875,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/exchanger",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Crypto Exchange &amp; Swap — Buy BTC, ETH, USDT Instantly | Kolo",
+      "description": "Swap and exchange 50+ cryptocurrencies instantly — BTC, ETH, USDT and more. No KYC for swaps, competitive rates, funds land directly in your crypto Visa card wallet. Works in Telegram, no app download needed.",
+      "descriptionLength": 208,
+      "titleLength": 64,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47455,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Description too long (208 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/for-business/business",
+      "lang": "en",
+      "category": "Business",
+      "title": "Crypto for Business — B2B Payments &amp; Corporate Visa Cards | Kolo",
+      "description": "Accept crypto payments, issue corporate Visa cards, and manage business expenses with Kolo. Low fees, instant USDT settlements, and multi-platform access for companies worldwide.",
+      "descriptionLength": 178,
+      "titleLength": 68,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 35339,
+      "issues": [
+        "Title too long (68 > 60)",
+        "Description too long (178 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/help/card-number-transfer",
+      "lang": "en",
+      "category": "Help",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21121,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/old-home",
+      "lang": "en",
+      "category": "Home",
+      "title": "Crypto Exchange &amp; Swap — Buy BTC, ETH, USDT Instantly | Kolo",
+      "description": "Swap and exchange 50+ cryptocurrencies instantly — BTC, ETH, USDT and more. No KYC for swaps, competitive rates, funds land directly in your crypto Visa card wallet. Works in Telegram, no app download needed.",
+      "descriptionLength": 208,
+      "titleLength": 64,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47455,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Description too long (208 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/personal-data-deletion",
+      "lang": "en",
+      "category": "Legal",
+      "title": "Request for Personal Data Deletion",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 34,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 17207,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collection/are-you-into-traveling",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21073,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collection/bitcoin-or-cash",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20985,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collection/dollar-or-euro",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20933,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collection/have-you-ever-heard-about-cryptocards",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21114,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collection/is-passive-income-your-thing",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21127,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collections-debit/are-you-into-traveling-debit",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20270,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collections-debit/bitcoin-or-cash-debit",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20247,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collections-debit/dollar-or-euro-debit",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20195,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20374,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz-collections-debit/is-passive-income-your-thing-debit",
+      "lang": "en",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20387,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/advanced",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Quiz advanced",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21029,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/advanced-debit",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Advanced debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21147,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/perfect-card",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Perfect card",
+      "description": "2 minutes and you’ll know which one debit card fits you the best",
+      "descriptionLength": 64,
+      "titleLength": 12,
+      "ogImage": "/cdn/641863621e81371558abea11/686e744b620ed8016c30eb72_og-quiz-new.png",
+      "canonical": null,
+      "sizeBytes": 21852,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/quiz/perfect-crypto-card",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "In less than 2 minutes we’ll pick a perfect crypto card for you",
+      "description": "2 minutes and you’ll know which one crypto card fits you the best",
+      "descriptionLength": 65,
+      "titleLength": 63,
+      "ogImage": "/cdn/641863621e81371558abea11/67641eefae7d43bb9caf6c06_OG.png",
+      "canonical": null,
+      "sizeBytes": 23752,
+      "issues": [
+        "Title too long (63 > 60)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/start",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Quiz start",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20954,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/start-debit",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Start debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 11,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21066,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/welcome",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Quiz welcome",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 12,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20944,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/quiz/welcome-debit",
+      "lang": "en",
+      "category": "Quiz",
+      "title": "Welcome debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21071,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru",
+      "lang": "ru",
+      "category": "Home",
+      "title": "Kolo — Crypto Visa Card &amp; USDT Wallet | Spend in 60+ Countries",
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual &amp; physical cards. The best crypto debit card for digital nomads, expats, and everyday spending in Europe, UAE, UK and beyond.",
+      "descriptionLength": 225,
+      "titleLength": 66,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
+      "canonical": null,
+      "sizeBytes": 124997,
+      "issues": [
+        "Title too long (66 > 60)",
+        "Description too long (225 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/buy",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin, USDT &amp; Crypto Instantly — Card or Bank Transfer | Kolo",
+      "description": "Buy Bitcoin, USDT, ETH and 50+ cryptocurrencies instantly with Kolo. Pay by card or bank transfer — funds land in your crypto wallet and Visa card. No KYC for small amounts. Best way to buy crypto in Europe, UAE and 60+ countries.",
+      "descriptionLength": 230,
+      "titleLength": 71,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47061,
+      "issues": [
+        "Title too long (71 > 60)",
+        "Description too long (230 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/buy-btc",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin (BTC) Instantly with Kolo | Crypto Card &amp; Wallet",
+      "description": "Buy Bitcoin instantly with Kolo — pay by card or bank transfer, BTC lands in your wallet immediately. Spend it with your Kolo crypto Visa card or earn 2% BTC cashback.",
+      "descriptionLength": 167,
+      "titleLength": 64,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 46282,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Description too long (167 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/buy-crypto",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Crypto with Kolo Card | Instant Purchase &amp; Storage",
+      "description": "Purchase any cryptocurrency in Kolo - from popular coins to memecoins. Instant card payments, secure storage, and easy spending. Join today!",
+      "descriptionLength": 140,
+      "titleLength": 58,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 45548,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/countries",
+      "lang": "ru",
+      "category": "Countries",
+      "title": "Crypto Card Available in 60+ Countries — Europe, UAE, UK &amp; More | Kolo",
+      "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
+      "descriptionLength": 219,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24219,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Description too long (219 > 160)",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/cryptowallet",
+      "lang": "ru",
+      "category": "Wallet",
+      "title": "Криптокошелек от Kolo – безопасный и простой в использовании",
+      "description": "Надёжно храните криптовалюту и наслаждайтесь быстрыми транзакциями с кошельком Kolo. Начните уже сегодня и откройте для себя, каким удобным может быть криптоопыт.",
+      "descriptionLength": 162,
+      "titleLength": 60,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 48516,
+      "issues": [
+        "Description too long (162 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/docs/privacy-policy",
+      "lang": "ru",
+      "category": "Legal",
+      "title": "Privacy Policy",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 19407,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/event",
+      "lang": "ru",
+      "category": "Event",
+      "title": "Kolo event",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 18855,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/exchange-crypto",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Kolo Crypto Exchange | Trade Any Crypto",
+      "description": "Exchange any cryptocurrency instantly on Kolo&#x27;s secure platform. Swap tokens at best rates with AML protection. Start trading now!",
+      "descriptionLength": 135,
+      "titleLength": 39,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 43167,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/exchanger",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Купить или продать крипту легко с Kolo – Быстрый и безопасный обмен криптовалют",
+      "description": "Покупайте или продавайте криптовалюту с Kolo — так, как удобно вам.",
+      "descriptionLength": 67,
+      "titleLength": 79,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47967,
+      "issues": [
+        "Title too long (79 > 60)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/for-business/business",
+      "lang": "ru",
+      "category": "Business",
+      "title": "Crypto for Business — B2B Payments &amp; Corporate Visa Cards | Kolo",
+      "description": "Accept crypto payments, issue corporate Visa cards, and manage business expenses with Kolo. Low fees, instant USDT settlements, and multi-platform access for companies worldwide.",
+      "descriptionLength": 178,
+      "titleLength": 68,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 35377,
+      "issues": [
+        "Title too long (68 > 60)",
+        "Description too long (178 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/help/card-number-transfer",
+      "lang": "ru",
+      "category": "Help",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23663,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/old-home",
+      "lang": "ru",
+      "category": "Home",
+      "title": "Your card to live in crypto",
+      "description": "A single app for spending, sending, and banking around the clock",
+      "descriptionLength": 64,
+      "titleLength": 27,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
+      "canonical": null,
+      "sizeBytes": 46465,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/personal-data-deletion",
+      "lang": "ru",
+      "category": "Legal",
+      "title": "Request for Personal Data Deletion",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 34,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 17252,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collection/are-you-into-traveling",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21073,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collection/bitcoin-or-cash",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20985,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collection/dollar-or-euro",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20933,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collection/have-you-ever-heard-about-cryptocards",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21114,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collection/is-passive-income-your-thing",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21127,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collections-debit/are-you-into-traveling-debit",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20270,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collections-debit/bitcoin-or-cash-debit",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20247,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collections-debit/dollar-or-euro-debit",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20195,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20374,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz-collections-debit/is-passive-income-your-thing-debit",
+      "lang": "ru",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20387,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/advanced",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Quiz advanced",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21074,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/advanced-debit",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Advanced debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21192,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/perfect-card",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Perfect card",
+      "description": "2 minutes and you’ll know which one debit card fits you the best",
+      "descriptionLength": 64,
+      "titleLength": 12,
+      "ogImage": "/cdn/641863621e81371558abea11/686e744b620ed8016c30eb72_og-quiz-new.png",
+      "canonical": null,
+      "sizeBytes": 21900,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/quiz/perfect-crypto-card",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "In less than 2 minutes we’ll pick a perfect crypto card for you",
+      "description": "2 minutes and you’ll know which one crypto card fits you the best",
+      "descriptionLength": 65,
+      "titleLength": 63,
+      "ogImage": "/cdn/641863621e81371558abea11/67641eefae7d43bb9caf6c06_OG.png",
+      "canonical": null,
+      "sizeBytes": 23800,
+      "issues": [
+        "Title too long (63 > 60)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/start",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Quiz start",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20999,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/start-debit",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Start debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 11,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21111,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/welcome",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Quiz welcome",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 12,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20989,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/quiz/welcome-debit",
+      "lang": "ru",
+      "category": "Quiz",
+      "title": "Welcome debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21116,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/sell",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto Instantly | Convert to USDT or Spend | Kolo",
+      "description": "Sell Bitcoin, ETH, USDT and 50+ cryptocurrencies instantly on Kolo. Get competitive rates, convert to fiat or spend directly with your Kolo Visa card.",
+      "descriptionLength": 150,
+      "titleLength": 55,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 44788,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/sell-btc",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell BTC for Cash or USDT Instantly | Kolo Crypto Card",
+      "description": "Sell Bitcoin at competitive rates on Kolo. Convert BTC to USDT or spend directly with your Kolo Visa card. Fast, simple, no extra app — works in Telegram.",
+      "descriptionLength": 154,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 45068,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/sell-crypto",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto on Kolo | Convert Crypto to Cash",
+      "description": "Sell Bitcoin, USDT, ETH and 50+ cryptocurrencies on Kolo. Get cash to your card or bank instantly. Competitive rates, no hidden fees. Works via Telegram.",
+      "descriptionLength": 153,
+      "titleLength": 44,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 45593,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/swap",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap Crypto Instantly with Kolo | Best Rates, No Hidden Fees",
+      "description": "Swap BTC, ETH, USDT and 50+ crypto pairs instantly on Kolo. Competitive rates, transparent fees. Funds swap directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 163,
+      "titleLength": 60,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 43738,
+      "issues": [
+        "Description too long (163 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/swap-btc",
+      "lang": "ru",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap BTC Instantly | Best Rates, No Hidden Fees | Kolo",
+      "description": "Swap Bitcoin for USDT, ETH or other crypto instantly on Kolo. Fast BTC swaps with competitive rates, directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 156,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 46949,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ru/test-page",
+      "lang": "ru",
+      "category": "Test",
+      "title": "test page",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 9,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 15542,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/sell",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto Instantly | Convert to USDT or Spend | Kolo",
+      "description": "Sell Bitcoin, ETH, USDT and 50+ cryptocurrencies instantly on Kolo. Get competitive rates, convert to fiat or spend directly with your Kolo Visa card.",
+      "descriptionLength": 150,
+      "titleLength": 55,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 44304,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/sell-btc",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell BTC for Cash or USDT Instantly | Kolo Crypto Card",
+      "description": "Sell Bitcoin at competitive rates on Kolo. Convert BTC to USDT or spend directly with your Kolo Visa card. Fast, simple, no extra app — works in Telegram.",
+      "descriptionLength": 154,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 44584,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/sell-crypto",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto on Kolo | Convert Crypto to Cash",
+      "description": "Sell Bitcoin, USDT, ETH and 50+ cryptocurrencies on Kolo. Get cash to your card or bank instantly. Competitive rates, no hidden fees. Works via Telegram.",
+      "descriptionLength": 153,
+      "titleLength": 44,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 44304,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/swap",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap Crypto Instantly with Kolo | Best Rates, No Hidden Fees",
+      "description": "Swap BTC, ETH, USDT and 50+ crypto pairs instantly on Kolo. Competitive rates, transparent fees. Funds swap directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 163,
+      "titleLength": 60,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 43254,
+      "issues": [
+        "Description too long (163 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/swap-btc",
+      "lang": "en",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap BTC Instantly | Best Rates, No Hidden Fees | Kolo",
+      "description": "Swap Bitcoin for USDT, ETH or other crypto instantly on Kolo. Fast BTC swaps with competitive rates, directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 156,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 46463,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/test-page",
+      "lang": "en",
+      "category": "Test",
+      "title": "test page",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 9,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 15545,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua",
+      "lang": "ua",
+      "category": "Home",
+      "title": "Kolo — Crypto Visa Card &amp; USDT Wallet | Spend in 60+ Countries",
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual &amp; physical cards. The best crypto debit card for digital nomads, expats, and everyday spending in Europe, UAE, UK and beyond.",
+      "descriptionLength": 225,
+      "titleLength": 66,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
+      "canonical": null,
+      "sizeBytes": 124997,
+      "issues": [
+        "Title too long (66 > 60)",
+        "Description too long (225 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/buy",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin, USDT &amp; Crypto Instantly — Card or Bank Transfer | Kolo",
+      "description": "Buy Bitcoin, USDT, ETH and 50+ cryptocurrencies instantly with Kolo. Pay by card or bank transfer — funds land in your crypto wallet and Visa card. No KYC for small amounts. Best way to buy crypto in Europe, UAE and 60+ countries.",
+      "descriptionLength": 230,
+      "titleLength": 71,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47120,
+      "issues": [
+        "Title too long (71 > 60)",
+        "Description too long (230 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/buy-btc",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Bitcoin (BTC) Instantly with Kolo | Crypto Card &amp; Wallet",
+      "description": "Buy Bitcoin instantly with Kolo — pay by card or bank transfer, BTC lands in your wallet immediately. Spend it with your Kolo crypto Visa card or earn 2% BTC cashback.",
+      "descriptionLength": 167,
+      "titleLength": 64,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 46338,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Description too long (167 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/buy-crypto",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Buy Crypto with Kolo Card | Instant Purchase &amp; Storage",
+      "description": "Purchase any cryptocurrency in Kolo - from popular coins to memecoins. Instant card payments, secure storage, and easy spending. Join today!",
+      "descriptionLength": 140,
+      "titleLength": 58,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 45936,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/countries",
+      "lang": "ua",
+      "category": "Countries",
+      "title": "Crypto Card Available in 60+ Countries — Europe, UAE, UK &amp; More | Kolo",
+      "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
+      "descriptionLength": 219,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24219,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Description too long (219 > 160)",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/cryptowallet",
+      "lang": "ua",
+      "category": "Wallet",
+      "title": "Криптогаманець Kolo – безпечний та простий у використанні",
+      "description": "Безпечно зберігайте криптовалюту та насолоджуйтеся швидкими транзакціями з криптогаманцем Kolo. Почніть вже сьогодні та відчуйте що таке найзручніший криптодосвід!",
+      "descriptionLength": 163,
+      "titleLength": 57,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 49008,
+      "issues": [
+        "Description too long (163 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/docs/privacy-policy",
+      "lang": "ua",
+      "category": "Legal",
+      "title": "Privacy Policy",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 19433,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/event",
+      "lang": "ua",
+      "category": "Event",
+      "title": "Kolo event",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 18855,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/exchange-crypto",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Kolo Crypto Exchange | Trade Any Crypto",
+      "description": "Exchange any cryptocurrency instantly on Kolo&#x27;s secure platform. Swap tokens at best rates with AML protection. Start trading now!",
+      "descriptionLength": 135,
+      "titleLength": 39,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 43555,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/exchanger",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Kolo: Купуйте та продавайте крипту так, як вам зручно",
+      "description": "Купуйте та продавайте криптовалюту так, як вам подобається",
+      "descriptionLength": 58,
+      "titleLength": 53,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 47798,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/for-business/business",
+      "lang": "ua",
+      "category": "Business",
+      "title": "Crypto for Business — B2B Payments &amp; Corporate Visa Cards | Kolo",
+      "description": "Accept crypto payments, issue corporate Visa cards, and manage business expenses with Kolo. Low fees, instant USDT settlements, and multi-platform access for companies worldwide.",
+      "descriptionLength": 178,
+      "titleLength": 68,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 35377,
+      "issues": [
+        "Title too long (68 > 60)",
+        "Description too long (178 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/help/transfers-by-card-number",
+      "lang": "ua",
+      "category": "Help",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23776,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/old-home",
+      "lang": "ua",
+      "category": "Home",
+      "title": "Your card to live in crypto",
+      "description": "A single app for spending, sending, and banking around the clock",
+      "descriptionLength": 64,
+      "titleLength": 27,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
+      "canonical": null,
+      "sizeBytes": 46465,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/personal-data-deletion",
+      "lang": "ua",
+      "category": "Legal",
+      "title": "Request for Personal Data Deletion",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 34,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 17252,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collection/are-you-into-traveling",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21154,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collection/bitcoin-or-cash",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21022,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collection/dollar-or-euro",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20973,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collection/have-you-ever-heard-about-cryptocards",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21134,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collection/is-passive-income-your-thing",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21169,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collections-debit/are-you-into-traveling-debit",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20282,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collections-debit/bitcoin-or-cash-debit",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20270,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collections-debit/dollar-or-euro-debit",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20223,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20387,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz-collections-debit/is-passive-income-your-thing-debit",
+      "lang": "ua",
+      "category": "Quiz Collections",
+      "title": "Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 4,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20419,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/advanced",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Quiz advanced",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21209,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/advanced-debit",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Advanced debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 14,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21354,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/perfect-card",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Менш ніж за 2 хвилини ми підберемо ідеальну криптокарту для вас",
+      "description": "2 хвилини і ви дізнаєтесь, яка криптокарта вам найбільше підходить",
+      "descriptionLength": 66,
+      "titleLength": 63,
+      "ogImage": "/cdn/641863621e81371558abea11/676aa8207f4212a10c338531_OG-ua.png",
+      "canonical": null,
+      "sizeBytes": 22510,
+      "issues": [
+        "Title too long (63 > 60)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/perfect-crypto-card",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Менш ніж за 2 хвилини ми підберемо ідеальну криптокарту для вас",
+      "description": "2 хвилини і ви дізнаєтесь, яка криптокарта вам найбільше підходить",
+      "descriptionLength": 66,
+      "titleLength": 63,
+      "ogImage": "/cdn/641863621e81371558abea11/676aa8207f4212a10c338531_OG-ua.png",
+      "canonical": null,
+      "sizeBytes": 24264,
+      "issues": [
+        "Title too long (63 > 60)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/start",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Quiz start",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 10,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21176,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/start-debit",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Start debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 11,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21220,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/welcome",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Quiz welcome",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 12,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21198,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/quiz/welcome-debit",
+      "lang": "ua",
+      "category": "Quiz",
+      "title": "Welcome debit",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 13,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21233,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/sell",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto Instantly | Convert to USDT or Spend | Kolo",
+      "description": "Sell Bitcoin, ETH, USDT and 50+ cryptocurrencies instantly on Kolo. Get competitive rates, convert to fiat or spend directly with your Kolo Visa card.",
+      "descriptionLength": 150,
+      "titleLength": 55,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 44844,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/sell-btc",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell BTC for Cash or USDT Instantly | Kolo Crypto Card",
+      "description": "Sell Bitcoin at competitive rates on Kolo. Convert BTC to USDT or spend directly with your Kolo Visa card. Fast, simple, no extra app — works in Telegram.",
+      "descriptionLength": 154,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 45124,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/sell-crypto",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Sell Crypto on Kolo | Convert Crypto to Cash",
+      "description": "Sell Bitcoin, USDT, ETH and 50+ cryptocurrencies on Kolo. Get cash to your card or bank instantly. Competitive rates, no hidden fees. Works via Telegram.",
+      "descriptionLength": 153,
+      "titleLength": 44,
+      "ogImage": "/cdn/641863621e81371558abea11/66f516e68fbc5fb416a3ff2e_ogupd.png",
+      "canonical": null,
+      "sizeBytes": 45981,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/swap",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap Crypto Instantly with Kolo | Best Rates, No Hidden Fees",
+      "description": "Swap BTC, ETH, USDT and 50+ crypto pairs instantly on Kolo. Competitive rates, transparent fees. Funds swap directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 163,
+      "titleLength": 60,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 43794,
+      "issues": [
+        "Description too long (163 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/swap-btc",
+      "lang": "ua",
+      "category": "Buy/Sell/Swap",
+      "title": "Swap BTC Instantly | Best Rates, No Hidden Fees | Kolo",
+      "description": "Swap Bitcoin for USDT, ETH or other crypto instantly on Kolo. Fast BTC swaps with competitive rates, directly in your Telegram wallet — no extra app needed.",
+      "descriptionLength": 156,
+      "titleLength": 54,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 46987,
+      "issues": [],
+      "hasIssues": false
+    },
+    {
+      "path": "/ua/test-page",
+      "lang": "ua",
+      "category": "Test",
+      "title": "test page",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 9,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 15542,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    }
+  ],
+  "checklist": [
+    {
+      "id": "self-hosted-cdn",
+      "label": "All assets self-hosted (no Webflow CDN runtime deps)",
+      "category": "Infrastructure",
+      "status": "done",
+      "details": "No unmigrated CDN URLs detected."
+    },
+    {
+      "id": "404-page",
+      "label": "Custom 404 page exists",
+      "category": "Infrastructure",
+      "status": "todo",
+      "details": "Add src/pages/404.astro for a branded 404 instead of Vercel default."
+    },
+    {
+      "id": "dns-ready",
+      "label": "DNS for kolo.xyz ready to switch to Vercel",
+      "category": "Infrastructure",
+      "status": "todo",
+      "details": "Manual step before launch — add domain in Vercel project, update DNS at registrar."
+    },
+    {
+      "id": "kolo-in-redirect",
+      "label": "kolo.in → kolo.xyz redirect set up",
+      "category": "Infrastructure",
+      "status": "todo",
+      "details": "120 internal links point at https://kolo.in/... — those need to resolve after the cutover."
+    },
+    {
+      "id": "sitemap",
+      "label": "sitemap.xml accessible",
+      "category": "SEO",
+      "status": "todo",
+      "details": "Astro can generate a sitemap via @astrojs/sitemap, or copy sitemap.xml from kolo.xyz into public/."
+    },
+    {
+      "id": "robots",
+      "label": "robots.txt configured",
+      "category": "SEO",
+      "status": "todo",
+      "details": "Add public/robots.txt to allow indexing on prod and block on preview."
+    },
+    {
+      "id": "og-images",
+      "label": "Every page has og:image",
+      "category": "SEO",
+      "status": "warn",
+      "details": "48/114 pages have og:image."
+    },
+    {
+      "id": "meta-descriptions",
+      "label": "Every page has meta description",
+      "category": "SEO",
+      "status": "warn",
+      "details": "63 pages are missing descriptions."
+    },
+    {
+      "id": "blog-migrated",
+      "label": "Blog (~120 posts) migrated",
+      "category": "Content",
+      "status": "todo",
+      "details": "Currently /blog and /blog/* pages do not exist — losing all blog SEO if cutover happens before this is done."
+    },
+    {
+      "id": "forms-verified",
+      "label": "Forms verified or replaced",
+      "category": "Functional",
+      "status": "todo",
+      "details": "32 form tags total. Most are likely Finsweet cookie consent (frontend only). 6 wf-form references — those would post to webflow.com and break after cutover."
+    },
+    {
+      "id": "analytics",
+      "label": "GA4 / GTM wired up",
+      "category": "Tracking",
+      "status": "done",
+      "details": "Both GA4 and GTM detected on homepage."
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy policy / data deletion accessible",
+      "category": "Legal",
+      "status": "done",
+      "details": "Pages found in src/pages/."
+    }
+  ]
+}

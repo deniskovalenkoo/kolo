@@ -10,7 +10,8 @@
     "astro": "astro",
     "scrape": "node scripts/scrape-webflow.mjs",
     "scrape:single": "node scripts/scrape-single.mjs",
-    "self-host-cdn": "node scripts/self-host-cdn.mjs"
+    "self-host-cdn": "node scripts/self-host-cdn.mjs",
+    "audit": "node scripts/audit-migration.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",

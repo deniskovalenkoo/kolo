@@ -49,11 +49,16 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
     <style is:inline>
       /* Logo + hamburger icon: flatten the white SVGs to ~15% gray so they
          read as dark against the light pill nav, with a touch of softness
-         vs pure black. Everything else reverts to Webflow's defaults. */
+         vs pure black. */
       .n-logo,
       .n-menu-icn,
       .n-menu-icn-out {
         filter: brightness(0.15) !important;
+      }
+
+      /* Bottom-nav pill background: ~15% lighter than Webflow's default. */
+      .n-menu-wrap {
+        background-color: rgba(255, 255, 255, 0.72) !important;
       }
     </style>
   </head>

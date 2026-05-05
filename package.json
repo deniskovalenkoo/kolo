@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "scrape": "node scripts/scrape-webflow.mjs",
-    "scrape:single": "node scripts/scrape-single.mjs"
+    "scrape:single": "node scripts/scrape-single.mjs",
+    "self-host-cdn": "node scripts/self-host-cdn.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",

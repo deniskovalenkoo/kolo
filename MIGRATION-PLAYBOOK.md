@@ -253,18 +253,67 @@ import SpeedInsights from '@vercel/speed-insights/astro';
 <SpeedInsights />
 ```
 
-### 4.3 Self-host the CDN assets
+### 4.3 Self-host the CDN assets — **REQUIRED before disconnecting the source**
 
-By default the scraped HTML still references `cdn.prod.website-files.com` (Webflow's CDN). The scraper already downloaded local copies into `public/cdn/`. To switch to self-hosting, add a post-scrape rewrite step:
+By default the scraped HTML still references `cdn.prod.website-files.com` (Webflow's CDN).
+While the source Webflow site stays alive, those URLs work — but the moment you cancel
+the Webflow plan or the source project gets deleted, the CDN goes with it and your
+mirror loses every image, font, and stylesheet.
 
-```js
-// in scripts/scrape-webflow.mjs, after scrapePage() runs:
-const html = await readFile(cacheFile, 'utf-8');
-const rewritten = html.replace(/https:\/\/cdn\.prod\.website-files\.com\//g, '/cdn/');
-await writeFile(cacheFile, rewritten);
+**Before switching DNS to the new mirror, run self-hosting.**
+
+The scraper already downloaded all referenced CDN assets into `public/cdn/`. The
+`scripts/self-host-cdn.mjs` script rewrites every `https://cdn.prod.website-files.com/<path>`
+reference inside scraped HTML and CSS to `/cdn/<sanitized-path>` — pointing browsers
+at your Vercel deployment instead of Webflow.
+
+```bash
+npm run self-host-cdn
 ```
 
-Then re-build. Pages now load assets from your Vercel deployment, breaking the dependency on Webflow's CDN.
+The script:
+1. Walks `src/_scraped/*.html` and `public/cdn/**/*.css`, rewrites CDN URLs to `/cdn/...`
+2. Verifies every rewritten reference exists on disk
+3. Reports any missing files, separating real misses from broken-source-HTML noise
+
+Idempotent — running twice is a no-op.
+
+#### What to watch for
+
+- **The scraper's URL discovery must catch `<meta>` tags too.** Open Graph and Twitter
+  card images live in `<meta property="og:image" content="...">`, not in `<link>`/`<img>`.
+  If you skip these, the og:image returns 404 after self-hosting. The scraper here
+  includes a catch-all pattern for `https://(yoursite|cdn-host)/...` that covers this.
+
+- **HTML entity-encoded URLs trip up regex extraction.** Some Webflow attributes embed
+  JSON-encoded URLs separated by `&quot;`, e.g.
+  `data-bg="https://cdn.prod.../foo.mp4&quot;https://cdn.prod.../bar.webm"`. A naive
+  regex captures both URLs as one mangled string. Fix: include `&` in the URL
+  stop-char set so the regex stops at the entity boundary.
+
+- **Some "missing" references are broken at the source.** Webflow occasionally emits
+  HTML where two URLs are concatenated literally with no separator (look for `_https_//`
+  in the safe-path output). The browser ignores these — they live in CSS `url()` calls
+  or data-attrs that are never evaluated. The script labels these as "malformed source
+  HTML (safe to ignore)".
+
+- **`%2F`-encoded slashes survive sanitization as `_2F`.** Webflow sometimes URL-encodes
+  the slashes in CDN paths (`/path%2Fto%2Ffile.png`). The sanitizer treats `%` as a
+  special char and rewrites to `_2F`. As long as the scraper and the rewriter use the
+  same sanitizer function, the rewritten reference and the file on disk match.
+
+- **`<link rel="preconnect" href="https://cdn.prod.website-files.com">`** stays in the
+  HTML even after self-hosting. It's harmless (browser opens a connection but never
+  loads anything from it), but if you want a fully clean diff, add an extra rewrite
+  step to drop those preconnect tags.
+
+After self-hosting, repeat the size check:
+```bash
+diff <(curl -s https://your-vercel-url/) <(curl -s https://your-source.com/) | wc -l
+```
+The diff grows (because every CDN URL changed), but visiting the page in a browser
+should look identical and DevTools → Network should show all assets loading from
+your Vercel domain.
 
 ### 4.4 Add a CMS for a blog
 
@@ -289,10 +338,11 @@ After the first migration, the repeatable steps boil down to:
 2. (5 min) `mkdir`, copy template files from this repo, edit `SITE` constant in scraper.
 3. (5 min) Create new GitHub repo, `git init`, add remote.
 4. (10 min) `npm install` && `npm run scrape` && verify locally.
-5. (5 min) Push to GitHub, import into Vercel, click Deploy.
-6. (5 min) Smoke-test the Vercel URL.
+5. (5 min) `npm run self-host-cdn` && verify dev server still renders. (Phase 4.3 — do this NOW for new sites, not later. The sooner you cut the source CDN dependency, the lower the risk that you forget before going live.)
+6. (5 min) Push to GitHub, import into Vercel, click Deploy.
+7. (5 min) Smoke-test the Vercel URL.
 
-**Total: ~35 min for a new mirror.** First time is slower because of the auth setup.
+**Total: ~40 min for a new mirror.** First time is slower because of the auth setup.
 
 ---
 

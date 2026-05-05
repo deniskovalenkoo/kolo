@@ -141,15 +141,23 @@ const assetUrls = new Set();
 
 function collectAssetUrlsFromHtml(html, baseUrl) {
   const base = new NodeURL(baseUrl);
+  // `&` excluded so we don't follow into JSON-encoded URL pairs like
+  //   data-bg="https://.../foo.mp4&quot;https://.../bar.webm"
+  // which would otherwise capture both URLs as one mangled string.
+  // The last pattern is a catch-all for everything the structured patterns miss
+  // (og:image, twitter:image, JSON-LD images, inline JS configs, etc.).
+  // isLikelyAsset() filters the catch-all results down to real asset extensions.
   const patterns = [
-    /<link[^>]+href=["']([^"']+)["']/gi,
-    /<script[^>]+src=["']([^"']+)["']/gi,
-    /<img[^>]+src=["']([^"']+)["']/gi,
-    /<source[^>]+srcset=["']([^"']+)["']/gi,
-    /<img[^>]+srcset=["']([^"']+)["']/gi,
-    /<video[^>]+src=["']([^"']+)["']/gi,
-    /<audio[^>]+src=["']([^"']+)["']/gi,
-    /background[^"]*url\(["']?([^"')]+)["']?\)/gi,
+    /<link[^>]+href=["']([^"'&]+)["&]/gi,
+    /<script[^>]+src=["']([^"'&]+)["&]/gi,
+    /<img[^>]+src=["']([^"'&]+)["&]/gi,
+    /<source[^>]+srcset=["']([^"'&]+)["&]/gi,
+    /<img[^>]+srcset=["']([^"'&]+)["&]/gi,
+    /<video[^>]+src=["']([^"'&]+)["&]/gi,
+    /<audio[^>]+src=["']([^"'&]+)["&]/gi,
+    /<meta[^>]+content=["'](https:\/\/[^"'&]+)["&]/gi,
+    /background[^"]*url\(["']?([^"')&]+)["']?\)/gi,
+    /(https:\/\/(?:kolo\.xyz|cdn\.prod\.website-files\.com)\/[^"'\s)<>&]+)/gi,
   ];
   for (const re of patterns) {
     let m;

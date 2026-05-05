@@ -1,8 +1,34 @@
 ---
 import WebflowPage from '../layouts/WebflowPage.astro';
-import KoloNavPill from '../components/KoloNavPill.astro';
 import rawHtml from '../_scraped/_root.html?raw';
 ---
 <WebflowPage rawHtml={rawHtml} lang="en">
-  <KoloNavPill />
+  <!-- Override the original Webflow bottom nav: round it + heavier blur.
+       is:inline so the rules land in the HTML and beat Webflow's own CSS. -->
+  <style is:inline>
+    /* The bottom nav bar */
+    .n-menu-wrap,
+    .n-menu-bg,
+    .n-menu-container,
+    .n-menu-container-bg {
+      border-radius: 999px !important;
+      backdrop-filter: blur(36px) saturate(200%) !important;
+      -webkit-backdrop-filter: blur(36px) saturate(200%) !important;
+    }
+    /* The hamburger button — round */
+    .n-menu-btn,
+    .n-menu-btn-body {
+      border-radius: 999px !important;
+      overflow: hidden;
+    }
+    /* The "Get Kolo card" CTA — round */
+    .n-letter-wrap,
+    .n-ctawrap a {
+      border-radius: 999px !important;
+    }
+    /* The opened menu panel — also round */
+    .n-menu-animation-wrap > * {
+      border-radius: 28px !important;
+    }
+  </style>
 </WebflowPage>

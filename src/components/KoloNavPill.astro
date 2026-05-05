@@ -1,0 +1,318 @@
+---
+// Floating glass pill navigation — replaces the default Webflow nav.
+//
+// Usage: pass it as a child of WebflowPage so the slot renders it at the top
+// of <body>.  The component injects global CSS that hides the original
+// Webflow nav (.n-menu-wrap, .n-menu-animation-wrap) and mounts its own
+// fixed-position pill at the top of the viewport.
+//
+// Style: dark glass with backdrop-blur, rounded-pill shape.
+//        - Logo on the left, primary nav items in the centre, CTA + menu on the right.
+//        - Click the menu button to expand a dropdown panel containing the
+//          extended menu items + QR code (matching the original nav's QR behaviour).
+
+interface Props {
+  /** Locale-aware path prefix, e.g. "" for en, "/ua" for ua, "/ru" for ru */
+  langPrefix?: string;
+  /** "Get Kolo card" CTA text (translated per locale) */
+  ctaLabel?: string;
+}
+
+const { langPrefix = '', ctaLabel = 'Get Kolo card' } = Astro.props;
+
+const navLinks: { label: string; href: string }[] = [
+  { label: 'Card', href: `${langPrefix}/buy` },
+  { label: 'Cashback', href: `${langPrefix}/#cashback` },
+  { label: 'Countries', href: `${langPrefix}/countries` },
+  { label: 'Business', href: `${langPrefix}/for-business/business` },
+  { label: 'Blog', href: `${langPrefix}/blog` },
+];
+
+const extendedLinks: { label: string; href: string; sub?: string }[] = [
+  { label: 'Buy crypto', href: `${langPrefix}/buy`, sub: 'Card top-up with USDT, BTC, ETH' },
+  { label: 'Sell crypto', href: `${langPrefix}/sell`, sub: 'Convert to fiat, withdraw to bank' },
+  { label: 'Swap', href: `${langPrefix}/swap`, sub: 'Crypto-to-crypto exchange' },
+  { label: 'Crypto wallet', href: `${langPrefix}/cryptowallet`, sub: 'Multi-chain self-custody' },
+  { label: 'Quiz', href: `${langPrefix}/quiz/start`, sub: 'Find the perfect card' },
+  { label: 'Privacy', href: `${langPrefix}/docs/privacy-policy`, sub: 'Legal & data' },
+];
+---
+
+<nav class="kolo-nav" data-state="closed" aria-label="Main">
+  <div class="kolo-nav__pill">
+    <a class="kolo-nav__logo" href={`${langPrefix}/`} aria-label="Kolo home">
+      <img
+        src="/cdn/641863621e81371558abea11/682dac7e7b0e8bf65f4f72be_logo-white.svg"
+        alt="Kolo"
+        height="20"
+      />
+    </a>
+
+    <ul class="kolo-nav__links">
+      {navLinks.map((l) => (
+        <li><a href={l.href}>{l.label}</a></li>
+      ))}
+    </ul>
+
+    <div class="kolo-nav__right">
+      <a class="kolo-nav__cta" href="#">{ctaLabel}</a>
+      <button class="kolo-nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="kolo-nav__panel" role="menu" aria-hidden="true">
+    <div class="kolo-nav__panel-grid">
+      <div class="kolo-nav__panel-items">
+        {extendedLinks.map((l) => (
+          <a href={l.href} role="menuitem">
+            <span class="kolo-nav__panel-label">{l.label}</span>
+            {l.sub && <span class="kolo-nav__panel-sub">{l.sub}</span>}
+          </a>
+        ))}
+      </div>
+      <div class="kolo-nav__panel-qr">
+        <img
+          src="/cdn/641863621e81371558abea11/689f2de63b1d3a4d1eb4df6b_qr_code.svg"
+          alt="Download Kolo app — QR code"
+          width="120"
+          height="120"
+        />
+        <p>Scan to download <br/>iOS or Android</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style is:global>
+  /* Hide the original Webflow nav while this pill is mounted */
+  .n-menu-wrap,
+  .n-menu-animation-wrap,
+  .n-menu-bg,
+  .n-menu-body-wrap,
+  .n-menu-container,
+  .n-cta-animation { display: none !important; }
+</style>
+
+<style>
+  :root {
+    --pill-bg: rgba(20, 20, 22, 0.55);
+    --pill-border: rgba(255, 255, 255, 0.08);
+    --pill-hover: rgba(255, 255, 255, 0.07);
+    --pill-text: rgba(255, 255, 255, 0.78);
+    --pill-text-strong: #fff;
+    --pill-cta-bg: #fff;
+    --pill-cta-fg: #0d0d0f;
+    --pill-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    --pill-radius: 999px;
+    --pill-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .kolo-nav {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2147483647;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    width: max-content;
+    max-width: calc(100vw - 24px);
+  }
+
+  .kolo-nav__pill {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: var(--pill-bg);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border: 1px solid var(--pill-border);
+    border-radius: var(--pill-radius);
+    padding: 6px 6px 6px 22px;
+    box-shadow: var(--pill-shadow);
+    transition: transform 0.4s var(--pill-ease), background 0.3s ease;
+  }
+
+  .kolo-nav__logo img { display: block; height: 20px; width: auto; }
+
+  .kolo-nav__links {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .kolo-nav__links a {
+    display: inline-block;
+    color: var(--pill-text);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    transition: color 0.2s ease, background 0.2s ease;
+    line-height: 1;
+  }
+  .kolo-nav__links a:hover {
+    color: var(--pill-text-strong);
+    background: var(--pill-hover);
+  }
+
+  .kolo-nav__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .kolo-nav__cta {
+    background: var(--pill-cta-bg);
+    color: var(--pill-cta-fg);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    line-height: 1;
+  }
+  .kolo-nav__cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.12);
+  }
+
+  .kolo-nav__toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--pill-border);
+    color: var(--pill-text-strong);
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .kolo-nav__toggle:hover { background: var(--pill-hover); }
+  .kolo-nav__toggle span {
+    display: block;
+    width: 16px;
+    height: 1.5px;
+    background: var(--pill-text-strong);
+    border-radius: 2px;
+    transition: transform 0.3s var(--pill-ease), opacity 0.2s ease;
+  }
+  .kolo-nav[data-state='open'] .kolo-nav__toggle span:nth-child(1) {
+    transform: translateY(3.25px) rotate(45deg);
+  }
+  .kolo-nav[data-state='open'] .kolo-nav__toggle span:nth-child(2) {
+    transform: translateY(-3.25px) rotate(-45deg);
+  }
+
+  .kolo-nav__panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: min(440px, calc(100vw - 32px));
+    background: rgba(15, 15, 17, 0.88);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid var(--pill-border);
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+    pointer-events: none;
+    transition: opacity 0.25s var(--pill-ease), transform 0.25s var(--pill-ease);
+  }
+  .kolo-nav[data-state='open'] .kolo-nav__panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .kolo-nav[data-state='open'] .kolo-nav__panel { aria-hidden: false; }
+
+  .kolo-nav__panel-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 14px;
+  }
+  .kolo-nav__panel-items a {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--pill-text-strong);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .kolo-nav__panel-items a:hover {
+    background: var(--pill-hover);
+    transform: translateX(2px);
+  }
+  .kolo-nav__panel-label { font-size: 15px; font-weight: 600; line-height: 1.3; }
+  .kolo-nav__panel-sub  { font-size: 12px; color: var(--pill-text); line-height: 1.4; }
+
+  .kolo-nav__panel-qr {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    border-top: 1px solid var(--pill-border);
+    margin-top: 6px;
+  }
+  .kolo-nav__panel-qr img {
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .kolo-nav__panel-qr p {
+    color: var(--pill-text);
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Mobile — collapse the centre links into the dropdown panel */
+  @media (max-width: 880px) {
+    .kolo-nav { top: 12px; }
+    .kolo-nav__pill { gap: 10px; padding: 6px 6px 6px 16px; }
+    .kolo-nav__links { display: none; }
+    .kolo-nav__cta { padding: 9px 14px; font-size: 13px; }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const nav = document.querySelector('.kolo-nav');
+    if (!nav) return;
+    const toggle = nav.querySelector('.kolo-nav__toggle');
+    const panel = nav.querySelector('.kolo-nav__panel');
+
+    function setState(open) {
+      nav.dataset.state = open ? 'open' : 'closed';
+      if (toggle) toggle.setAttribute('aria-expanded', String(open));
+      if (panel) panel.setAttribute('aria-hidden', String(!open));
+    }
+
+    toggle?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setState(nav.dataset.state !== 'open');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) setState(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setState(false);
+    });
+  })();
+</script>

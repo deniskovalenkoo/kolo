@@ -45,6 +45,7 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
     <Fragment set:html={headHtml} />
   </head>
   <body {...bodyAttrs}>
+    <slot />
     <Fragment set:html={bodyHtml} />
   </body>
 </html>

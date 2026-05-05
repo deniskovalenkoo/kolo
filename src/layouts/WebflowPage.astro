@@ -43,6 +43,49 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
 <html lang={resolvedLang} {...Object.fromEntries(Object.entries(htmlAttrsObj).filter(([k]) => k !== 'lang'))}>
   <head>
     <Fragment set:html={headHtml} />
+    <!-- Site-wide overrides on top of the scraped Webflow head.
+         is:inline so the rules land in the HTML and beat Webflow's own CSS
+         via source order (last wins) without any Astro processing.       -->
+    <style is:inline>
+      /* ---------- Dark logo + dark hamburger icon ----------
+         The original SVGs are pure white (designed for dark page backgrounds).
+         brightness(0) flattens any image to solid black, matching the body
+         text colour for the new light-bg pill nav. */
+      .n-logo,
+      .n-menu-icn,
+      .n-menu-icn-out {
+        filter: brightness(0) !important;
+      }
+
+      /* ---------- Open-menu performance ----------
+         Each animated element gets its own GPU compositing layer + paint
+         containment. The page behind the blur is rasterised once into a
+         layer instead of being re-blurred every frame as the panel scales
+         in. Blur effects themselves are kept exactly as they were.        */
+      .n-menu-wrap,
+      .n-menu-animation-wrap,
+      .n-menu-bg,
+      .n-menu-container,
+      .n-menu-container-bg,
+      .n-menu-body-wrap {
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+      }
+      .n-menu-animation-wrap {
+        contain: layout style paint;
+      }
+      .n-menu-bg,
+      .n-menu-container,
+      .n-menu-body-wrap {
+        will-change: opacity, transform;
+      }
+      /* The bottom bar is always on screen — give it a stable layer so
+         opening the menu doesn't trigger a repaint of the bar itself. */
+      .n-menu-wrap {
+        will-change: transform;
+      }
+    </style>
   </head>
   <body {...bodyAttrs}>
     <Fragment set:html={bodyHtml} />

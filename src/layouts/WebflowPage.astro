@@ -42,6 +42,24 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
 <!DOCTYPE html>
 <html lang={resolvedLang} {...Object.fromEntries(Object.entries(htmlAttrsObj).filter(([k]) => k !== 'lang'))}>
   <head>
+    <!-- Load Google Fonts via synchronous <link> at the very top of <head>
+         so they start downloading before Webflow's JS-based WebFont.load
+         runs. This eliminates the FOUT (font swap) the user was seeing on
+         page load. display=swap shows fallback immediately, then swaps to
+         the custom font as soon as it lands — but with these preconnect
+         + stylesheet hints the swap typically happens within the first
+         100-200ms, often before the user perceives any flash. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
     <Fragment set:html={headHtml} />
     <!-- Site-wide override on top of the scraped Webflow head.
          is:inline so the rule lands in the HTML and beats Webflow's own

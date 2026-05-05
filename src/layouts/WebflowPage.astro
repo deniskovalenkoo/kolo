@@ -47,43 +47,72 @@ const resolvedLang = lang ?? htmlAttrsObj.lang ?? 'en';
          is:inline so the rules land in the HTML and beat Webflow's own CSS
          via source order (last wins) without any Astro processing.       -->
     <style is:inline>
-      /* ---------- Dark logo + dark hamburger icon ----------
-         The original SVGs are pure white (designed for dark page backgrounds).
-         brightness(0) flattens any image to solid black, matching the body
-         text colour for the new light-bg pill nav. */
+      /* ---------- Dark logo + dark hamburger icon ---------- */
       .n-logo,
       .n-menu-icn,
       .n-menu-icn-out {
         filter: brightness(0) !important;
       }
 
-      /* ---------- Open-menu performance ----------
-         Each animated element gets its own GPU compositing layer + paint
-         containment. The page behind the blur is rasterised once into a
-         layer instead of being re-blurred every frame as the panel scales
-         in. Blur effects themselves are kept exactly as they were.        */
+      /* ---------- Lighter, glassier opened menu ----------
+         Light translucent white background + stronger blur + saturate.
+         Webflow's default panel was darker; user wants a frosted-light look. */
+      .n-menu-container-bg,
+      .n-menu-bg {
+        background: rgba(255, 255, 255, 0.55) !important;
+        backdrop-filter: blur(44px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(44px) saturate(180%) !important;
+      }
+      .n-menu-container {
+        background: transparent !important;
+      }
+
+      /* ---------- Open-menu performance — aggressive isolation ----------
+         The earlier translateZ + contain hints alone weren't enough. Now:
+         (1) isolation: isolate creates a fresh stacking context per layer
+             so the blurred area is rasterised once and just blitted as the
+             panel scales/fades in.
+         (2) contain: strict on the wrapper fully decouples the menu from
+             the rest of the page — neither layout nor paint of the page
+             behind it triggers re-work in the menu, and vice versa.
+         (3) translate3d (instead of translateZ) is a stronger hint to put
+             the element on its own GPU layer in older Chromium builds.    */
       .n-menu-wrap,
       .n-menu-animation-wrap,
       .n-menu-bg,
       .n-menu-container,
       .n-menu-container-bg,
       .n-menu-body-wrap {
-        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
+        isolation: isolate;
       }
       .n-menu-animation-wrap {
-        contain: layout style paint;
+        contain: strict;
+        /* Reserve the full viewport for the menu wrapper so `contain: strict`
+           doesn't collapse it during the closed state. */
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
       }
       .n-menu-bg,
       .n-menu-container,
+      .n-menu-container-bg,
       .n-menu-body-wrap {
         will-change: opacity, transform;
       }
-      /* The bottom bar is always on screen — give it a stable layer so
-         opening the menu doesn't trigger a repaint of the bar itself. */
       .n-menu-wrap {
         will-change: transform;
+      }
+
+      /* Avoid re-rendering the page behind the menu while it animates —
+         transform-only changes don't repaint, but Webflow may also tweak
+         opacity on parents. Locking transition properties prevents the
+         expensive backdrop-filter from being interpolated frame-by-frame. */
+      .n-menu-bg,
+      .n-menu-container-bg {
+        transition-property: opacity, transform !important;
       }
     </style>
   </head>

@@ -42,12 +42,29 @@ const referencedPaths = new Set();
 async function rewriteFile(path) {
   const original = await readFile(path, 'utf-8');
   let rewriteCount = 0;
-  const updated = original.replace(CDN_HOST_RE, (_match, pathPart) => {
+  let updated = original.replace(CDN_HOST_RE, (_match, pathPart) => {
     const safe = sanitizePath(pathPart);
     referencedPaths.add(safe);
     rewriteCount++;
     return '/cdn/' + safe;
   });
+  // Strip Subresource Integrity (SRI) from any <link>/<script> tag pointing to /cdn/.
+  // Webflow ships SRI hashes computed against the original CDN file. Once we rewrite
+  // URLs inside CSS files (which the URL pass above does), the file bytes change and
+  // the hash no longer matches → browser refuses to load the file → site renders
+  // unstyled. Local-hosted assets don't need SRI (we control the file).
+  if (path.endsWith('.html')) {
+    updated = updated.replace(
+      /<(link|script)\b[^>]*?\b(href|src)=["']\/cdn\/[^"']+["'][^>]*>/g,
+      (match) => {
+        const cleaned = match
+          .replace(/\s+integrity="[^"]*"/g, '')
+          .replace(/\s+crossorigin="[^"]*"/g, '');
+        if (cleaned !== match) rewriteCount++;
+        return cleaned;
+      },
+    );
+  }
   if (updated !== original) {
     await writeFile(path, updated);
   }

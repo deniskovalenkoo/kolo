@@ -307,6 +307,21 @@ Idempotent — running twice is a no-op.
   loads anything from it), but if you want a fully clean diff, add an extra rewrite
   step to drop those preconnect tags.
 
+- **Subresource Integrity (SRI) breaks self-hosted CSS — strip it.** Webflow ships
+  `integrity="sha384-..."` on `<link>` and `<script>` tags pointing to its CDN. Once
+  the URL-rewrite pass modifies the CSS file (rewriting CDN URLs inside it to local
+  `/cdn/...` paths), the file's bytes change and the SHA384 hash no longer matches.
+  The browser then refuses to load the CSS file with a *Failed to find a valid digest
+  in the 'integrity' attribute* error in DevTools → Console. Visible symptom: the page
+  renders in the default serif font with no layout, no styling, and a broken vertical
+  list of content. The `self-host-cdn.mjs` script fixes this by stripping `integrity`
+  and `crossorigin` attributes from any tag whose `href`/`src` starts with `/cdn/`.
+  External CDN scripts (jQuery from cloudfront, Spline from unpkg) keep their
+  integrity attrs — those files are unchanged. **If you fork the script, do not
+  remove the integrity-strip step**; the failure mode is silent in `curl -I` (asset
+  returns 200), so an HTTP-only smoke test won't catch it. Always open the deployed
+  page in a browser after self-hosting.
+
 After self-hosting, repeat the size check:
 ```bash
 diff <(curl -s https://your-vercel-url/) <(curl -s https://your-source.com/) | wc -l
@@ -358,6 +373,7 @@ After the first migration, the repeatable steps boil down to:
 | Vercel build OOMs | Too many pages × big HTML | Move scraped HTML out of `src/_scraped/`, keep only relative imports — Vite hits memory limits with 500+ raw imports |
 | Quotes break in zsh: `git add src/pages/[lang]/foo` | zsh expands `[lang]` as a glob | Quote: `git add 'src/pages/[lang]/foo'` |
 | Source site has `Last-Modified` Webflow comment that breaks our diff | Webflow build artifact | Cosmetic, ignore — our scraper already strips it |
+| **Page renders unstyled (default serif fonts, no layout) after self-hosting** | SRI hash on `<link>` no longer matches because we rewrote URLs inside the CSS file | `self-host-cdn.mjs` strips `integrity`/`crossorigin` from tags pointing to `/cdn/` — make sure that step ran. DevTools → Console will show *Failed to find a valid digest* errors |
 
 ---
 

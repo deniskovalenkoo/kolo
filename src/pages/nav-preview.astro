@@ -3,32 +3,66 @@ import WebflowPage from '../layouts/WebflowPage.astro';
 import rawHtml from '../_scraped/_root.html?raw';
 ---
 <WebflowPage rawHtml={rawHtml} lang="en">
-  <!-- Override the original Webflow bottom nav: round it + heavier blur.
-       is:inline so the rules land in the HTML and beat Webflow's own CSS. -->
+  <!-- Override the Webflow bottom nav: rounded shape + +20% blur, with
+       proper sizing so the CTA fits the bar and GPU-accelerated transitions
+       so opening the menu doesn't lag. -->
   <style is:inline>
-    /* The bottom nav bar */
-    .n-menu-wrap,
-    .n-menu-bg,
-    .n-menu-container,
-    .n-menu-container-bg {
+    /* ---------- The bottom bar (pill shape) ---------- */
+    .n-menu-wrap {
       border-radius: 999px !important;
-      backdrop-filter: blur(36px) saturate(200%) !important;
-      -webkit-backdrop-filter: blur(36px) saturate(200%) !important;
+      padding: 6px 6px 6px 22px !important;
+      gap: 10px !important;
+      align-items: center !important;
+      backdrop-filter: blur(36px) saturate(180%) !important;
+      -webkit-backdrop-filter: blur(36px) saturate(180%) !important;
+      /* Promote to its own GPU layer so backdrop-filter doesn't repaint
+         the whole page while the menu animates */
+      will-change: transform;
+      transform: translateZ(0);
+      /* Keep the bar above the opening menu so its blur stays visible */
+      z-index: 10001 !important;
+      position: relative !important;
     }
-    /* The hamburger button — round */
+
+    /* ---------- The hamburger button — round, fixed size ---------- */
     .n-menu-btn,
     .n-menu-btn-body {
       border-radius: 999px !important;
+      width: 44px !important;
+      height: 44px !important;
+      flex-shrink: 0 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
       overflow: hidden;
     }
-    /* The "Get Kolo card" CTA — round */
+
+    /* ---------- The "Get Kolo card" CTA — pill, matches bar height ---------- */
     .n-letter-wrap,
-    .n-ctawrap a {
+    .n-ctawrap > a {
       border-radius: 999px !important;
+      padding: 12px 22px !important;
+      height: auto !important;
+      line-height: 1 !important;
+      box-sizing: border-box !important;
     }
-    /* The opened menu panel — also round */
-    .n-menu-animation-wrap > * {
+
+    /* ---------- The opened menu panel — round + GPU layer to avoid lag ---------- */
+    .n-menu-animation-wrap,
+    .n-menu-bg,
+    .n-menu-container,
+    .n-menu-container-bg,
+    .n-menu-body-wrap {
       border-radius: 28px !important;
+      will-change: opacity, transform;
+      transform: translateZ(0);
+    }
+
+    /* Don't transition backdrop-filter (very expensive). Animate transform/opacity only. */
+    .n-menu-animation-wrap,
+    .n-menu-bg,
+    .n-menu-wrap {
+      transition-property: transform, opacity !important;
     }
   </style>
 </WebflowPage>

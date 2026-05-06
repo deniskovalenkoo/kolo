@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T08:57:54.842Z",
+  "generatedAt": "2026-05-06T10:38:59.882Z",
   "site": {
     "name": "kolo",
     "deployUrl": "https://kolo-seven.vercel.app",
@@ -17,10 +17,10 @@
     "assetsCount": 666,
     "assetsSizeBytes": 61857554,
     "astroRoutes": 243,
-    "totalIssues": 486,
-    "checklistDone": 4,
+    "totalIssues": 107,
+    "checklistDone": 6,
     "checklistTotal": 12,
-    "healthScore": 20
+    "healthScore": 52
   },
   "pages": [
     {
@@ -62,33 +62,28 @@
       "lang": "en",
       "category": "Other",
       "title": "6 ways to make money fast using cryptocurrency ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 53,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31618,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/beginners-guide-to-crypto-wallet-cards",
       "lang": "en",
       "category": "Other",
       "title": "Beginners Guide to Crypto Wallet Cards: All you need to know! ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 68,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31350,
       "issues": [
-        "Title too long (68 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (68 > 60)"
       ],
       "hasIssues": true
     },
@@ -97,16 +92,14 @@
       "lang": "en",
       "category": "Other",
       "title": "CBDC vs. Stablecoins: Which Digital Currency Will Shape Our Future? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24928,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -115,16 +108,14 @@
       "lang": "en",
       "category": "Other",
       "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 82,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43635,
       "issues": [
-        "Title too long (82 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (82 > 60)"
       ],
       "hasIssues": true
     },
@@ -133,16 +124,14 @@
       "lang": "en",
       "category": "Other",
       "title": "Best Crypto Cards for International Travel in 2025: Pay Abroad Safety ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 76,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 29948,
       "issues": [
-        "Title too long (76 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (76 > 60)"
       ],
       "hasIssues": true
     },
@@ -151,50 +140,42 @@
       "lang": "en",
       "category": "Other",
       "title": "How to Use Crypto Cards for Gaming Purchases ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 51,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 48732,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-exchange-vs-crypto-wallet",
       "lang": "en",
       "category": "Other",
       "title": "Crypto exchange VS crypto wallet: which is better? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 57,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 26742,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-on-ramps-crypto-off-ramps",
       "lang": "en",
       "category": "Other",
       "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36031,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -203,84 +184,70 @@
       "lang": "en",
       "category": "Other",
       "title": "Staying Safe in Web3: How not to Get Hacked ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 50,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27805,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-visa-card-for-everyday-spending",
       "lang": "en",
       "category": "Other",
       "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 45,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27077,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-vs-traditional-finances",
       "lang": "en",
       "category": "Other",
       "title": "Crypto vs traditional finances ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 37,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23960,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-wallet",
       "lang": "en",
       "category": "Other",
       "title": "What is a crypto wallet? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 31,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 25062,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-wallet-for-different-cryptocurrencies",
       "lang": "en",
       "category": "Other",
       "title": "How to Choose a Crypto Wallet for Different Cryptocurrencies ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 67,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31967,
       "issues": [
-        "Title too long (67 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (67 > 60)"
       ],
       "hasIssues": true
     },
@@ -289,84 +256,70 @@
       "lang": "en",
       "category": "Other",
       "title": "Crypto Wallets with Auto Convert in Local Currency ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 57,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 32907,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/crypto-wallets-without-kyc",
       "lang": "en",
       "category": "Other",
       "title": "Crypto Wallets Without KYC: Pros and Cons ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31577,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/cryptocurrency-and-privacy",
       "lang": "en",
       "category": "Legal",
       "title": "Cryptocurrency and Privacy: What You Need to Know ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 56,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24097,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/cryptocurrency-investing-guide-what-is-dca",
       "lang": "en",
       "category": "Other",
       "title": "Cryptocurrency investing guide: what is DCA? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 51,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23878,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/cryptocurrency-market-in-2024",
       "lang": "en",
       "category": "Other",
       "title": "What is expected of the cryptocurrency market in 2024? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 61,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24023,
       "issues": [
-        "Title too long (61 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (61 > 60)"
       ],
       "hasIssues": true
     },
@@ -375,84 +328,70 @@
       "lang": "en",
       "category": "Other",
       "title": "Cryptocurrency Staking: What You Need to Know ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 52,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 29911,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/custodial-vs-non-custodial-wallet",
       "lang": "en",
       "category": "Other",
       "title": "Custodial VS non-custodial wallet ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 40,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 22033,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/custodial-wallet",
       "lang": "en",
       "category": "Other",
       "title": "Custodial wallet: a complete review ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 42,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23692,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/dirty-cryptocurrency",
       "lang": "en",
       "category": "Other",
       "title": "What is a &quot;dirty&quot; cryptocurrency? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 50,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20528,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/dollar-cost-averaging",
       "lang": "en",
       "category": "Other",
       "title": "How to Set Up Dollar-Cost Averaging with Your Crypto Wallet ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 66,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24468,
       "issues": [
-        "Title too long (66 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (66 > 60)"
       ],
       "hasIssues": true
     },
@@ -461,16 +400,14 @@
       "lang": "en",
       "category": "Other",
       "title": "Crypto Card Exchange Rates: How They Affect Your Purchases Abroad ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 72,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31198,
       "issues": [
-        "Title too long (72 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (72 > 60)"
       ],
       "hasIssues": true
     },
@@ -479,33 +416,28 @@
       "lang": "en",
       "category": "Other",
       "title": "Fiat and the most popular fiat currencies ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24817,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/hierarchical-deterministic-wallet",
       "lang": "en",
       "category": "Other",
       "title": "What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 77,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 35693,
       "issues": [
-        "Title too long (77 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (77 > 60)"
       ],
       "hasIssues": true
     },
@@ -514,16 +446,14 @@
       "lang": "en",
       "category": "Other",
       "title": "Honeypot Crypto Scam: How to Detect and Avoid It in Crypto Projects ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36635,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -532,16 +462,14 @@
       "lang": "en",
       "category": "Other",
       "title": "How Crypto Wallets Get Hacked &amp; Whether Someone Can Steal Your Crypto ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 80,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 30546,
       "issues": [
-        "Title too long (80 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (80 > 60)"
       ],
       "hasIssues": true
     },
@@ -550,118 +478,98 @@
       "lang": "en",
       "category": "Other",
       "title": "How much you can earn on cryptocurrency ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 46,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 22405,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-buy-bitcoin",
       "lang": "en",
       "category": "Other",
       "title": "How to buy Bitcoin: a step-by-step guide ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 47,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20605,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-buy-ethereum",
       "lang": "en",
       "category": "Other",
       "title": "How to buy Ethereum? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 27,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20296,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-buy-litecoin-ltc",
       "lang": "en",
       "category": "Other",
       "title": "How to buy Litecoin (LTC)? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 33,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21605,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-exchange-cryptocurrency-a-step-by-step-guide",
       "lang": "en",
       "category": "Other",
       "title": "How to exchange cryptocurrency: a step-by-step guide ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 59,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20047,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-pay-online-shopping-with-crypto-wallet",
       "lang": "en",
       "category": "Other",
       "title": "How to Pay for Online Shopping Using a Crypto Wallet ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 59,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 33934,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/how-to-track-crypto-wallet-address-activities-and-why-it-matters",
       "lang": "en",
       "category": "Other",
       "title": "How to Track Crypto Wallet Address Activities and Why It Matters ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 71,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 28662,
       "issues": [
-        "Title too long (71 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (71 > 60)"
       ],
       "hasIssues": true
     },
@@ -670,50 +578,42 @@
       "lang": "en",
       "category": "Other",
       "title": "How to Use a Crypto Card for Everyday Purchases ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 54,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31180,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/https-kolo-in-blog-the-future-of-crypto-cards",
       "lang": "en",
       "category": "Other",
       "title": "The Future of Crypto Cards: 2025 Trends ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 46,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31701,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/https-kolo-in-blog-what-is-decentralized-science-desci",
       "lang": "en",
       "category": "Other",
       "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 73,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34471,
       "issues": [
-        "Title too long (73 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (73 > 60)"
       ],
       "hasIssues": true
     },
@@ -722,16 +622,14 @@
       "lang": "en",
       "category": "Other",
       "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 101,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43091,
       "issues": [
-        "Title too long (101 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (101 > 60)"
       ],
       "hasIssues": true
     },
@@ -740,50 +638,42 @@
       "lang": "en",
       "category": "Other",
       "title": "State of Mass Adoption: Where Are We Now? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 25812,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/metaverse",
       "lang": "en",
       "category": "Other",
       "title": "What Happened to the Metaverse? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 38,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24695,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/mica",
       "lang": "en",
       "category": "Other",
       "title": "Market in Crypto Assets (MiCA): The New Rules That Will Shape Crypto in 2025 ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 83,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27626,
       "issues": [
-        "Title too long (83 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (83 > 60)"
       ],
       "hasIssues": true
     },
@@ -792,33 +682,28 @@
       "lang": "en",
       "category": "Other",
       "title": "Mining: what is it, and how does it work? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 25935,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/mobile-vs-desktop-crypto-wallets",
       "lang": "en",
       "category": "Other",
       "title": "Mobile and Desktop Crypto Wallets: Which One To Choose  ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 62,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 29936,
       "issues": [
-        "Title too long (62 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (62 > 60)"
       ],
       "hasIssues": true
     },
@@ -827,16 +712,14 @@
       "lang": "en",
       "category": "Other",
       "title": "NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 72,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 35258,
       "issues": [
-        "Title too long (72 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (72 > 60)"
       ],
       "hasIssues": true
     },
@@ -845,50 +728,42 @@
       "lang": "en",
       "category": "Other",
       "title": "Non-custodial wallet: a complete review ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 46,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23741,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/real-world-assets-rwa",
       "lang": "en",
       "category": "Other",
       "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34227,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/receive-salary-in-crypto-and-spend-instantly",
       "lang": "en",
       "category": "Other",
       "title": "How to Receive Your Salary in Crypto and Spend It Instantly ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 66,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 31054,
       "issues": [
-        "Title too long (66 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (66 > 60)"
       ],
       "hasIssues": true
     },
@@ -897,16 +772,14 @@
       "lang": "en",
       "category": "Other",
       "title": "How to Use Stablecoins While Traveling: Pay Abroad &amp; Cut Fees ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 72,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 30262,
       "issues": [
-        "Title too long (72 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (72 > 60)"
       ],
       "hasIssues": true
     },
@@ -915,33 +788,28 @@
       "lang": "en",
       "category": "Other",
       "title": "Metal Seed Phrase Storage: Backup Your Crypto Safely ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 59,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 35395,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/subscriptions",
       "lang": "en",
       "category": "Other",
       "title": "How Subscription Stacking Destroys Your Monthly Budget ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 61,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23522,
       "issues": [
-        "Title too long (61 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (61 > 60)"
       ],
       "hasIssues": true
     },
@@ -950,16 +818,14 @@
       "lang": "en",
       "category": "Other",
       "title": "The Evolution of Decentralized Autonomous Organizations (DAOs) ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 69,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24631,
       "issues": [
-        "Title too long (69 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (69 > 60)"
       ],
       "hasIssues": true
     },
@@ -968,101 +834,84 @@
       "lang": "en",
       "category": "Other",
       "title": "The Impact of Cryptocurrency on Global Economies ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 55,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 32309,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/the-role-of-ai-in-cryptocurrency-trading",
       "lang": "en",
       "category": "Other",
       "title": "The Role of AI in Cryptocurrency Trading ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 47,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24292,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/the-role-of-smart-contracts-in-modern-business",
       "lang": "en",
       "category": "Other",
       "title": "The Role of Smart Contracts in Modern Business ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 53,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27530,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/top-cryptocurrencies-by-capitalization-in-2024",
       "lang": "en",
       "category": "Other",
       "title": "Top cryptocurrencies by capitalization in 2024 ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 53,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 28342,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/top-promising-coins-of-2024",
       "lang": "en",
       "category": "Other",
       "title": "Top promising coins of 2024 ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 34,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23683,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/travel-with-crypto",
       "lang": "en",
       "category": "Other",
       "title": "Traveling with Crypto: How to Pack Light and Pay Right ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 61,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23009,
       "issues": [
-        "Title too long (61 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (61 > 60)"
       ],
       "hasIssues": true
     },
@@ -1071,16 +920,14 @@
       "lang": "en",
       "category": "Other",
       "title": "What TRC20 and ERC20 are: the difference and advantages of each network ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 78,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20664,
       "issues": [
-        "Title too long (78 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (78 > 60)"
       ],
       "hasIssues": true
     },
@@ -1089,33 +936,28 @@
       "lang": "en",
       "category": "Other",
       "title": "Uniswap v3: How to Provide Liquidity ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 43,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 37639,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-are-crypto-cross-border-payments",
       "lang": "en",
       "category": "Other",
       "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 67,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 41552,
       "issues": [
-        "Title too long (67 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (67 > 60)"
       ],
       "hasIssues": true
     },
@@ -1124,101 +966,84 @@
       "lang": "en",
       "category": "Other",
       "title": "What Are Crypto Mixers? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 30,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 28953,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-awaits-ethereum-in-2024",
       "lang": "en",
       "category": "Other",
       "title": "What awaits Ethereum (ETH) in 2024? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 42,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21664,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-bitcoin-is",
       "lang": "en",
       "category": "Other",
       "title": "What Bitcoin (BTC) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 51,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24239,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-dollar-is",
       "lang": "en",
       "category": "Other",
       "title": "What dollar (USD) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 50,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23432,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-ethereum-is",
       "lang": "en",
       "category": "Other",
       "title": "What Ethereum (ETH) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 52,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24079,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-is-altcoin-season",
       "lang": "en",
       "category": "Other",
       "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 63,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 33006,
       "issues": [
-        "Title too long (63 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (63 > 60)"
       ],
       "hasIssues": true
     },
@@ -1227,33 +1052,28 @@
       "lang": "en",
       "category": "Other",
       "title": "What is «crypto» in plain English?  ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 42,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24751,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-is-cryptocurrency",
       "lang": "en",
       "category": "Other",
       "title": "What is cryptocurrency? The most popular cryptocurrencies ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 64,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 25664,
       "issues": [
-        "Title too long (64 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (64 > 60)"
       ],
       "hasIssues": true
     },
@@ -1262,50 +1082,42 @@
       "lang": "en",
       "category": "Other",
       "title": "What Is DCA? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 19,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24300,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-is-restaking",
       "lang": "en",
       "category": "Other",
       "title": "What Restaking Is and How It Can Be Used ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 47,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 30432,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-is-rug-pull",
       "lang": "en",
       "category": "Other",
       "title": "Rug Pulls: How To Identify And Protect Yourself From Crypto Scams ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 72,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 33482,
       "issues": [
-        "Title too long (72 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (72 > 60)"
       ],
       "hasIssues": true
     },
@@ -1314,135 +1126,112 @@
       "lang": "en",
       "category": "Other",
       "title": "What Litecoin (LTC) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 52,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21867,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-tron-is",
       "lang": "en",
       "category": "Other",
       "title": "What TRON (TRX) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24441,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/what-usdt-is",
       "lang": "en",
       "category": "Other",
       "title": "What USDT (Tether) is: a guide for beginners ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 51,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21725,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/whats-next-for-ethereum",
       "lang": "en",
       "category": "Other",
       "title": "What&#x27;s Next for Ethereum: A Roadmap Analysis ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 56,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 28515,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/when-you-should-buy-cryptocurrency",
       "lang": "en",
       "category": "Other",
       "title": "When you should buy cryptocurrency ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 41,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21266,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/where-to-exchange-cryptocurrency-safely",
       "lang": "en",
       "category": "Other",
       "title": "Where to exchange cryptocurrency safely ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 46,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20836,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/why-invest-in-cryptocurrency",
       "lang": "en",
       "category": "Other",
       "title": "Why invest in cryptocurrency? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 36,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 22715,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/blog/your-digital-keys-explained-from-passwords-to-passkeys-to-seed-phrases",
       "lang": "en",
       "category": "Other",
       "title": "Your Digital Keys Explained: From Passwords to Passkeys to Seed Phrases ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 78,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27031,
       "issues": [
-        "Title too long (78 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (78 > 60)"
       ],
       "hasIssues": true
     },
@@ -1502,13 +1291,12 @@
       "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
       "descriptionLength": 219,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24222,
       "issues": [
         "Title too long (74 > 60)",
-        "Description too long (219 > 160)",
-        "Missing og:image"
+        "Description too long (219 > 160)"
       ],
       "hasIssues": true
     },
@@ -1534,34 +1322,28 @@
       "lang": "en",
       "category": "Legal",
       "title": "Privacy Policy",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 19265,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/event",
       "lang": "en",
       "category": "Event",
       "title": "Kolo event",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 18855,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/exchange-crypto",
@@ -1616,17 +1398,14 @@
       "lang": "en",
       "category": "Help",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21121,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/old-home",
@@ -1650,221 +1429,182 @@
       "lang": "en",
       "category": "Legal",
       "title": "Request for Personal Data Deletion",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 34,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 17207,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collection/are-you-into-traveling",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21073,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collection/bitcoin-or-cash",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20985,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collection/dollar-or-euro",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20933,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collection/have-you-ever-heard-about-cryptocards",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21114,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collection/is-passive-income-your-thing",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21127,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collections-debit/are-you-into-traveling-debit",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20270,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collections-debit/bitcoin-or-cash-debit",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20247,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collections-debit/dollar-or-euro-debit",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20195,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20374,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz-collections-debit/is-passive-income-your-thing-debit",
       "lang": "en",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20387,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/advanced",
       "lang": "en",
       "category": "Quiz",
       "title": "Quiz advanced",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21029,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/advanced-debit",
       "lang": "en",
       "category": "Quiz",
       "title": "Advanced debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21147,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/perfect-card",
@@ -1901,68 +1641,56 @@
       "lang": "en",
       "category": "Quiz",
       "title": "Quiz start",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20954,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/start-debit",
       "lang": "en",
       "category": "Quiz",
       "title": "Start debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 11,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21066,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/welcome",
       "lang": "en",
       "category": "Quiz",
       "title": "Quiz welcome",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 12,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20944,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/quiz/welcome-debit",
       "lang": "en",
       "category": "Quiz",
       "title": "Welcome debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21071,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru",
@@ -2003,33 +1731,28 @@
       "lang": "ru",
       "category": "Other",
       "title": "Что такое альтсезон и как его распознать ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 47,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 49973,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/choose-crypto-card-daily-expenses",
       "lang": "ru",
       "category": "Other",
       "title": "Как выбрать крипто карту для повседневных расходов: советы и рекомендации ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 80,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43131,
       "issues": [
-        "Title too long (80 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (80 > 60)"
       ],
       "hasIssues": true
     },
@@ -2038,16 +1761,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 82,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43669,
       "issues": [
-        "Title too long (82 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (82 > 60)"
       ],
       "hasIssues": true
     },
@@ -2056,33 +1777,28 @@
       "lang": "ru",
       "category": "Other",
       "title": "Какие комиссии у криптокарт и как их минимизировать? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 59,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 39472,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/crypto-cards-future-trends",
       "lang": "ru",
       "category": "Other",
       "title": "Будущее криптокарт: тренды, технологии и регулирование цифровых платежей ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 79,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 44853,
       "issues": [
-        "Title too long (79 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (79 > 60)"
       ],
       "hasIssues": true
     },
@@ -2091,16 +1807,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36065,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -2109,67 +1823,56 @@
       "lang": "ru",
       "category": "Other",
       "title": "Регулирование криптовалютных платежей в Казахстане ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 57,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 41012,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/crypto-visa-card-for-everyday-spending",
       "lang": "ru",
       "category": "Other",
       "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 45,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27111,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/crypto-withdrawl-in-cash",
       "lang": "ru",
       "category": "Other",
       "title": "Можно ли перевести криптовалюту в наличные без банка ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 59,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34784,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/how-to-accept-cryptopayments-in-business",
       "lang": "ru",
       "category": "Other",
       "title": "Прием платежей в криптовалюте: руководство для бизнеса ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 61,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43160,
       "issues": [
-        "Title too long (61 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (61 > 60)"
       ],
       "hasIssues": true
     },
@@ -2178,50 +1881,42 @@
       "lang": "ru",
       "category": "Other",
       "title": "Как купить криптовалюту в Украине за гривну ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 50,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 41416,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/how-to-secure-your-crypto-wallet",
       "lang": "ru",
       "category": "Other",
       "title": "Как защитить криптокошелек от взлома и мошенников? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 57,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 40046,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/how-to-withdraw-cryptocurrency-to-bank-card",
       "lang": "ru",
       "category": "Other",
       "title": "Как вывести криптовалюту на банковскую карту в Украине в 2025 году ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 73,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36673,
       "issues": [
-        "Title too long (73 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (73 > 60)"
       ],
       "hasIssues": true
     },
@@ -2230,16 +1925,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 73,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34505,
       "issues": [
-        "Title too long (73 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (73 > 60)"
       ],
       "hasIssues": true
     },
@@ -2248,16 +1941,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "Безопасность криптокошелька: насколько защищён ваш криптокошелёк ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 71,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 40466,
       "issues": [
-        "Title too long (71 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (71 > 60)"
       ],
       "hasIssues": true
     },
@@ -2266,16 +1957,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "Как работает стейкинг в пулах ликвидности: механизм, доход и риски ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 73,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 47541,
       "issues": [
-        "Title too long (73 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (73 > 60)"
       ],
       "hasIssues": true
     },
@@ -2284,16 +1973,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 101,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43125,
       "issues": [
-        "Title too long (101 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (101 > 60)"
       ],
       "hasIssues": true
     },
@@ -2302,50 +1989,42 @@
       "lang": "ru",
       "category": "Other",
       "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34261,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/top-cold-crypto-wallets",
       "lang": "ru",
       "category": "Other",
       "title": "Лучшие холодные кошельки: какой выбрать в 2025 году ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 58,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43582,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/blog/what-are-crypto-cross-border-payments",
       "lang": "ru",
       "category": "Other",
       "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 67,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 41586,
       "issues": [
-        "Title too long (67 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (67 > 60)"
       ],
       "hasIssues": true
     },
@@ -2354,16 +2033,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 63,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 33040,
       "issues": [
-        "Title too long (63 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (63 > 60)"
       ],
       "hasIssues": true
     },
@@ -2372,17 +2049,14 @@
       "lang": "ru",
       "category": "Other",
       "title": "Что такое криптовалюта? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 30,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 44308,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/buy",
@@ -2440,13 +2114,12 @@
       "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
       "descriptionLength": 219,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24219,
       "issues": [
         "Title too long (74 > 60)",
-        "Description too long (219 > 160)",
-        "Missing og:image"
+        "Description too long (219 > 160)"
       ],
       "hasIssues": true
     },
@@ -2471,34 +2144,28 @@
       "lang": "ru",
       "category": "Legal",
       "title": "Privacy Policy",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 19407,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/event",
       "lang": "ru",
       "category": "Event",
       "title": "Kolo event",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 18855,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/exchange-crypto",
@@ -2552,17 +2219,14 @@
       "lang": "ru",
       "category": "Help",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23663,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/old-home",
@@ -2583,221 +2247,182 @@
       "lang": "ru",
       "category": "Legal",
       "title": "Request for Personal Data Deletion",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 34,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 17252,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collection/are-you-into-traveling",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21073,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collection/bitcoin-or-cash",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20985,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collection/dollar-or-euro",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20933,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collection/have-you-ever-heard-about-cryptocards",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21114,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collection/is-passive-income-your-thing",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21127,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collections-debit/are-you-into-traveling-debit",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20270,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collections-debit/bitcoin-or-cash-debit",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20247,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collections-debit/dollar-or-euro-debit",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20195,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20374,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz-collections-debit/is-passive-income-your-thing-debit",
       "lang": "ru",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20387,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/advanced",
       "lang": "ru",
       "category": "Quiz",
       "title": "Quiz advanced",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21074,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/advanced-debit",
       "lang": "ru",
       "category": "Quiz",
       "title": "Advanced debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21192,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/perfect-card",
@@ -2834,68 +2459,56 @@
       "lang": "ru",
       "category": "Quiz",
       "title": "Quiz start",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20999,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/start-debit",
       "lang": "ru",
       "category": "Quiz",
       "title": "Start debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 11,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21111,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/welcome",
       "lang": "ru",
       "category": "Quiz",
       "title": "Quiz welcome",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 12,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20989,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/quiz/welcome-debit",
       "lang": "ru",
       "category": "Quiz",
       "title": "Welcome debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21116,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ru/sell",
@@ -2974,17 +2587,14 @@
       "lang": "ru",
       "category": "Test",
       "title": "test page",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 9,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 15542,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/sell",
@@ -3063,17 +2673,14 @@
       "lang": "en",
       "category": "Test",
       "title": "test page",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 9,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 15545,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua",
@@ -3114,16 +2721,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 82,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43672,
       "issues": [
-        "Title too long (82 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (82 > 60)"
       ],
       "hasIssues": true
     },
@@ -3132,16 +2737,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36068,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -3150,16 +2753,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Як оплачувати підписки та сервіси криптовалютою онлайн ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 61,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 42496,
       "issues": [
-        "Title too long (61 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (61 > 60)"
       ],
       "hasIssues": true
     },
@@ -3168,50 +2769,42 @@
       "lang": "ua",
       "category": "Other",
       "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 45,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 27114,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/crypto-vs-traditional-finances",
       "lang": "ua",
       "category": "Other",
       "title": "Чим крипта краще за традиційні фінанси? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 46,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 28681,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/crypto-wallet-big-purchases",
       "lang": "ua",
       "category": "Other",
       "title": "Як планувати та здійснювати великі покупки криптовалюти?  ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 64,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 50411,
       "issues": [
-        "Title too long (64 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (64 > 60)"
       ],
       "hasIssues": true
     },
@@ -3220,16 +2813,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Як використовувати криптокартку за кордоном та для міжнародних платежів ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 78,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 44957,
       "issues": [
-        "Title too long (78 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (78 > 60)"
       ],
       "hasIssues": true
     },
@@ -3238,16 +2829,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Чи можуть криптокартки повністю замінити банківські рахунки? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 67,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 42140,
       "issues": [
-        "Title too long (67 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (67 > 60)"
       ],
       "hasIssues": true
     },
@@ -3256,16 +2845,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Криптовалютні платежі у звичайних магазинах: як працює криптопроцесінг ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 77,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 47530,
       "issues": [
-        "Title too long (77 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (77 > 60)"
       ],
       "hasIssues": true
     },
@@ -3274,16 +2861,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Гаманець з мультипідписом (MulitSig) для сімейного бюджету: як це працює ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 79,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 47427,
       "issues": [
-        "Title too long (79 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (79 > 60)"
       ],
       "hasIssues": true
     },
@@ -3292,16 +2877,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Honeypot Crypto Scam: How to Detect and Avoid It in Crypto Projects ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 36672,
       "issues": [
-        "Title too long (74 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (74 > 60)"
       ],
       "hasIssues": true
     },
@@ -3310,33 +2893,28 @@
       "lang": "ua",
       "category": "Other",
       "title": "Як купити криптовалюту в Україні за гривні? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 50,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 37759,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/https-kolo-in-blog-what-is-decentralized-science-desci",
       "lang": "ua",
       "category": "Other",
       "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 73,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34508,
       "issues": [
-        "Title too long (73 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (73 > 60)"
       ],
       "hasIssues": true
     },
@@ -3345,67 +2923,56 @@
       "lang": "ua",
       "category": "Other",
       "title": "Віртуальна криптокарта: що це так і як її оформити? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 58,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 40923,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/https-kolo-in-ua-blog-what-is-layer2-blockchain",
       "lang": "ua",
       "category": "Other",
       "title": "Що таке Layer 2 блокчейн і навіщо він потрібен ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 53,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 48373,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/keep-access-to-crypto-wallet",
       "lang": "ua",
       "category": "Other",
       "title": "Як не втратити доступ до криптогаманця ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 45,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 46106,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/layer-zero-message-passing",
       "lang": "ua",
       "category": "Other",
       "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 101,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43128,
       "issues": [
-        "Title too long (101 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (101 > 60)"
       ],
       "hasIssues": true
     },
@@ -3414,50 +2981,42 @@
       "lang": "ua",
       "category": "Other",
       "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 48,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34264,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/secure-crypto-storage-without-exchanges",
       "lang": "ua",
       "category": "Other",
       "title": "Як зберігати криптовалюту, якщо не довіряєш біржам ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 57,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 43096,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/blog/shcho-take-kriptovalyuta-ta-de-yiyi-mozhna-vikoristovuvati-v-ukrayini",
       "lang": "ua",
       "category": "Other",
       "title": "Що таке криптовалюта та де її можна використовувати в Україні ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 68,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 49388,
       "issues": [
-        "Title too long (68 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (68 > 60)"
       ],
       "hasIssues": true
     },
@@ -3466,16 +3025,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 67,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 41589,
       "issues": [
-        "Title too long (67 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (67 > 60)"
       ],
       "hasIssues": true
     },
@@ -3484,16 +3041,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 63,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 33043,
       "issues": [
-        "Title too long (63 > 60)",
-        "Missing meta description",
-        "Missing og:image"
+        "Title too long (63 > 60)"
       ],
       "hasIssues": true
     },
@@ -3502,17 +3057,14 @@
       "lang": "ua",
       "category": "Other",
       "title": "Що таке KYC в криптовалюті? ∙ Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 34,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 34640,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/buy",
@@ -3570,13 +3122,12 @@
       "description": "Check if Kolo crypto Visa card works in your country. Available in Europe, UAE, UK, Indonesia, Thailand, CIS and 60+ countries. Top up with USDT via Telegram, spend wherever Visa is accepted. Virtual and physical cards.",
       "descriptionLength": 219,
       "titleLength": 74,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 24219,
       "issues": [
         "Title too long (74 > 60)",
-        "Description too long (219 > 160)",
-        "Missing og:image"
+        "Description too long (219 > 160)"
       ],
       "hasIssues": true
     },
@@ -3601,34 +3152,28 @@
       "lang": "ua",
       "category": "Legal",
       "title": "Privacy Policy",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 19433,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/event",
       "lang": "ua",
       "category": "Event",
       "title": "Kolo event",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 18855,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/exchange-crypto",
@@ -3680,17 +3225,14 @@
       "lang": "ua",
       "category": "Help",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 23776,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/old-home",
@@ -3711,221 +3253,182 @@
       "lang": "ua",
       "category": "Legal",
       "title": "Request for Personal Data Deletion",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 34,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 17252,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collection/are-you-into-traveling",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21154,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collection/bitcoin-or-cash",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21022,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collection/dollar-or-euro",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20973,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collection/have-you-ever-heard-about-cryptocards",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21134,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collection/is-passive-income-your-thing",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21169,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collections-debit/are-you-into-traveling-debit",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20282,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collections-debit/bitcoin-or-cash-debit",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20270,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collections-debit/dollar-or-euro-debit",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20223,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collections-debit/have-you-ever-heard-about-cryptocards-debit",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20387,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz-collections-debit/is-passive-income-your-thing-debit",
       "lang": "ua",
       "category": "Quiz Collections",
       "title": "Kolo",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 4,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 20419,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/advanced",
       "lang": "ua",
       "category": "Quiz",
       "title": "Quiz advanced",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21209,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/advanced-debit",
       "lang": "ua",
       "category": "Quiz",
       "title": "Advanced debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 14,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21354,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/perfect-card",
@@ -3964,68 +3467,56 @@
       "lang": "ua",
       "category": "Quiz",
       "title": "Quiz start",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 10,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21176,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/start-debit",
       "lang": "ua",
       "category": "Quiz",
       "title": "Start debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 11,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21220,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/welcome",
       "lang": "ua",
       "category": "Quiz",
       "title": "Quiz welcome",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 12,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21198,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/quiz/welcome-debit",
       "lang": "ua",
       "category": "Quiz",
       "title": "Welcome debit",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 13,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 21233,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     },
     {
       "path": "/ua/sell",
@@ -4104,17 +3595,14 @@
       "lang": "ua",
       "category": "Test",
       "title": "test page",
-      "description": "",
-      "descriptionLength": 0,
+      "description": "Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.",
+      "descriptionLength": 135,
       "titleLength": 9,
-      "ogImage": null,
+      "ogImage": "/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png",
       "canonical": null,
       "sizeBytes": 15542,
-      "issues": [
-        "Missing meta description",
-        "Missing og:image"
-      ],
-      "hasIssues": true
+      "issues": [],
+      "hasIssues": false
     }
   ],
   "checklist": [
@@ -4164,15 +3652,15 @@
       "id": "og-images",
       "label": "Every page has og:image",
       "category": "SEO",
-      "status": "warn",
-      "details": "51/242 pages have og:image."
+      "status": "done",
+      "details": "242/242 pages have og:image."
     },
     {
       "id": "meta-descriptions",
       "label": "Every page has meta description",
       "category": "SEO",
-      "status": "warn",
-      "details": "188 pages are missing descriptions."
+      "status": "done",
+      "details": "242/242 pages have descriptions."
     },
     {
       "id": "blog-migrated",

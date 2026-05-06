@@ -95,13 +95,25 @@ function categoryFor(path) {
 // ----------------------------------------------------------------------------
 
 async function auditPages() {
+  // Prefer built dist/ output if it's fresh — it's what users actually see, including
+  // any fallbacks injected by the WebflowPage layout (default og:image, description).
+  // Falls back to scraped source if dist/ is missing.
+  const distRoot = join(ROOT, 'dist');
+  const useDist = existsSync(distRoot);
   const files = (await readdir(SCRAPED_DIR)).filter((f) => f.endsWith('.html'));
   const pages = [];
 
   for (const f of files) {
     const fullPath = join(SCRAPED_DIR, f);
-    const html = await readFile(fullPath, 'utf-8');
     const sz = (await stat(fullPath)).size;
+    // Map scraped filename → deployed path → dist file
+    const deployedPath = pathFromCacheFilename(f);
+    const distFile = deployedPath === '/'
+      ? join(distRoot, 'index.html')
+      : join(distRoot, deployedPath.replace(/^\//, ''), 'index.html');
+    const html = useDist && existsSync(distFile)
+      ? await readFile(distFile, 'utf-8')
+      : await readFile(fullPath, 'utf-8');
 
     const path = pathFromCacheFilename(f);
     const lang = detectLang(f);

@@ -6,7 +6,10 @@
       "Bash(curl -s https://kolo.xyz/sitemap.xml)",
       "Bash(curl -sIL https://github.com/deniskovalenkoo/kolo)",
       "Bash(curl -sI https://github.com/deniskovalenkoo)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Default OG/SEO fallbacks in WebflowPage layout *)",
+      "Bash(git push *)"
     ]
   }
 }

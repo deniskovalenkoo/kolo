@@ -16,7 +16,53 @@ const htmlAttrs = htmlMatch?.[1]?.trim() ?? '';
 
 // Extract <head> inner HTML
 const headMatch = rawHtml.match(/<head[^>]*>([\s\S]*?)<\/head>/i);
-const headHtml = headMatch?.[1] ?? '';
+let headHtml = headMatch?.[1] ?? '';
+
+// ---------- Default OG / SEO fallbacks ----------
+// Pages where Webflow didn't set og:image / meta description (quiz, quiz-collections,
+// some legal pages) end up with broken-looking social share previews and weaker SEO.
+// We inject sensible site-wide defaults if the scraped head is missing them, so every
+// page has at least the homepage's branding when shared.
+const DEFAULT_OG_IMAGE = '/cdn/641863621e81371558abea11/682f3321d310b1cfd1d938e2_open_20img.png';
+const DEFAULT_DESCRIPTION =
+  'Kolo crypto Visa card — top up with USDT, spend in 60+ countries, earn 2% BTC cashback. Virtual & physical cards for everyday spending.';
+const DEFAULT_OG_TITLE = 'Kolo — Crypto Visa Card & USDT Wallet';
+
+const titleMatch = headHtml.match(/<title[^>]*>([^<]*)<\/title>/i);
+const pageTitle = titleMatch?.[1]?.trim() || DEFAULT_OG_TITLE;
+
+const has = (re: RegExp) => re.test(headHtml);
+const fallbacks: string[] = [];
+
+if (!has(/<meta[^>]+name=["']description["']/i)) {
+  fallbacks.push(`<meta name="description" content="${DEFAULT_DESCRIPTION}"/>`);
+}
+if (!has(/<meta[^>]+property=["']og:image["']/i)) {
+  fallbacks.push(`<meta property="og:image" content="${DEFAULT_OG_IMAGE}"/>`);
+}
+if (!has(/<meta[^>]+property=["']og:title["']/i)) {
+  fallbacks.push(`<meta property="og:title" content="${pageTitle}"/>`);
+}
+if (!has(/<meta[^>]+property=["']og:description["']/i)) {
+  fallbacks.push(`<meta property="og:description" content="${DEFAULT_DESCRIPTION}"/>`);
+}
+if (!has(/<meta[^>]+property=["']og:type["']/i)) {
+  fallbacks.push(`<meta property="og:type" content="website"/>`);
+}
+if (!has(/<meta[^>]+name=["']twitter:card["']/i)) {
+  fallbacks.push(`<meta name="twitter:card" content="summary_large_image"/>`);
+}
+if (!has(/<meta[^>]+name=["']twitter:image["']/i)) {
+  fallbacks.push(`<meta name="twitter:image" content="${DEFAULT_OG_IMAGE}"/>`);
+}
+if (!has(/<meta[^>]+name=["']twitter:title["']/i)) {
+  fallbacks.push(`<meta name="twitter:title" content="${pageTitle}"/>`);
+}
+if (!has(/<meta[^>]+name=["']twitter:description["']/i)) {
+  fallbacks.push(`<meta name="twitter:description" content="${DEFAULT_DESCRIPTION}"/>`);
+}
+
+if (fallbacks.length) headHtml += '\n' + fallbacks.join('\n');
 
 // Extract <body> attributes and inner HTML
 const bodyMatch = rawHtml.match(/<body([^>]*)>([\s\S]*?)<\/body>/i);

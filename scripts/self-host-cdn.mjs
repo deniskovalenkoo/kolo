@@ -26,10 +26,17 @@ const ROOT = join(fileURLToPath(import.meta.url), '..', '..');
 const SCRAPED_DIR = join(ROOT, 'src', '_scraped');
 const PUBLIC_CDN_DIR = join(ROOT, 'public', 'cdn');
 
-// Stops at quote, whitespace, paren, angle bracket, AND `&` — the latter
-// is critical: Webflow attributes sometimes embed JSON-encoded URLs separated
-// by `&quot;`, and without `&` in the stop set we'd capture both URLs as one.
-const CDN_HOST_RE = /https:\/\/cdn\.prod\.website-files\.com\/([^"'\s)<>&]*)/g;
+// HTML context: URLs live inside attribute quotes (`src="..."`, `srcset="..."`).
+// `)` is allowed inside the URL because Webflow file names frequently have
+// parens (e.g. `bg iban (2).avif`) — stopping at `)` would truncate the URL
+// before `.avif` and leave a stale `)` in the rewritten HTML pointing at a
+// non-existent file.
+const CDN_HOST_RE_HTML = /https:\/\/cdn\.prod\.website-files\.com\/([^"'\s<>&]*)/g;
+
+// CSS context: URLs live inside `url(...)` and may not have surrounding
+// quotes, so `)` MUST be a stop char or we slurp the entire @font-face
+// declaration (`url(.../foo.otf) format("opentype")`).
+const CDN_HOST_RE_CSS = /https:\/\/cdn\.prod\.website-files\.com\/([^"'\s<>&)]*)/g;
 
 // Must match scrape-webflow.mjs assetUrlToLocalPath sanitization:
 //   safePath = pathname.replace(/^\/+/, '').replace(/[^a-zA-Z0-9._/-]/g, '_')
@@ -42,12 +49,30 @@ const referencedPaths = new Set();
 async function rewriteFile(path) {
   const original = await readFile(path, 'utf-8');
   let rewriteCount = 0;
-  let updated = original.replace(CDN_HOST_RE, (_match, pathPart) => {
+  // Pick the regex matching this file's syntax — see the comment above
+  // each regex for why HTML and CSS need different stop sets.
+  const re = path.endsWith('.css') ? CDN_HOST_RE_CSS : CDN_HOST_RE_HTML;
+  let updated = original.replace(re, (_match, pathPart) => {
     const safe = sanitizePath(pathPart);
     referencedPaths.add(safe);
     rewriteCount++;
     return '/cdn/' + safe;
   });
+  // One-shot fixup for HTML files: legacy passes (before the regex split)
+  // left some `/cdn/...)...` URLs with a stray `)` from Webflow filenames
+  // like `bg iban (2).avif` — turn the `)` into `_` so the rewritten URL
+  // matches the on-disk filename.
+  if (!path.endsWith('.css')) {
+    updated = updated.replace(/\/cdn\/[^"'\s<>]*?\)[^"'\s<>]*\.[a-zA-Z0-9]{2,5}/g, (m) => {
+      const fixed = m.replace(/\)/g, '_');
+      if (fixed !== m) {
+        const safe = fixed.replace(/^\/cdn\//, '');
+        referencedPaths.add(safe);
+        rewriteCount++;
+      }
+      return fixed;
+    });
+  }
   // Strip Subresource Integrity (SRI) from any <link>/<script> tag pointing to /cdn/.
   // Webflow ships SRI hashes computed against the original CDN file. Once we rewrite
   // URLs inside CSS files (which the URL pass above does), the file bytes change and

@@ -5,6 +5,13 @@ Same stack as the eResidency project — see `INFRASTRUCTURE.md` of that repo fo
 
 **Time budget for a typical site (60–150 pages):** 1.5–2 hours of human time, 10–20 min of waiting.
 
+> **TL;DR — start a new migration via the `/webflow-migrate` Claude skill.**
+> The skill (installed at `~/.claude/skills/webflow-migrate/`) walks you phase-by-phase
+> through Discovery → Setup → Scrape → Self-host → Deploy → OG check → Lighthouse →
+> Pre-publish checklist → Domain switch. It bundles a starter kit (`template/`) with
+> all the reusable scripts and Astro files. This MD file is the human-readable
+> longer-form reference; the skill is the working tool.
+
 ---
 
 ## When to use this playbook

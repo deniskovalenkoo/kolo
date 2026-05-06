@@ -1,0 +1,28 @@
+# Allow all general-purpose crawlers across the public site.
+User-agent: *
+Allow: /
+Disallow: /migration-status/
+
+# Block AI crawlers from training on the content. Remove these lines if
+# you want kolo content surfaced inside ChatGPT, Claude, Perplexity, etc.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Sitemap discovery — Astro's @astrojs/sitemap generates sitemap-index.xml
+# at build time which links to per-locale sitemaps.
+Sitemap: https://kolo.xyz/sitemap-index.xml

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T10:38:59.882Z",
+  "generatedAt": "2026-05-06T11:45:26.576Z",
   "site": {
     "name": "kolo",
     "deployUrl": "https://kolo-seven.vercel.app",
@@ -16,11 +16,11 @@
     ],
     "assetsCount": 666,
     "assetsSizeBytes": 61857554,
-    "astroRoutes": 243,
+    "astroRoutes": 244,
     "totalIssues": 107,
-    "checklistDone": 6,
+    "checklistDone": 8,
     "checklistTotal": 12,
-    "healthScore": 52
+    "healthScore": 62
   },
   "pages": [
     {
@@ -3617,8 +3617,8 @@
       "id": "404-page",
       "label": "Custom 404 page exists",
       "category": "Infrastructure",
-      "status": "todo",
-      "details": "Add src/pages/404.astro for a branded 404 instead of Vercel default."
+      "status": "done",
+      "details": "src/pages/404.astro present."
     },
     {
       "id": "dns-ready",
@@ -3645,7 +3645,7 @@
       "id": "robots",
       "label": "robots.txt configured",
       "category": "SEO",
-      "status": "todo",
+      "status": "done",
       "details": "Add public/robots.txt to allow indexing on prod and block on preview."
     },
     {

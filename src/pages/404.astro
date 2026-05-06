@@ -1,0 +1,179 @@
+---
+// Branded 404 page. Vanilla HTML/CSS — no Webflow dependency, so it loads
+// even when CSS for the rest of the site fails. Detects user's language
+// from the URL prefix and translates the copy.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>404 — Page not found · Kolo</title>
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      background: #f6f6f7;
+      color: #0a0a0c;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      text-align: center;
+    }
+    .kolo-404__logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 32px;
+      opacity: 0.85;
+    }
+    .kolo-404__code {
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      color: #0a0a0c;
+    }
+    .kolo-404__title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .kolo-404__sub {
+      font-size: 16px;
+      color: #71717a;
+      max-width: 420px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .kolo-404__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #0a0a0c;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .kolo-404__btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+    .kolo-404__links {
+      margin-top: 32px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .kolo-404__links a {
+      color: #71717a;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.15s;
+    }
+    .kolo-404__links a:hover { color: #0a0a0c; }
+  </style>
+</head>
+<body>
+  <img
+    class="kolo-404__logo"
+    src="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png"
+    alt="Kolo"
+    width="64"
+    height="64"
+  />
+  <div class="kolo-404__code">404</div>
+  <h1 class="kolo-404__title" data-i18n="title">Page not found</h1>
+  <p class="kolo-404__sub" data-i18n="sub">
+    The page you are looking for doesn't exist or has been moved.
+  </p>
+  <a class="kolo-404__btn" href="/" data-i18n-prefix="home">← Back to home</a>
+  <nav class="kolo-404__links">
+    <a href="/buy" data-i18n="link-buy">Buy crypto</a>
+    <a href="/blog" data-i18n="link-blog">Blog</a>
+    <a href="/countries" data-i18n="link-countries">Countries</a>
+    <a href="/cryptowallet" data-i18n="link-wallet">Wallet</a>
+  </nav>
+
+  <script is:inline>
+    (() => {
+      const path = window.location.pathname;
+      const lang = path.startsWith('/ua') ? 'ua' : path.startsWith('/ru') ? 'ru' : 'en';
+      const prefix = lang === 'en' ? '' : `/${lang}`;
+
+      const t = {
+        en: {
+          title: 'Page not found',
+          sub: "The page you are looking for doesn't exist or has been moved.",
+          home: '← Back to home',
+          'link-buy': 'Buy crypto',
+          'link-blog': 'Blog',
+          'link-countries': 'Countries',
+          'link-wallet': 'Wallet',
+        },
+        ua: {
+          title: 'Сторінку не знайдено',
+          sub: 'Сторінки, яку ви шукаєте, не існує або її було переміщено.',
+          home: '← На головну',
+          'link-buy': 'Купити крипту',
+          'link-blog': 'Блог',
+          'link-countries': 'Країни',
+          'link-wallet': 'Гаманець',
+        },
+        ru: {
+          title: 'Страница не найдена',
+          sub: 'Страница, которую вы ищете, не существует или была перемещена.',
+          home: '← На главную',
+          'link-buy': 'Купить крипту',
+          'link-blog': 'Блог',
+          'link-countries': 'Страны',
+          'link-wallet': 'Кошелёк',
+        },
+      }[lang];
+
+      document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
+      document.title = `404 — ${t.title} · Kolo`;
+
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+
+      // Localised back-to-home button (text + link target)
+      const homeBtn = document.querySelector('[data-i18n-prefix="home"]');
+      if (homeBtn) {
+        homeBtn.textContent = t.home;
+        homeBtn.setAttribute('href', `${prefix}/`);
+      }
+
+      // Localise the bottom links by adding lang prefix
+      document.querySelectorAll('.kolo-404__links a').forEach((a) => {
+        const href = a.getAttribute('href');
+        if (href && href.startsWith('/') && !href.startsWith(`/${lang}/`)) {
+          a.setAttribute('href', prefix + href);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

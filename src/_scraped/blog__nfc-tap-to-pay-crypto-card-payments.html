@@ -1,0 +1,481 @@
+<!DOCTYPE html><!-- Last Published: Thu Apr 23 2026 13:48:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="kolo.xyz" data-wf-page="64918aa7c1eb2dea6938a0b3" data-wf-site="641863621e81371558abea11" lang="en-US" data-wf-collection="64918aa1c1eb2dea69389a9e" data-wf-item-slug="nfc-tap-to-pay-crypto-card-payments"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips ∙ Kolo</title><link rel="alternate" hrefLang="x-default" href="https://kolo.xyz/blog/nfc-tap-to-pay-crypto-card-payments"/><link rel="alternate" hrefLang="en-US" href="https://kolo.xyz/blog/nfc-tap-to-pay-crypto-card-payments"/><meta content="NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips ∙ Kolo" property="og:title"/><meta content="NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips ∙ Kolo" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="/cdn/641863621e81371558abea11/css/777ex.shared.97839c652.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/641863621e81371558abea11/65fbc4e9777e6eaf1633f75a_KoloFavicon.png" rel="apple-touch-icon"/><link href="https://kolo.xyz/blog/nfc-tap-to-pay-crypto-card-payments" rel="canonical"/><!-- Auto hreflang + canonical -->
+<script>
+(function () {
+  var BASE = 'https://kolo.xyz';
+  var path = window.location.pathname;
+
+  // Normalize: strip trailing slash except root
+  var p = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+  var enPath, locale;
+
+  if (/^\/ru(\/|$)/.test(p)) {
+    locale = 'ru';
+    enPath = p.replace(/^\/ru/, '') || '/';
+  } else if (/^\/ua(\/|$)/.test(p)) {
+    locale = 'ua';
+    enPath = p.replace(/^\/ua/, '') || '/';
+  } else {
+    locale = 'en';
+    enPath = p;
+  }
+
+  var ruPath = '/ru' + (enPath === '/' ? '' : enPath);
+  var uaPath = '/ua' + (enPath === '/' ? '' : enPath);
+
+  // Remove wrong canonical Webflow may have added
+  var existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) existingCanonical.parentNode.removeChild(existingCanonical);
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  // Hreflang tags
+  var hreflangs = [
+    { lang: 'en',        href: BASE + enPath },
+    { lang: 'ru',        href: BASE + ruPath },
+    { lang: 'uk',        href: BASE + uaPath },
+    { lang: 'x-default', href: BASE + enPath }
+  ];
+
+  hreflangs.forEach(function (item) {
+    var link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = item.lang;
+    link.href = item.href;
+    head.appendChild(link);
+  });
+
+  // Self-referencing canonical
+  var canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = BASE + p;
+  head.appendChild(canonical);
+})();
+<\/script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VWPZZ8G');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZ815EGP84" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript" type="fs-consent"></script>
+
+<script type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-MZ815EGP84');</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Kolo Crypto Visa Card",
+  "description": "Crypto Visa debit card with BTC cashback. Spend in 60+ countries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Kolo",
+    "url": "https://kolo.xyz"
+  },
+  "url": "https://kolo.xyz",
+  "category": "Crypto Debit Card",
+  "areaServed": ["Europe", "United Kingdom", "UAE", "CIS"],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceType": "Mobile App, Web, Telegram"
+  }
+}
+</script>
+
+
+
+<!-- For smooth scroll -->
+<!--
+<style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+</style>
+<style>
+.loading {
+  display: flex;
+}
+</style>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="/cdn/641863621e81371558abea11_2F6544eda5f000985a163a8687_2F6877797c65a77ee100fcd989_2Ffinsweetcomponentsconfig-1.0.2.js" type="module" async="" siteId="641863621e81371558abea11" finsweet="components"></script></head><body class="body-personal"><div class="navigation"><div class="w-layout-blockcontainer conteiner-width w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-business w-nav"><div class="navbar-business-content"><div class="navbar-wrapper"><div class="logo-header"><a href="/" class="combine-nav-logo-link w-inline-block"><img src="/cdn/641863621e81371558abea11/65f83b83a7dc6825efaae8e3_logo_205.svg" loading="lazy" alt="" class="image-11"/></a></div><nav role="navigation" class="navbar-right-side w-nav-menu"><div class="navigation-items"><div class="menu-list-adaptive"><a href="/exchanger" class="customer-switcher">Personal</a><a href="/for-business/business" class="customer-switcher">Business</a></div></div></nav><div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></div></div><div class="w-layout-blockcontainer conteiner-width-blog w-container"><div class="blog-header"><a href="/blog" class="back-blog w-inline-block"><img src="/cdn/641863621e81371558abea11/658d69ab464ea3ca8aa933ad_Frame_201.svg" loading="lazy" alt="" class="back-button-icon"/><div class="text-block-26">Back to blog</div></a><div style="background-image:url(&quot;/cdn/64895abf18b47a0c31b8a51f/6900be28bd52d84a81de3886_tqkdhhpxoznosbs8cgu5.webp&quot;)" class="blog-cover"></div></div><div class="blog-content"><div class="article-tittle hide">NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips</div><h2 class="n-header2">NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips</h2><div class="article-content w-richtext"><h1>What Are NFC and Tap-to-Pay for Crypto Cards?</h1><p>NFC contactless payments crypto show smashing adoption. See how it works, how to save a few bucks on fees, and why the tech use cases keep expanding.</p><p>According to preliminary <a href="https://www.berginsight.com/the-installed-base-of-cellular-pos-terminals-to-reach-229-million-in-2028">estimates</a>, more than <strong>299 million global POS terminals </strong>will support NFC by <strong>2025</strong>. The same logic applies to crypto cards that use technology that enables people to bridge cryptocurrency assets with real-world purchases.</p><p>Today, you&#x27;ll learn what NFC delivers in the context of payments, how the tech is developing, and whether it&#x27;s really beneficial to arm yourself with it.</p><h3>Key Takeaways</h3><p>Let&#x27;s check the core things around NFC payments:</p><ul role="list"><li>Over <strong>90% </strong>of POS terminals use NFC</li><li>Average transaction time is under 2 seconds</li><li><strong>85%</strong> of Gen Z <a href="https://www.pymnts.com/digital-payments/2024/85percent-of-gen-z-prefers-digital-payments-to-cash">prefer</a> contactless payments</li><li>NFC cards store encrypted, tokenized payment data</li><li>Apple Pay <a href="https://en.wikipedia.org/wiki/Apple_Pay">supports</a> <strong>90+</strong> countries worldwide</li><li>Crypto cards now integrate real-time fiat conversion</li><li>Tap-to-pay adoption grows <strong>15%</strong> annually</li><li>NFC range stays within <strong>4</strong> centimeters</li></ul><p><strong>Key takeaway</strong>: These facts confirm that contactless crypto payments are already mainstream. They bridge the gap between cryptocurrencies and everyday purchases, thanks to strong features like low fees and rising adoption.</p><h2>What Is NFC / Tap-to-Pay?</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/68fb41a4652c2d1205dd8b78_virzw4tdapomwtwapdsj.webp" loading="lazy"/></div><figcaption><em>Image credit</em>: <em>Techadvisor</em></figcaption></figure><p>NFC, also known as &quot;<strong><em>Near Field Communication</em></strong>,&quot; enables instant, secure data exchange between nearby devices. The tap to pay feature, in turn, uses this technology for lightning-fast transactions between cards, phones, and payment terminals.</p><p>Currently, NFC&#x27;s biggest adoption is in retail, transport, and cryptocurrency payments. It&#x27;s a matter of time before other fields adopt it as an alternative to traditional payment tools.</p><h2>How Contactless Works</h2><p>A contactless payment system uses short-range radio signals to ensure a stable connection for data transfer between devices and the terminal. Typically, the process takes seconds and requires no physical contact.</p><p>See how the workflow runs and the stages it passes:</p><ol role="list"><li>Tap card or phone</li><li>The NFC signal activates a terminal</li><li>The device sends an encrypted token</li><li>Terminal verifies payment data</li><li>Bank confirms authorization</li><li>Transaction completes instantly</li></ol><p>This process is the foundation of how EMV codes and NFC chips protect each tap.</p><h3>EMV Contactless &amp; One-Time Codes</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/68fb41b076af6405f7c43ead_h5bvvqdrl9tjt7p6samv.webp" loading="lazy"/></div><figcaption><em>Image credit</em>: <em>Webrezpro</em></figcaption></figure><p>This tool uses dynamic one-time codes to ensure the highest level of security. Each code is unique, while its primary goal is to replace static card details.</p><p>Key features of touchless payment options powered by EVM:</p><ul role="list"><li>Generating a new code per transaction</li><li>Stopping card cloning or data reuse</li><li>Encrypting transfers between a card and a bank</li><li>Real-time validation</li><li>Following PCI DSS compliance</li></ul><p>Each touch triggers new credentials, adding another layer of security to transactions.</p><h3>NFC Basics (Phones, Wearables)</h3><p>NFC, a tap to pay with phone technology, allows smartphones, watches, and rings to connect with payment terminals. Every device that integrates this technology uses an internal chip to send tokenized data while placed close to the reader. </p><p>A few key details to keep in mind about NFC basics:</p><ul role="list"><li>Built into modern phones and watches</li><li>Works without internet access</li><li>Uses biometric verification</li><li>Connects with Apple Pay, Google Pay</li><li>Supports NFC crypto wallets</li></ul><p><strong>Key takeaway</strong>: The Near Field Communication technology delivers <strong><em>fast</em></strong>, <strong><em>secure</em></strong>, and <strong><em>seamless</em></strong> payments. Its goal is to transform devices into reliable payment instruments for fiat and crypto transfers.</p><h2>Where You Can Use It</h2><p>Global adoption of NFC has opened the door to hundreds of use cases, making this technology mainstream. By 2025, contactless payments will be available in more than <strong>180</strong> countries. The technology leverages a single global network that supports retail, transport, and crypto card payments 24 hours a day, 365 days a year. </p><p>It&#x27;s time to see how major platforms bring it to life.</p><h3>Apple Pay / Tap to Pay on iPhone</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/68fb41c47eabd0bfbb4c543b_jfxngmk2dwd6cnji75ti.webp" loading="lazy"/></div><figcaption><em>Image credit</em>: <em>Thefinanser</em></figcaption></figure><p>Apple Pay tap to pay supports more than <strong>80</strong> <strong>countries</strong> and boasts over <strong>600 million</strong> active users. Each payment covers three main components: NFC, tokenization, and biometric ID, all of which are needed for instant approval. This definitely benefits merchants who can accept payments directly from customers with iPhones or Apple Watches.</p><p>Key features to remember:</p><ul role="list"><li>Works across Visa, Mastercard, and Amex</li><li>Supports contactless crypto card integration</li><li>Authorizes within<strong> 1–2 seconds</strong></li><li>Uses Face ID or Touch ID</li><li>Backed by PCI DSS and EMVCo standards</li></ul><p>The ecosystem connects millions of small businesses with global customers, demonstrating how NFC has become a top-tier alternative to physical terminals.</p><h3>Google Wallet / Google Pay</h3><p>Google Pay contactless service covers over 25 million locations worldwide. It is compatible with over <strong>150 </strong>transit systems and supports in-store and online tap-to-pay features. Here&#x27;s why it&#x27;s the ideal solution for fiat and crypto cards:</p><ul role="list"><li>Stores multiple cards and IDs securely</li><li>Runs on Android 7.0 and later</li><li>Encrypts each tap using tokenization</li><li>Supports<strong> 45+ national currencies</strong></li><li>Integrates loyalty cards and passes</li></ul><p>The solution continues to expand as new NFC terminals appear year after year.</p><h3>Tap to Pay on Android (merchant acceptance)</h3><p>This is another popular tool that lets people make purchases with a single tap. Any phone with NFC that runs Android can instantly send payments powered by Visa, Mastercard, or crypto cards worldwide.</p><p>A few key features worth noting about the tap to pay Android solution:</p><ul role="list"><li>Accepts payments in <strong>100+ countries</strong></li><li>Processes transactions in under <strong>2 seconds</strong></li><li>Meets PCI and EMV compliance</li><li>Supports Stripe, Adyen, and Shopify POS</li><li>Backed by biometric security layers</li></ul><p><strong>Key takeaway</strong>: The modern world has over <strong>3 billion</strong> smartphones that support NFC technology. As a result, the tech has linked buyers, merchants, and crypto wallets into a single global ecosystem that operates 24/7.</p><h2>NFC vs. QR Codes</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/68fb41d47f0619cb7677263d_daughasdhatilie6ptft.webp" loading="lazy"/></div><figcaption><em>Image credit</em>: <em>Bluebite</em></figcaption></figure><p>It matters little whether you prefer an NFC crypto card or QR code payments, as both deliver instant payments. The only difference is in their mechanisms. For example, NFC operates on short-range radio signals, while QR codes require a visual scan from a camera. </p><p>Let&#x27;s compare them below and see the other use case differences:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Use Case</b></th>
+            <th><b>Best Option</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>High-volume retail payments</td>
+            <td>NFC</td>
+        </tr>
+        <tr>
+            <td>Offline or low-connectivity zones</td>
+            <td>QR</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Crypto and card tap transactions</p>
+            </td>
+            <td>NFC</td>
+        </tr>
+        <tr>
+            <td>Public transport and parking systems</td>
+            <td>QR</td>
+        </tr>
+        <tr>
+            <td>Secure tokenized wallet payments</td>
+            <td>NFC</td>
+        </tr>
+        <tr>
+            <td>Low-cost vendor or donation setups</td>
+            <td>QR</td>
+        </tr>
+        <tr>
+            <td>Wearables and smartphone integrations</td>
+            <td>NFT</td>
+        </tr>
+        <tr>
+            <td>Printed menus or event tickets</td>
+            <td>QR</td>
+        </tr>
+    </tbody></div><p>‍</p><p><strong>Key takeaway</strong>: NFC payment security solutions employ encrypted, high-speed payments. It&#x27;s a perfect solution for using wallets, crypto cards, and wearables. On the other hand, QR codes work seamlessly for low-cost and offline setups.</p><h2>Crypto Cards &amp; Wallets</h2><p>Wireless payment via cryptocurrency cards and wallets is an alternative to traditional financial transactions. In this case, payments use blockchain tech, allowing people to spend Bitcoin, altcoins, and stablecoins at any merchant that accepts Visa or Mastercard.</p><p>The wallet or card instantly converts crypto into traditional currency, making the payment process contactless and straightforward. At the same time, most modern solutions feature tokenization, biometric security, and real-time transaction tracking.</p><p>Key features they offer today:</p><ul role="list"><li>Instant crypto-to-fiat conversion</li><li>Support for stablecoins and major tokens</li><li>Integration with Apple Pay and Google Pay</li><li>Encrypted storage for private keys</li><li>One-tap payment authorization</li><li>Multi-chain wallet compatibility</li><li>Real-time spending analytics</li></ul><p>Key takeaway: Both contactless crypto cards and wallets offer easy, contactless payment options accepted at all locations that accept VISA and Mastercard.</p><h2>Fees to Expect</h2><p>Mobile wallet contactless always involves paying small commissions, no matter how you slice it. As a rule, charges depend on the provider, the payment system, and the crypto-to-fiat exchange model. Check the average size and fee types below:</p><ul role="list"><li>Transaction processing: 0.5–1.5%</li><li>Crypto-to-fiat conversion: 0.8–2.0%</li><li>Network or blockchain fee: 0.1–0.5%</li><li>Foreign exchange markup: 0.5–1.0%</li><li>Card issuance or maintenance: 1.0–2.5% (annual)</li><li>ATM withdrawal (if supported): 1.5–3.0%</li></ul><p><strong>Key takeaway</strong>: Crypto cards powered by NFC offer lower fees than traditional bank charges. Users can reduce costs by using stablecoins and fintech providers that provide the best exchange rates.</p><h2>Speed ​​&amp; Reliability</h2><p>Speed ​​is a key parameter that determines the quality and level of contactless payment. Typically, NFC transactions take one or two seconds, while QR codes can feel a bit longer. It all depends on three fundamental factors: signal strength, hardware quality, and merchant connectivity. Meanwhile, success rates are reaching above<strong> 99%</strong> in most stores.</p><h3>Range &amp; Alignment</h3><p>NFC technology requires at least four centimeters to maintain a decent signal level. This small distance is sufficient to ensure security and prevent accidental charges.</p><p>Here are some tips on how to properly position your card or phone for one-tap purchases:</p><ul role="list"><li>Keep the device close to the terminal center</li><li>Avoid thick phone cases or metal surfaces</li><li>Hold the device still for one second</li><li>Wait for vibration or sound confirmation</li><li>Ensure the terminal has full power and internet connection</li></ul><p><strong>Key takeaway</strong>: NFC works at a close distance of about 4 centimeters. This distance is sufficient to ensure fast and secure transactions. Proper positioning of your device will trigger a near-instantaneous response and payment at any terminal.</p><h2>Safety Tips</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/68fb41e87f0619cb76772e14_t53k92tp9pmz16xpirg1.webp" loading="lazy"/></div><figcaption><em>Image credit</em>: <em>Innovance</em></figcaption></figure><p>‍</p><p>NFC card payments are secure by default. However, adopting smart habits makes them even more secure. Below, you&#x27;ll find simple tips to protect and use your wallets more effectively.</p><h3>Apple Pay</h3><p>Here are a few simple settings you can adjust right now:</p><ul role="list"><li>Enable Face ID or Touch ID</li><li>Use the device passcode at all times</li><li>Avoid adding cards on public Wi-Fi</li><li>Check transaction history regularly</li><li>Disable lost devices through iCloud</li></ul><p>iOS automatically encrypts all data. Still, extra precautions ensure all payments are safe and secure.</p><h3>Basic Hygiene</h3><p>Contactless technology is excellent for keeping your phone away from contact points. See a few tips to keep your devices and cards clean and safe:</p><ul role="list"><li>Wipe phone or card daily</li><li>Avoid tapping on wet surfaces</li><li>Keep cards in RFID sleeves</li><li>Store wallets away from magnets</li><li>Use personal devices only</li></ul><p><strong>Key takeaway</strong>: Use the above tips to protect both your data and your health. </p><h2>Quick Setup (Step-by-Step)</h2><p>It only takes a few minutes to set up NFC for everyday use with a crypto card. Follow these steps to do it properly:</p><ol role="list"><li>Download the wallet or banking app</li><li>Add your crypto or debit card</li><li>Verify identity through a KYC check</li><li>Enable NFC in phone settings</li><li>Select tap-to-pay as the default option</li><li>Test at a nearby payment terminal</li></ol><p><strong>Key takeaway</strong>: Most devices activate the NFC tool right after launch. Once set up, you can use and enjoy contactless crypto payments for everyday purchases.</p><h2>Conclusion</h2><p>NFC technology has completely changed the way people use their money to purchase goods and services. It provides instant, transparent, and secure payments via blockchain wallets and crypto cards, which are already part of the daily lives of millions of users.</p><p>Contactless crypto payments are ideally suited to Apple Pay and Android Pay tap-to-pay, significantly increasing global adoption. Today, NFC&#x27;s short range, EMV-level security, and instant processing make this solution an obvious choice for the future of contactless spending.</p><h2>FAQ</h2><h3>What is NFC in Contactless Payments?</h3><p>The technology relates to Near Field Communication, a.k.a. NFC. It enables two devices to exchange payment data within a few centimeters.</p><h3>What are the Types of Contactless Payment?</h3><p>This covers NFC tap-to-pay, mobile wallets, wearables, QR code payments, and crypto cards. In all cases, payment is made without physical contact and takes just seconds.</p><h3>Is PayPal Contactless?</h3><p>Yes. The service supports contactless solutions with NFC and QR codes. Users can tap or scan with their phone in stores that support this feature.</p><h3>Is Contactless Payment Safe?</h3><p>Sure. Each transaction uses three security layers, including tokenization, EMV encryption, and biometric verification. As a result, a tap does not reveal your real card number, making purchases as secure as possible.</p></div></div></div><div class="footer"><div class="w-layout-blockcontainer block-container w-container"><div class="footerbusinesscontent"><div class="top-row"><div class="footer-logo-wrapper"><img src="/cdn/641863621e81371558abea11/65fb0f6a4fc28c826816028d_Layer_7.svg" loading="lazy" alt="" class="image-5"/></div><div class="bottom-row-rights"><div class="text-block-6">© 2025. All rights reserved.</div></div></div><div class="links-personal"><div class="footerlinksblock"><a href="#" class="new-footer-link">Wallet</a><a href="/exchanger" class="new-footer-link">Exchanger</a><a href="/for-business/business" class="new-footer-link">Business</a><a href="#" class="link hide">Terms</a><a href="#" class="link hide">Privacy</a><a href="/blog" class="new-footer-link">Blog</a><a href="#" class="link disabled hide">Support</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641863621e81371558abea11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.0be0ff630adfe789.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.6d502c0af9c01e12.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.eeff05e8.b9d868b31419297d.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTMCWKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Проверяем наличие всех UTM меток
+    const utmId = urlParams.get('utm_id');
+    const utmTerm = urlParams.get('utm_term');
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmContent = urlParams.get('utm_content');
+    const utmCampaign = urlParams.get('utm_campaign');
+
+    // Функция для добавления UTM меток к каждой ссылке (включая внешние)
+    function addUtmToLinks() {
+      const allLinks = document.querySelectorAll('a'); // Все ссылки
+
+      allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        // Пропускаем якорные ссылки (те, которые ведут только на эту же страницу)
+        if (href && !href.includes('#')) {
+          let utmParamsArray = [];
+
+          // Добавляем только не пустые UTM параметры
+          if (utmId) {
+            utmParamsArray.push(`utm_id=${utmId}`);
+          }
+          if (utmTerm) {
+            utmParamsArray.push(`utm_term=${utmTerm}`);
+          }
+          if (utmSource) {
+            utmParamsArray.push(`utm_source=${utmSource}`);
+          }
+          if (utmMedium) {
+            utmParamsArray.push(`utm_medium=${utmMedium}`);
+          }
+          if (utmContent) {
+            utmParamsArray.push(`utm_content=${utmContent}`);
+          }
+          if (utmCampaign) {
+            utmParamsArray.push(`utm_campaign=${utmCampaign}`);
+          }
+
+          // Добавляем параметры, только если есть хотя бы один UTM параметр
+          if (utmParamsArray.length > 0) {
+            const separator = href.includes('?') ? '&' : '?';
+            const utmParams = utmParamsArray.join('&');
+
+            // Добавляем UTM параметры к ссылке
+            link.setAttribute('href', href + separator + utmParams);
+          }
+        }
+      });
+    }
+
+    // Добавляем UTM метки к ссылкам на текущей странице
+    addUtmToLinks();
+  });
+</script>
+
+<!-- Smooth scroll start -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+<!-- Smooth scroll end -->
+
+
+
+<!-- Lazy loaging for video -->
+<script
+     
+  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"
+></script>
+
+<!-- header animation -->
+<script src="https://cdn.jsdelivr.net/gh/waveshape-co/word-play@1.0.0/script.min.js"></script>
+
+<style>
+  .n-heder-line-one:not(:has(.ws__span)),
+  .n-heder-line-two:not(:has(.ws__span)){opacity:0}
+  
+  body.body-6:not(:has(.n-page_loading[style*='display: none'])) {
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+  
+ </style>
+
+
+<!-- +++ -->
+ <script>
+function smoothscroll() {
+    // Smooth scrolling
+    const isHome = document.querySelectorAll('.body-6').length;
+  	if (!isHome){return;}
+  	const lenis = new Lenis({ resize: true });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    // Grab all elements that have a "data-target" attribute
+    const scrollButtons = document.querySelectorAll('[data-target]');
+
+    // For each element, listen to a "click" event
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // get the DOM element by the ID (data-target value)
+            const target = button.dataset.target;
+            const $el = document.getElementById(target.replace('#', ''));
+
+            // Use lenis.scrollTo() to scroll the page to the right element
+            lenis.scrollTo($el, {
+                offset: 0,
+                immediate: false,
+                duration: 1,
+                easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2) // https://easings.net
+            });
+        });
+    });
+
+    requestAnimationFrame(raf);
+}
+
+function init() {
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  myLazyLoad.update();
+    smoothscroll();
+    new WordPlay({
+        className: 'n-heder-line-one', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+
+    new WordPlay({
+        className: 'n-heder-line-two', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+    // document.getElementById('n-video-bg').play();
+}
+
+function loader() {
+    // Отримуємо посилання на елемент
+    const target = document.querySelector('.n-page_loading');
+
+    // Функція, яка перевіряє, чи display: none
+    function isHidden(element) {
+        return window.getComputedStyle(element).display === 'none';
+    }
+
+    if (target) {
+        // Створюємо обсервер
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                    if (isHidden(target)) {
+                        console.log('Елемент став display: none');
+                        init();
+                        // Зупиняємо обсервер після спрацювання
+                        observer.disconnect();
+                        // Можна викликати додаткову логіку тут
+                    }
+                }
+            }
+        });
+
+        // Налаштування обсерверу: слідкуємо за змінами атрибутів
+        observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    } else {
+        init();
+    }
+}
+window.Webflow.push(loader);
+  </script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header2", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header3", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+<!-- Headers animation End -->
+
+
+
+
+
+<!-- Button text animation start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+<script>
+const letterWrapClass = 'n-letter-wrap';
+const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+[...letterWrapElements].forEach(el => {
+  letterWrap(el, letterWrapClass);
+  letterAnimation(el, letterWrapClass);
+});
+function letterWrap(el, cls) {
+  const words = el.textContent.split(' ');
+  const letters = []; 
+  cls = cls || 'n-letter-wrap'  
+  words.forEach(word => {
+    let html = '';
+    for (var letter in word) {
+      html += `
+        <span class="${cls}__char">
+          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+            ${word[letter]}
+          </span>
+        </span>
+      `;
+    };   
+    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+    letters.push(wrappedWords);
+  });
+  return el.innerHTML = letters.join(' ');
+}
+function letterAnimation(el, cls) {
+  const tl = new TimelineMax({ paused: true });
+  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.025; 
+  el.animation = tl.staggerTo(characters, duration, {
+    y: '-100%',
+    delay: 0.1,
+    ease: Power2.easeOut
+  }, stagger);      
+  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+  el.addEventListener('mouseout', (event) => el.animation.pause(0)());
+}
+</script>
+<!-- Button text animation end --></body></html>

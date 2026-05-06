@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T17:03:05.894Z",
+  "generatedAt": "2026-05-06T08:57:54.842Z",
   "site": {
     "name": "kolo",
     "deployUrl": "https://kolo-seven.vercel.app",
@@ -7,20 +7,20 @@
     "repoUrl": "https://github.com/deniskovalenkoo/kolo"
   },
   "overview": {
-    "totalPages": 114,
-    "uniquePaths": 40,
+    "totalPages": 242,
+    "uniquePaths": 148,
     "languages": [
       "en",
       "ru",
       "ua"
     ],
-    "assetsCount": 287,
-    "assetsSizeBytes": 25224524,
-    "astroRoutes": 114,
-    "totalIssues": 175,
-    "checklistDone": 3,
+    "assetsCount": 666,
+    "assetsSizeBytes": 61857554,
+    "astroRoutes": 243,
+    "totalIssues": 486,
+    "checklistDone": 4,
     "checklistTotal": 12,
-    "healthScore": 15
+    "healthScore": 20
   },
   "pages": [
     {
@@ -37,6 +37,1412 @@
       "issues": [
         "Title too long (66 > 60)",
         "Description too long (225 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto Card Blog — Guides on USDT Spending, DeFi &amp; Digital Nomad Finance | Kolo",
+      "description": "Expert guides on crypto cards, USDT spending, Web3 finance and digital nomad money tips. Learn how to use a crypto Visa card, swap coins, manage your wallet, and spend smarter in 60+ countries.",
+      "descriptionLength": 193,
+      "titleLength": 83,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 43961,
+      "issues": [
+        "Title too long (83 > 60)",
+        "Description too long (193 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/6-ways-to-make-money",
+      "lang": "en",
+      "category": "Other",
+      "title": "6 ways to make money fast using cryptocurrency ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 53,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31618,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/beginners-guide-to-crypto-wallet-cards",
+      "lang": "en",
+      "category": "Other",
+      "title": "Beginners Guide to Crypto Wallet Cards: All you need to know! ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 68,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31350,
+      "issues": [
+        "Title too long (68 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/cbdc-vs-stablecoins",
+      "lang": "en",
+      "category": "Other",
+      "title": "CBDC vs. Stablecoins: Which Digital Currency Will Shape Our Future? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24928,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-card-fees-interchange-fx-spread",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 82,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43635,
+      "issues": [
+        "Title too long (82 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-cards-for-travel",
+      "lang": "en",
+      "category": "Other",
+      "title": "Best Crypto Cards for International Travel in 2025: Pay Abroad Safety ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 76,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 29948,
+      "issues": [
+        "Title too long (76 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-cards-gaming-purchases",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Use Crypto Cards for Gaming Purchases ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 51,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 48732,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-exchange-vs-crypto-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto exchange VS crypto wallet: which is better? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 57,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 26742,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-on-ramps-crypto-off-ramps",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36031,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-security",
+      "lang": "en",
+      "category": "Other",
+      "title": "Staying Safe in Web3: How not to Get Hacked ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 50,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27805,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-visa-card-for-everyday-spending",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 45,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27077,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-vs-traditional-finances",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto vs traditional finances ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 37,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23960,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "What is a crypto wallet? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 31,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 25062,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-wallet-for-different-cryptocurrencies",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Choose a Crypto Wallet for Different Cryptocurrencies ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 67,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31967,
+      "issues": [
+        "Title too long (67 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-wallets-auto-convert-local-currency",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto Wallets with Auto Convert in Local Currency ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 57,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 32907,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/crypto-wallets-without-kyc",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto Wallets Without KYC: Pros and Cons ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31577,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/cryptocurrency-and-privacy",
+      "lang": "en",
+      "category": "Legal",
+      "title": "Cryptocurrency and Privacy: What You Need to Know ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 56,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24097,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/cryptocurrency-investing-guide-what-is-dca",
+      "lang": "en",
+      "category": "Other",
+      "title": "Cryptocurrency investing guide: what is DCA? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 51,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23878,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/cryptocurrency-market-in-2024",
+      "lang": "en",
+      "category": "Other",
+      "title": "What is expected of the cryptocurrency market in 2024? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 61,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24023,
+      "issues": [
+        "Title too long (61 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/cryptocurrency-staking",
+      "lang": "en",
+      "category": "Other",
+      "title": "Cryptocurrency Staking: What You Need to Know ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 52,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 29911,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/custodial-vs-non-custodial-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "Custodial VS non-custodial wallet ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 40,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 22033,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/custodial-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "Custodial wallet: a complete review ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 42,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23692,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/dirty-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "What is a &quot;dirty&quot; cryptocurrency? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 50,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20528,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/dollar-cost-averaging",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Set Up Dollar-Cost Averaging with Your Crypto Wallet ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 66,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24468,
+      "issues": [
+        "Title too long (66 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/exchange-rates-affect-crypto-cards-abroad",
+      "lang": "en",
+      "category": "Other",
+      "title": "Crypto Card Exchange Rates: How They Affect Your Purchases Abroad ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 72,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31198,
+      "issues": [
+        "Title too long (72 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/fiat",
+      "lang": "en",
+      "category": "Other",
+      "title": "Fiat and the most popular fiat currencies ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24817,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/hierarchical-deterministic-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 77,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 35693,
+      "issues": [
+        "Title too long (77 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/honeypot-scam-crypto",
+      "lang": "en",
+      "category": "Other",
+      "title": "Honeypot Crypto Scam: How to Detect and Avoid It in Crypto Projects ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36635,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-crypto-wallets-get-hacked-whether-someone-can-steal-your-crypto",
+      "lang": "en",
+      "category": "Other",
+      "title": "How Crypto Wallets Get Hacked &amp; Whether Someone Can Steal Your Crypto ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 80,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 30546,
+      "issues": [
+        "Title too long (80 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-much-you-can-earn-on-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "How much you can earn on cryptocurrency ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 46,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 22405,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-buy-bitcoin",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to buy Bitcoin: a step-by-step guide ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 47,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20605,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-buy-ethereum",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to buy Ethereum? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 27,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20296,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-buy-litecoin-ltc",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to buy Litecoin (LTC)? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 33,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21605,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-exchange-cryptocurrency-a-step-by-step-guide",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to exchange cryptocurrency: a step-by-step guide ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 59,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20047,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-pay-online-shopping-with-crypto-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Pay for Online Shopping Using a Crypto Wallet ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 59,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 33934,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-track-crypto-wallet-address-activities-and-why-it-matters",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Track Crypto Wallet Address Activities and Why It Matters ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 71,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 28662,
+      "issues": [
+        "Title too long (71 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/how-to-use-a-crypto-card-for-everyday-purchases",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Use a Crypto Card for Everyday Purchases ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 54,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31180,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/https-kolo-in-blog-the-future-of-crypto-cards",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Future of Crypto Cards: 2025 Trends ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 46,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31701,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/https-kolo-in-blog-what-is-decentralized-science-desci",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 73,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34471,
+      "issues": [
+        "Title too long (73 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/layer-zero-message-passing",
+      "lang": "en",
+      "category": "Other",
+      "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 101,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43091,
+      "issues": [
+        "Title too long (101 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/mass-adoption",
+      "lang": "en",
+      "category": "Other",
+      "title": "State of Mass Adoption: Where Are We Now? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 25812,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/metaverse",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Happened to the Metaverse? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 38,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24695,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/mica",
+      "lang": "en",
+      "category": "Other",
+      "title": "Market in Crypto Assets (MiCA): The New Rules That Will Shape Crypto in 2025 ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 83,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27626,
+      "issues": [
+        "Title too long (83 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/mining",
+      "lang": "en",
+      "category": "Other",
+      "title": "Mining: what is it, and how does it work? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 25935,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/mobile-vs-desktop-crypto-wallets",
+      "lang": "en",
+      "category": "Other",
+      "title": "Mobile and Desktop Crypto Wallets: Which One To Choose  ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 62,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 29936,
+      "issues": [
+        "Title too long (62 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/nfc-tap-to-pay-crypto-card-payments",
+      "lang": "en",
+      "category": "Other",
+      "title": "NFC &amp; Tap-to-Pay for Crypto Cards: How It Works + Safety Tips ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 72,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 35258,
+      "issues": [
+        "Title too long (72 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/non-custodial-wallet",
+      "lang": "en",
+      "category": "Other",
+      "title": "Non-custodial wallet: a complete review ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 46,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23741,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/real-world-assets-rwa",
+      "lang": "en",
+      "category": "Other",
+      "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34227,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/receive-salary-in-crypto-and-spend-instantly",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Receive Your Salary in Crypto and Spend It Instantly ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 66,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 31054,
+      "issues": [
+        "Title too long (66 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/stablecoins-usdt-usdc-for-travelling",
+      "lang": "en",
+      "category": "Other",
+      "title": "How to Use Stablecoins While Traveling: Pay Abroad &amp; Cut Fees ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 72,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 30262,
+      "issues": [
+        "Title too long (72 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/steel-seed-phrase-backup-crypto",
+      "lang": "en",
+      "category": "Other",
+      "title": "Metal Seed Phrase Storage: Backup Your Crypto Safely ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 59,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 35395,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/subscriptions",
+      "lang": "en",
+      "category": "Other",
+      "title": "How Subscription Stacking Destroys Your Monthly Budget ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 61,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23522,
+      "issues": [
+        "Title too long (61 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/the-evolution-of-daos",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Evolution of Decentralized Autonomous Organizations (DAOs) ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 69,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24631,
+      "issues": [
+        "Title too long (69 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/the-impact-of-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Impact of Cryptocurrency on Global Economies ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 55,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 32309,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/the-role-of-ai-in-cryptocurrency-trading",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Role of AI in Cryptocurrency Trading ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 47,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24292,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/the-role-of-smart-contracts-in-modern-business",
+      "lang": "en",
+      "category": "Other",
+      "title": "The Role of Smart Contracts in Modern Business ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 53,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27530,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/top-cryptocurrencies-by-capitalization-in-2024",
+      "lang": "en",
+      "category": "Other",
+      "title": "Top cryptocurrencies by capitalization in 2024 ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 53,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 28342,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/top-promising-coins-of-2024",
+      "lang": "en",
+      "category": "Other",
+      "title": "Top promising coins of 2024 ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 34,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23683,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/travel-with-crypto",
+      "lang": "en",
+      "category": "Other",
+      "title": "Traveling with Crypto: How to Pack Light and Pay Right ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 61,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23009,
+      "issues": [
+        "Title too long (61 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/trc20-and-erc20",
+      "lang": "en",
+      "category": "Other",
+      "title": "What TRC20 and ERC20 are: the difference and advantages of each network ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 78,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20664,
+      "issues": [
+        "Title too long (78 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/uniswap-v3-liquidity",
+      "lang": "en",
+      "category": "Other",
+      "title": "Uniswap v3: How to Provide Liquidity ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 43,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 37639,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-are-crypto-cross-border-payments",
+      "lang": "en",
+      "category": "Other",
+      "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 67,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 41552,
+      "issues": [
+        "Title too long (67 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-are-crypto-mixers",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Are Crypto Mixers? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 30,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 28953,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-awaits-ethereum-in-2024",
+      "lang": "en",
+      "category": "Other",
+      "title": "What awaits Ethereum (ETH) in 2024? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 42,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21664,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-bitcoin-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Bitcoin (BTC) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 51,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24239,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-dollar-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What dollar (USD) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 50,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 23432,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-ethereum-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Ethereum (ETH) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 52,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24079,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-altcoin-season",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 63,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 33006,
+      "issues": [
+        "Title too long (63 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-crypto-in-plain-english",
+      "lang": "en",
+      "category": "Other",
+      "title": "What is «crypto» in plain English?  ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 42,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24751,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "What is cryptocurrency? The most popular cryptocurrencies ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 64,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 25664,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-dca",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Is DCA? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 19,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24300,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-restaking",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Restaking Is and How It Can Be Used ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 47,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 30432,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-is-rug-pull",
+      "lang": "en",
+      "category": "Other",
+      "title": "Rug Pulls: How To Identify And Protect Yourself From Crypto Scams ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 72,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 33482,
+      "issues": [
+        "Title too long (72 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-litecoin-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What Litecoin (LTC) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 52,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21867,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-tron-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What TRON (TRX) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 24441,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/what-usdt-is",
+      "lang": "en",
+      "category": "Other",
+      "title": "What USDT (Tether) is: a guide for beginners ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 51,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21725,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/whats-next-for-ethereum",
+      "lang": "en",
+      "category": "Other",
+      "title": "What&#x27;s Next for Ethereum: A Roadmap Analysis ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 56,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 28515,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/when-you-should-buy-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "When you should buy cryptocurrency ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 41,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 21266,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/where-to-exchange-cryptocurrency-safely",
+      "lang": "en",
+      "category": "Other",
+      "title": "Where to exchange cryptocurrency safely ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 46,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 20836,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/why-invest-in-cryptocurrency",
+      "lang": "en",
+      "category": "Other",
+      "title": "Why invest in cryptocurrency? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 36,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 22715,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/blog/your-digital-keys-explained-from-passwords-to-passkeys-to-seed-phrases",
+      "lang": "en",
+      "category": "Other",
+      "title": "Your Digital Keys Explained: From Passwords to Passkeys to Seed Phrases ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 78,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27031,
+      "issues": [
+        "Title too long (78 > 60)",
+        "Missing meta description",
+        "Missing og:image"
       ],
       "hasIssues": true
     },
@@ -572,6 +1978,409 @@
       "issues": [
         "Title too long (66 > 60)",
         "Description too long (225 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Crypto Card Blog — Guides on USDT Spending, DeFi &amp; Digital Nomad Finance | Kolo",
+      "description": "Expert guides on crypto cards, USDT spending, Web3 finance and digital nomad money tips. Learn how to use a crypto Visa card, swap coins, manage your wallet, and spend smarter in 60+ countries.",
+      "descriptionLength": 193,
+      "titleLength": 83,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 43191,
+      "issues": [
+        "Title too long (83 > 60)",
+        "Description too long (193 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/blog-what-is-altseason",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Что такое альтсезон и как его распознать ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 47,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 49973,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/choose-crypto-card-daily-expenses",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Как выбрать крипто карту для повседневных расходов: советы и рекомендации ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 80,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43131,
+      "issues": [
+        "Title too long (80 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-card-fees-interchange-fx-spread",
+      "lang": "ru",
+      "category": "Other",
+      "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 82,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43669,
+      "issues": [
+        "Title too long (82 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-cards-fees-minimize",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Какие комиссии у криптокарт и как их минимизировать? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 59,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 39472,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-cards-future-trends",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Будущее криптокарт: тренды, технологии и регулирование цифровых платежей ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 79,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 44853,
+      "issues": [
+        "Title too long (79 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-on-ramps-crypto-off-ramps",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36065,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-payments-regulation-kazakhstan",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Регулирование криптовалютных платежей в Казахстане ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 57,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 41012,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-visa-card-for-everyday-spending",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 45,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27111,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/crypto-withdrawl-in-cash",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Можно ли перевести криптовалюту в наличные без банка ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 59,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34784,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/how-to-accept-cryptopayments-in-business",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Прием платежей в криптовалюте: руководство для бизнеса ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 61,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43160,
+      "issues": [
+        "Title too long (61 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/how-to-buy-cryptocurrency-in-ukraine",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Как купить криптовалюту в Украине за гривну ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 50,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 41416,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/how-to-secure-your-crypto-wallet",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Как защитить криптокошелек от взлома и мошенников? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 57,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 40046,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/how-to-withdraw-cryptocurrency-to-bank-card",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Как вывести криптовалюту на банковскую карту в Украине в 2025 году ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 73,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36673,
+      "issues": [
+        "Title too long (73 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/https-kolo-in-blog-what-is-decentralized-science-desci",
+      "lang": "ru",
+      "category": "Other",
+      "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 73,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34505,
+      "issues": [
+        "Title too long (73 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/https-kolo-in-ru-blog-crypto-wallet-security-checklist",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Безопасность криптокошелька: насколько защищён ваш криптокошелёк ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 71,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 40466,
+      "issues": [
+        "Title too long (71 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/https-kolo-in-ru-blog-liquid-staking-in-liquidity-pools",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Как работает стейкинг в пулах ликвидности: механизм, доход и риски ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 73,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 47541,
+      "issues": [
+        "Title too long (73 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/layer-zero-message-passing",
+      "lang": "ru",
+      "category": "Other",
+      "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 101,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43125,
+      "issues": [
+        "Title too long (101 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/real-world-assets-rwa",
+      "lang": "ru",
+      "category": "Other",
+      "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34261,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/top-cold-crypto-wallets",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Лучшие холодные кошельки: какой выбрать в 2025 году ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 58,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43582,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/what-are-crypto-cross-border-payments",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 67,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 41586,
+      "issues": [
+        "Title too long (67 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/what-is-altcoin-season",
+      "lang": "ru",
+      "category": "Other",
+      "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 63,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 33040,
+      "issues": [
+        "Title too long (63 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ru/blog/what-is-crypto",
+      "lang": "ru",
+      "category": "Other",
+      "title": "Что такое криптовалюта? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 30,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 44308,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
       ],
       "hasIssues": true
     },
@@ -1284,6 +3093,428 @@
       "hasIssues": true
     },
     {
+      "path": "/ua/blog",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Crypto Card Blog — Guides on USDT Spending, DeFi &amp; Digital Nomad Finance | Kolo",
+      "description": "Expert guides on crypto cards, USDT spending, Web3 finance and digital nomad money tips. Learn how to use a crypto Visa card, swap coins, manage your wallet, and spend smarter in 60+ countries.",
+      "descriptionLength": 193,
+      "titleLength": 83,
+      "ogImage": "/cdn/641863621e81371558abea11/65fd67aa0ce389048f5ca21a_Page_1.png",
+      "canonical": null,
+      "sizeBytes": 44558,
+      "issues": [
+        "Title too long (83 > 60)",
+        "Description too long (193 > 160)"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-card-fees-interchange-fx-spread",
+      "lang": "ua",
+      "category": "Other",
+      "title": "The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 82,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43672,
+      "issues": [
+        "Title too long (82 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-on-ramps-crypto-off-ramps",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Crypto On-Ramps &amp; Off-Ramps Explained: Cheaper, Safer Transfers ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36068,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-subscriptions-pay-netflix-spotify",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як оплачувати підписки та сервіси криптовалютою онлайн ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 61,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 42496,
+      "issues": [
+        "Title too long (61 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-visa-card-for-everyday-spending",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Crypto Visa Card for Everyday Spending ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 45,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 27114,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-vs-traditional-finances",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Чим крипта краще за традиційні фінанси? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 46,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 28681,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/crypto-wallet-big-purchases",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як планувати та здійснювати великі покупки криптовалюти?  ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 64,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 50411,
+      "issues": [
+        "Title too long (64 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/cryptocards-usage-abroad-international-transactions",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як використовувати криптокартку за кордоном та для міжнародних платежів ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 78,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 44957,
+      "issues": [
+        "Title too long (78 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/cryptocards-vs-bank-cards-accounts",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Чи можуть криптокартки повністю замінити банківські рахунки? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 67,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 42140,
+      "issues": [
+        "Title too long (67 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/cryptocurrency-payments-in-stores",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Криптовалютні платежі у звичайних магазинах: як працює криптопроцесінг ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 77,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 47530,
+      "issues": [
+        "Title too long (77 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/family-crypto-wallet-budgeting",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Гаманець з мультипідписом (MulitSig) для сімейного бюджету: як це працює ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 79,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 47427,
+      "issues": [
+        "Title too long (79 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/honeypot-scam-crypto",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Honeypot Crypto Scam: How to Detect and Avoid It in Crypto Projects ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 74,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 36672,
+      "issues": [
+        "Title too long (74 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/how-to-buy-crypto-with-uah",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як купити криптовалюту в Україні за гривні? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 50,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 37759,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/https-kolo-in-blog-what-is-decentralized-science-desci",
+      "lang": "ua",
+      "category": "Other",
+      "title": "What Is Decentralized Science (DeSci) And How It Improves Research ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 73,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34508,
+      "issues": [
+        "Title too long (73 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/https-kolo-in-ua-blog-virtual-crypto-card",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Віртуальна криптокарта: що це так і як її оформити? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 58,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 40923,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/https-kolo-in-ua-blog-what-is-layer2-blockchain",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Що таке Layer 2 блокчейн і навіщо він потрібен ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 53,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 48373,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/keep-access-to-crypto-wallet",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як не втратити доступ до криптогаманця ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 45,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 46106,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/layer-zero-message-passing",
+      "lang": "ua",
+      "category": "Other",
+      "title": "LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 101,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43128,
+      "issues": [
+        "Title too long (101 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/real-world-assets-rwa",
+      "lang": "ua",
+      "category": "Other",
+      "title": "What are Real-World Assets? RWA Explained ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 48,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34264,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/secure-crypto-storage-without-exchanges",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Як зберігати криптовалюту, якщо не довіряєш біржам ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 57,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 43096,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/shcho-take-kriptovalyuta-ta-de-yiyi-mozhna-vikoristovuvati-v-ukrayini",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Що таке криптовалюта та де її можна використовувати в Україні ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 68,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 49388,
+      "issues": [
+        "Title too long (68 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/what-are-crypto-cross-border-payments",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Cross Border Payments in Crypto: How They Work on Blockchain ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 67,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 41589,
+      "issues": [
+        "Title too long (67 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/what-is-altcoin-season",
+      "lang": "ua",
+      "category": "Other",
+      "title": "What Is Altcoin Season and When Could It Happen in 2025? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 63,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 33043,
+      "issues": [
+        "Title too long (63 > 60)",
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
+      "path": "/ua/blog/what-is-kyc",
+      "lang": "ua",
+      "category": "Other",
+      "title": "Що таке KYC в криптовалюті? ∙ Kolo",
+      "description": "",
+      "descriptionLength": 0,
+      "titleLength": 34,
+      "ogImage": null,
+      "canonical": null,
+      "sizeBytes": 34640,
+      "issues": [
+        "Missing meta description",
+        "Missing og:image"
+      ],
+      "hasIssues": true
+    },
+    {
       "path": "/ua/buy",
       "lang": "ua",
       "category": "Buy/Sell/Swap",
@@ -1934,21 +4165,21 @@
       "label": "Every page has og:image",
       "category": "SEO",
       "status": "warn",
-      "details": "48/114 pages have og:image."
+      "details": "51/242 pages have og:image."
     },
     {
       "id": "meta-descriptions",
       "label": "Every page has meta description",
       "category": "SEO",
       "status": "warn",
-      "details": "63 pages are missing descriptions."
+      "details": "188 pages are missing descriptions."
     },
     {
       "id": "blog-migrated",
       "label": "Blog (~120 posts) migrated",
       "category": "Content",
-      "status": "todo",
-      "details": "Currently /blog and /blog/* pages do not exist — losing all blog SEO if cutover happens before this is done."
+      "status": "done",
+      "details": "Blog pages present in src/pages/."
     },
     {
       "id": "forms-verified",

@@ -1,0 +1,474 @@
+<!DOCTYPE html><!-- Last Published: Thu Apr 23 2026 13:48:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="kolo.xyz" data-wf-page="64918aa7c1eb2dea6938a0b3" data-wf-site="641863621e81371558abea11" lang="uk" data-wf-collection="64918aa1c1eb2dea69389a9e" data-wf-item-slug="https-kolo-in-ua-blog-what-is-layer2-blockchain"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Що таке Layer 2 блокчейн і навіщо він потрібен ∙ Kolo</title><link rel="alternate" hrefLang="uk" href="https://kolo.xyz/ua/blog/https-kolo-in-ua-blog-what-is-layer2-blockchain"/><meta content="Що таке Layer 2 блокчейн і навіщо він потрібен ∙ Kolo" property="og:title"/><meta content="Що таке Layer 2 блокчейн і навіщо він потрібен ∙ Kolo" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="/cdn/641863621e81371558abea11/css/777ex.shared.97839c652.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/641863621e81371558abea11/65fbc4e9777e6eaf1633f75a_KoloFavicon.png" rel="apple-touch-icon"/><link href="https://kolo.xyz/ua/blog/https-kolo-in-ua-blog-what-is-layer2-blockchain" rel="canonical"/><!-- Auto hreflang + canonical -->
+<script>
+(function () {
+  var BASE = 'https://kolo.xyz';
+  var path = window.location.pathname;
+
+  // Normalize: strip trailing slash except root
+  var p = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+  var enPath, locale;
+
+  if (/^\/ru(\/|$)/.test(p)) {
+    locale = 'ru';
+    enPath = p.replace(/^\/ru/, '') || '/';
+  } else if (/^\/ua(\/|$)/.test(p)) {
+    locale = 'ua';
+    enPath = p.replace(/^\/ua/, '') || '/';
+  } else {
+    locale = 'en';
+    enPath = p;
+  }
+
+  var ruPath = '/ru' + (enPath === '/' ? '' : enPath);
+  var uaPath = '/ua' + (enPath === '/' ? '' : enPath);
+
+  // Remove wrong canonical Webflow may have added
+  var existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) existingCanonical.parentNode.removeChild(existingCanonical);
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  // Hreflang tags
+  var hreflangs = [
+    { lang: 'en',        href: BASE + enPath },
+    { lang: 'ru',        href: BASE + ruPath },
+    { lang: 'uk',        href: BASE + uaPath },
+    { lang: 'x-default', href: BASE + enPath }
+  ];
+
+  hreflangs.forEach(function (item) {
+    var link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = item.lang;
+    link.href = item.href;
+    head.appendChild(link);
+  });
+
+  // Self-referencing canonical
+  var canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = BASE + p;
+  head.appendChild(canonical);
+})();
+<\/script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VWPZZ8G');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZ815EGP84" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript" type="fs-consent"></script>
+
+<script type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-MZ815EGP84');</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Kolo Crypto Visa Card",
+  "description": "Crypto Visa debit card with BTC cashback. Spend in 60+ countries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Kolo",
+    "url": "https://kolo.xyz"
+  },
+  "url": "https://kolo.xyz",
+  "category": "Crypto Debit Card",
+  "areaServed": ["Europe", "United Kingdom", "UAE", "CIS"],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceType": "Mobile App, Web, Telegram"
+  }
+}
+</script>
+
+
+
+<!-- For smooth scroll -->
+<!--
+<style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+</style>
+<style>
+.loading {
+  display: flex;
+}
+</style>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="/cdn/641863621e81371558abea11_2F6544eda5f000985a163a8687_2F6877797c65a77ee100fcd989_2Ffinsweetcomponentsconfig-1.0.2.js" type="module" async="" siteId="641863621e81371558abea11" finsweet="components"></script></head><body class="body-personal"><div class="navigation"><div class="w-layout-blockcontainer conteiner-width w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-business w-nav"><div class="navbar-business-content"><div class="navbar-wrapper"><div class="logo-header"><a href="/ua" class="combine-nav-logo-link w-inline-block"><img src="/cdn/641863621e81371558abea11/65f83b83a7dc6825efaae8e3_logo_205.svg" loading="lazy" alt="" class="image-11"/></a></div><nav role="navigation" class="navbar-right-side w-nav-menu"><div class="navigation-items"><div class="menu-list-adaptive"><a href="/ua/exchanger" class="customer-switcher">Personal</a><a href="/ua/for-business/business" class="customer-switcher">Business</a></div></div></nav><div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></div></div><div class="w-layout-blockcontainer conteiner-width-blog w-container"><div class="blog-header"><a href="/ua/blog" class="back-blog w-inline-block"><img src="/cdn/641863621e81371558abea11/658d69ab464ea3ca8aa933ad_Frame_201.svg" loading="lazy" alt="" class="back-button-icon"/><div class="text-block-26">До блогу</div></a><div style="background-image:url(&quot;/cdn/64895abf18b47a0c31b8a51f/68836e6f1876e2727c4f5ad7__D0_A9_D0_BE_20_D1_82_D0_B0_D0_BA_D0_B5_20Layer_202_20_D0_B1_D0_BB_D0_BE_D0_BA_D1_87_D0_B5_D0_B8_CC_86_D0_BD_20_D1_96_20_D0_BD_D0_B0_D0_B2_D1_96_D1_89_D0_BE_20_D0_B2_D1_96_D0_BD_20_D0_BF_D0_BE_D1_82_D1_80_D1_96_D0_B1_D0_B5_D0_BD.webp&quot;)" class="blog-cover"></div></div><div class="blog-content"><div class="article-tittle hide">Що таке Layer 2 блокчейн і навіщо він потрібен</div><h2 class="n-header2">Що таке Layer 2 блокчейн і навіщо він потрібен</h2><div class="article-content w-richtext"><p>Нові розробки, особливо у такій високотехнологічній сфері, як блокчейн-індустрія, з’являються чи не щодня. Вони мають на меті підвищити продуктивність, спростити роботу, чи запропонувати новий функціонал. Layer 2, чи рішення другого рівня вирішують актуальну проблему підвищення пропускної здатності мережі. </p><p>Тож, що це таке і як воно працює? Давайте розберемося із цим докладніше. </p><h3>Ключові висновки</h3><ul role="list"><li>Layer2 — це децентралізована блокчейн-мережа другого рівня, створена на базі основної системи (Layer 1), наприклад мережі Ethereum.</li><li>З одного боку блокчейн другого рівня має такий же рівень безпеки та надійності, що і базова мережа, на якій він створений, а з іншого використання нових технологій суттєво розширює можливості (пропускну здатність чи функціонал) відносно Layer 1.</li><li>Оновлення Ethereum Cancun матиме значний вплив на блокчейн-мережі 2го рівня та відкриє нові можливості для їх використання.</li></ul><h2>Що таке Layer 2</h2><p>Тож, що таке <strong>Layer 2 (L2)</strong> в криптоіндустрії? Це – система, чи технологічне рішення, яке працює на базі і поверх основної децентралізованої мережі (Layer 1). Така надбудова може суттєво підвищувати масштабованість, пропускну здатність та швидкість роботи. Найбільш поширена задача для рішень Layer 2 блокчейн – це розвантаження основної мережі, та пришвидшення обробки транзакцій. </p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/686bac76f83785df3180b028_qk3tguq4op7r00ocghm8.webp" loading="lazy"/></div><figcaption><em>Зображення: Global X ETFs</em></figcaption></figure><p>Це можна порівняти із рухом на автомагістралі. Коли стається затор, щоб розвантажити транспортну артерію, машини звертають на бічні дороги і проходять через дрібні населені пункти, що дозволяє підвищити пропускну здатність дороги.</p><p>Надбудова Layer 2 успадковує від своєї базової мережі її переваги, зокрема надійність і стабільність роботи. При цьому коректність транзакцій на завершальному етапі перевіряє і підтверджує ціла мережа, а не окрема група нод.</p><h3>Навіщо потрібен Рівень 2</h3><p>Головна мета L2-рішень – вирішення трилеми блокчейна. Концепцію трилеми свого часу сформулював розробник Ethreum, Віталій Бутерін: </p><p><em>Блокчейн мережа має три основні характеристики: децентралізація, безпека і масштабованість і одночасно вона може володіти лише двома з них. </em></p><p>Тут на допомогу приходять L2 мережі. Отже блокчейн-системи 2го рівня додають своїй базовій мережі те, чого їй бракує найбільше, найчастіше це масштабованість чи швидкодія. Ця особливість робить другий рівень блокчейн важливою частиною сучасної web3-екосистеми. </p><h2>Як працює Layer 2</h2><p>Завдяки тому, що система Layer 2 обробляє транзакції без використання потужностей основної мережі, навантаження на неї зменшується. Такий ефект досягається за допомогою різноманітних механізмів, що забезпечують безпеку та валідність транзакцій, одночасно підвищуючи ефективність роботи в цілому. Ці рішення використовують криптографічні докази та періодичні обміни даними з блокчейном Layer 1 для підтримки загальної довіри та надійності. Так вони підвищують масштабованість без шкоди для децентралізації.</p><p>Більшість уже наявних на ринку проєктів відрізняються за використаними підходами до розв&#x27;язання поставлених задач, але все ж у них всіх є дещо спільне – всі ці рішення складаються із двох основних компонентів: системи, що обробляє транзакції, і смарт-контракту на базі основного блокчейну, що дозволяє досягати консенсусу верхнього рівня мережі, узгоджуючи його роботу із базовим блокчейном.</p><p>Як це працює у реальному житті? Ось кілька прикладів проєктів у мережах Ethereum та Bitcoin.</p><h3>Приклад для Ethereum (Optimism, Arbitrum)</h3><p>Розглянемо оптимістичні ролапи наприклад, Optimism або Arbitrum, що працюють на базі мережі Ethereum. На першому етапі система Layer 2 (Optimism) поєднує велику кількість транзакцій в один &quot;пакет&quot;. Обробка цього пакета виконується у самому Layer 2, а не в мережі Ethereum. Після обробки Layer 2 відправляє отримані дані в основну мережу Ethereum Layer 1 один раз на кілька хвилин. Так працює ролап. Базова мережа зберігає у себе отримані дані, щоб за необхідності можна було довести, що транзакція коректна.</p><h3>Приклад для Bitcoin (Lightning Network)</h3><p>Layer 2 Lightning Network на базі Bitcoin. Система працює наступним чином: двоє користувачів відкривають платіжний канал, заблокувавши певну кількість біткойнів у транзакції в Layer 1. Далі вони можуть без проблем швидко обмінюватися монетами між собою, не підключаючи до цього основну мережу. Все проходить практично миттєво і майже безкоштовно. У фіналі сторони завершують взаємодію між собою і остаточне значення балансу записується в мережу Layer 1. Це дозволяє легко використовувати BTC для швидких операцій без затримок і з мінімумом комісії.</p><h2>Типи Layer 2 рішень</h2><p>Проєкти Layer 2 можна класифікувати на три категорії: </p><ol role="list"><li>Ролапи (Roll ups), </li><li>Канали стану (state channels), </li><li>Сайдчейни (Side chains). </li></ol><p>Кожен із них має свою унікальну методологію масштабування blockchain та переваги у використанні. Тож давайте розглянемо їх детальніше.</p><h3>Ролапи (оптимістичні та ZK)</h3><p>Найпопулярнішим типом рішень Layer 2 є ролапи. Як ми вже відзначали, ролапи об’єднують транзакції в групи та «згортають» їх в один блок, який записується в основний ланцюг блокчейну, зменшуючи навантаження на мережу та вартість виконання транзакції.</p><p>Існують оптимістичні ролапи та zk-ролапи:</p><ol role="list"><li><strong>Оптимістичні ролапи</strong>: Транзакції, передані до основного блокчейну, вважаються правильними, якщо хтось не оскаржить їх протягом певного періоду часу. Якщо хтось оскаржує транзакцію, він повинен подати доказ шахрайства, щоб оскаржити операцію. Цей метод мінімізує обчислювальні витрати, і проблемна ситуація виникне тоді, коли виникне суперечка.</li><li><strong>Zk rollups (роллапи з нульовим розголошенням):</strong> ZK-роллапи використовують криптографічні докази для підтвердження кректності всіх транзакцій у роллапі. У zk-роллапах кожен блок містить криптографічне підтвердження того, що транзакції в ньому є правильними. Таким чином, не потрібно перевіряти кожну транзакцію з оригінального блокчейну, при цьому досягається хороша безпека та ефективність.</li></ol><h3>Plasma, State Channels</h3><p>Plasma та State Channels – це рішення для масштабування другого рівня для блокчейна Ethereum, розроблені для покращення пропускної здатності мережі та зниження витрат шляхом розвантаження обчислень та/або транзакцій з основного ланцюга. Plasma передбачає створення «дочірніх ланцюгів» або «бічних ланцюгів», які працюють паралельно з основним, тоді як канали стану забезпечують безпечні позаланцюгові транзакції між двома або більше сторонами.</p><p>Plasma створює ієрархічну структуру блокчейнів, з основним ланцюгом (Ethereum) на вершині та кількома «дочірніми ланцюгами», що розгалужуються нижче. Plasma пропонує підвищену масштабованість, обробляючи великий обсяг транзакцій у дочірніх ланцюгах. Існують Plasma MVP, Plasma Cash та інші варіанти, кожен з яких пропонує різні компроміси з точки зору складності та функціональності.</p><h3>Сайдчейни</h3><p>Сайдчейн (sidechain) – це окремий блокчейн, підключений до основної мережі через двосторонній міст. Він дозволяє переміщувати активи між основним блокчейном та сайдчейном, забезпечуючи масштабованість та гнучкість. Сайдчейни працюють незалежно від основного блокчейну, на основі власних правил, алгоритмів, механізмів безпеки та методів отримання винагород.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/686bac8de702965ae0fe416c_p4a9iqmfkao6q11nk1nq.webp" loading="lazy"/></div><figcaption>Зображення: Litefinance</figcaption></figure><p>Головна мета сайдчейнів – збільшити швидкість транзакцій та зменшити їх вартість для основного блокчейну.</p><h3>Рішення Validium</h3><p>Validiums – це рішення для масштабування блокчейну на основі Ethereum, яке дозволяє обробляти транзакції поза блокчейном для збільшення пропускної здатності та зменшення навантаження на мережу. Вони використовують докази з нульовим розголошенням для забезпечення безпеки та автентичності транзакцій.</p><p>Як це працює? Користувачі ініціюють транзакції, які надсилаються до Validium. Далі система обробляє транзакції поза основною мережею, використовуючи спеціальний алгоритм для створення доказів з нульовим розкриттям. Далі ці докази передаються до основного блокчейну Ethereum, де вони перевіряються за допомогою смарт-контракту. Якщо перевірка пройшла успішно, докази визнаються дійсними, а транзакції вважаються завершеними.</p><h2>Переваги використання Layer 2</h2><p>Рішення 2-го рівня в криптовалютах пропонують низку переваг, включаючи нижчі комісії за транзакції, прискорену обробку транзакцій та повну сумісність з існуючими блокчейнами, такими як Ethereum. Вони дозволяють проводити транзакції поза основним ланцюгом, зменшуючи навантаження на мережу та підвищуючи загальну її ефективність.</p><p>Ключові переваги 2-го рівня:</p><ul role="list"><li><strong>Зниження комісій:</strong> Транзакції, що проводяться через 2-й рівень, зазвичай значно дешевші, ніж на основному блокчейні.</li><li><strong>Підвищена швидкість:</strong> Обробка транзакцій на 2-му рівні відбувається швидше, порівняно з повільнішим підтвердженням на основному блокчейні, часто навіть в режимі реального часу.</li><li><strong>Масштабованість</strong>: Layer 2 дозволяє обробляти велику кількість транзакцій без перевантаження основного блокчейну.</li><li><strong>Сумісність з існуючими блокчейнами:</strong> Багато рішень 2-го рівня розроблені для інтеграції з існуючими смарт-контрактами та протоколами, забезпечуючи сумісність без необхідності значних архітектурних змін.</li><li><strong>Покращений користувацький досвід:</strong> Завдяки зниженню комісій та збільшенню швидкості користувачі отримують зручніший та економічно ефективніший досвід використання децентралізованих додатків та сервісів.</li><li><strong>Підвищена безпека:</strong> Хоча транзакції проводяться поза основним блокчейном, безпека забезпечується підключенням до основної мережі, де дані перевіряються та підтверджуються.</li></ul><p>Таким чином, Layer 2 є важливим інструментом для масштабування блокчейн-мереж, покращення їхньої продуктивності та забезпечення більш доступного та зручного досвіду для користувачів.</p><h2>Недоліки і ризики Layer 2</h2><p>Безперечно, Layer 2 рішення дають значні переваги, але вони також несуть певні ризики та мають недоліки. Основні недоліки включають складність у впровадженні та обслуговуванні, фрагментацію ліквідності та потенційну залежність від базового рівня. Ризики включають потенційну централізацію, проблеми безпеки та вразливості в смарт-контрактах.</p><p><strong>Недоліки</strong></p><ul role="list"><li><strong><em>Складність</em></strong>: Розробка та впровадження рішень Layer 2 часто є складною задачею, що вимагає значних технічних знань та ресурсів.</li><li><strong><em>Фрагментація ліквідності</em></strong>: Розподіл ліквідності між кількома рішеннями Layer 2 може ускладнити загальний користувацький досвід та збільшити ризики для протоколів нижчого рівня.</li><li><strong><em>Залежність від базового блокчейну (рівень 1): </em></strong>Хоча рішення Layer 2 розроблені для зменшення навантаження на базову мережу, вони залежать від її безпеки та стабільності. Проблеми на Layer 1 будуть впливати також і на Layer 2.</li><li><strong><em>Складність перевірки</em></strong>: Деякі рішення Layer 2, такі як zk-rollups, може бути важко перевірити, що ускладнює їх захист та питання довіри.</li><li><strong><em>Централізація</em></strong>: Деякі рішення другого рівня можуть бути більш централізованими, на відміну від базового блокчейна, обмежуючи децентралізацію та створюючи нові точки відмови.</li></ul><p><strong>Ризики</strong></p><ul role="list"><li><strong><em>Ризики безпеки</em></strong>: Хоча рішення Layer 2 можуть покращити масштабованість, вони також можуть створювати нові вразливості для смарт-контрактів та протоколів.</li><li><strong><em>Ризики смарт-контрактів:</em></strong> Смарт-контракти, що використовуються на 2-му рівні, можуть містити помилки або вразливості, які можуть бути використані зловмисниками.</li><li><strong><em>Ризики ліквідності:</em></strong> Розподіл ліквідності між різними рішеннями другого рівня може призвести до проблем з ліквідністю на окремих платформах, що негативно вплине на користувачів та протоколи.</li></ul><p>Рішення 2 рівня є важливим інструментом для масштабування блокчейнів, але важливо враховувати їхні недоліки та ризики. Впровадження цих рішень має проходити обережно та з враховуванням потреб та специфіки кожного блокчейн-проекту.</p><h2>Layer 1 vs Layer 2: у чому різниця?</h2><p>Основна різниця між блокчейнами Layer 1 і Layer 2 полягає в їх ролі та функціях. Layer 1 (або базовий блокчейн) забезпечує основну інфраструктуру, безпеку та децентралізацію, тоді як Layer 2 (або мережа другого рівня) будується поверх Layer 1 для підвищення масштабованості та швидкості транзакцій. </p><p>Ось порівняльна таблиця їхніх базових властивостей:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th>Параметр<br></th>
+            <th>Layer 1<br></th>
+            <th>Layer 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Рівень<br></td>
+            <td>Базовий </td>
+            <td>Надбудова</td>
+        </tr>
+        <tr>
+            <td>Пропускна здатність<br></td>
+            <td>Низька </td>
+            <td>Вища</td>
+        </tr>
+        <tr>
+            <td>Комісії<br></td>
+            <td>Вищі (особливо при завантаженості мережі)</td>
+            <td>Нижчі</td>
+        </tr>
+        <tr>
+            <td>Безпека<br></td>
+            <td>Висока</td>
+            <td>Залежить від Layer 1</td>
+        </tr>
+        <tr>
+            <td>Масштабування<br></td>
+            <td>Важке</td>
+            <td>Легке</td>
+        </tr>
+    </tbody>
+</table></div><p>Таким чином, можна сказати, що Layer 1 – це базова мережа, де офіційно підтверджуються всі транзакції, вона працює повільно, а Layer 2 – це допоміжна надбудова, дозволяє здійснювати проводити швидкі транзакції в Ethereum і згодом записувати їх у основну мережу.</p><h2>Реальні приклади Layer 2-проєктів</h2><p>Ось кілька прикладів реалізованих і успішно діючих проектів:</p><ul role="list"><li><strong>Polygon</strong>. Мережа сумісних з ETHEREUM реєстрів, здатних до дешевих та миттєвих переказів. Polygon дозволяє здійснювати високошвидкісні транзакції із низькими комісіями, що забезпечує повнофункціональні децентралізовані додатки та смарт-контракти. Polygon використовує сайдчейни та ролапи для підвищення продуктивності основної мережі, а також підтримує токени ERC-20.</li><li><strong>Arbitrum</strong>. Проєкт розгортає оптимістичні ролапи для збільшення пропускної здатності та зниження комісій. Це дозволяє здійснювати швидкі та дешеві транзакції, зберігаючи при цьому безпеку та децентралізацію батьківського блокчейну. Arbitrum знаходиться на стадії зародження та потенційно просуватиме децентралізовані додатки з високопродуктивними характеристиками.</li></ul><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="/cdn/64895abf18b47a0c31b8a51f/686baca086a19a9a00193296_ckph9mgrchdgzmcvwaao.webp" loading="lazy"/></div><figcaption>Зображення: BitCub Support</figcaption></figure><ul role="list"><li><strong>Base</strong> використовує комбінацію технологій, що підвищує загальну продуктивність мережі, дозволяючи розробляти та використовувати децентралізовані додатки. Base має зосередитися на створенні швидших та дешевших рішень для користувачів та розробників.</li></ul><h2>Перспективи розвитку</h2><p>У міру розвитку Web3, Layer 2 займе його місце як основна платформа для різноманітних рішень. Ethereum не може самостійно обробляти мільйони користувачів – без другого рівня це неможливо. Тож очікується, що:</p><ul role="list"><li>скоро з’являться стандарти для взаємодії Layer 2;</li><li>технології ZK використовуватимуться в активній інфраструктурі;</li><li>час на виведення активів суттєво зменшиться;</li><li>відбудеться інтеграція Layer 2 в гаманці, API, біржі.</li></ul><p>Розробники Ethereum свідомо рухаються в напрямку «модульної архітектури», де перший рівень забезпечує безпеку, а другий рівень – масштабованість.</p><h3>Dencun та інтеграція Ethereum</h3><p>Оновлення Dencun для Ethereum – це велике мережеве оновлення, яке включатиме зміни, що раніше були заплановані для хардфорків Cancun та Deneb. Основною метою Dencun є покращення масштабованості та витрат на транзакції в Ethereum.</p><p>Оновлення Dencun дозволить користувачам Ethereum обробляти транзакції дешевше та швидше, а мережа зможе краще масштабуватися. Dencun – це важливий крок на шляху до того, щоб зробити Ethereum більш децентралізованим, масштабованим та доступним блокчейном.</p><h2>Висновок</h2><p>Layer 2 рішення суттєво впливає на масштабування блокчейну, щоб запропонувати швидкі та недорогі транзакції, тим самим роблячи його зручним для використання широкими масами. Layer 2 уже показав свою ефективність у таких проектах, як Lightning Network та Rollups, але ці рішення можуть призвести до більшої централізації та вразливостей безпеки. /хнє використання не обходиться без додаткових зусиль, але воно дозволяє швидко впроваджувати інновації та підвищує простоту використання блокчейну, що дозволяє користувачам та розробникам легше впроваджувати децентралізовані системи та продукти.</p></div></div></div><div class="footer"><div class="w-layout-blockcontainer block-container w-container"><div class="footerbusinesscontent"><div class="top-row"><div class="footer-logo-wrapper"><img src="/cdn/641863621e81371558abea11/65fb0f6a4fc28c826816028d_Layer_7.svg" loading="lazy" alt="" class="image-5"/></div><div class="bottom-row-rights"><div class="text-block-6">© 2025. Всі права захищені</div></div></div><div class="links-personal"><div class="footerlinksblock"><a href="#" class="new-footer-link">Wallet</a><a href="/ua/exchanger" class="new-footer-link">Exchanger</a><a href="/ua/for-business/business" class="new-footer-link">Business</a><a href="#" class="link hide">Terms</a><a href="#" class="link hide">Privacy</a><a href="/ua/blog" class="new-footer-link">Blog</a><a href="#" class="link disabled hide">Support</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641863621e81371558abea11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.0be0ff630adfe789.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.6d502c0af9c01e12.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.eeff05e8.b9d868b31419297d.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTMCWKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Проверяем наличие всех UTM меток
+    const utmId = urlParams.get('utm_id');
+    const utmTerm = urlParams.get('utm_term');
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmContent = urlParams.get('utm_content');
+    const utmCampaign = urlParams.get('utm_campaign');
+
+    // Функция для добавления UTM меток к каждой ссылке (включая внешние)
+    function addUtmToLinks() {
+      const allLinks = document.querySelectorAll('a'); // Все ссылки
+
+      allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        // Пропускаем якорные ссылки (те, которые ведут только на эту же страницу)
+        if (href && !href.includes('#')) {
+          let utmParamsArray = [];
+
+          // Добавляем только не пустые UTM параметры
+          if (utmId) {
+            utmParamsArray.push(`utm_id=${utmId}`);
+          }
+          if (utmTerm) {
+            utmParamsArray.push(`utm_term=${utmTerm}`);
+          }
+          if (utmSource) {
+            utmParamsArray.push(`utm_source=${utmSource}`);
+          }
+          if (utmMedium) {
+            utmParamsArray.push(`utm_medium=${utmMedium}`);
+          }
+          if (utmContent) {
+            utmParamsArray.push(`utm_content=${utmContent}`);
+          }
+          if (utmCampaign) {
+            utmParamsArray.push(`utm_campaign=${utmCampaign}`);
+          }
+
+          // Добавляем параметры, только если есть хотя бы один UTM параметр
+          if (utmParamsArray.length > 0) {
+            const separator = href.includes('?') ? '&' : '?';
+            const utmParams = utmParamsArray.join('&');
+
+            // Добавляем UTM параметры к ссылке
+            link.setAttribute('href', href + separator + utmParams);
+          }
+        }
+      });
+    }
+
+    // Добавляем UTM метки к ссылкам на текущей странице
+    addUtmToLinks();
+  });
+</script>
+
+<!-- Smooth scroll start -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+<!-- Smooth scroll end -->
+
+
+
+<!-- Lazy loaging for video -->
+<script
+     
+  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"
+></script>
+
+<!-- header animation -->
+<script src="https://cdn.jsdelivr.net/gh/waveshape-co/word-play@1.0.0/script.min.js"></script>
+
+<style>
+  .n-heder-line-one:not(:has(.ws__span)),
+  .n-heder-line-two:not(:has(.ws__span)){opacity:0}
+  
+  body.body-6:not(:has(.n-page_loading[style*='display: none'])) {
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+  
+ </style>
+
+
+<!-- +++ -->
+ <script>
+function smoothscroll() {
+    // Smooth scrolling
+    const isHome = document.querySelectorAll('.body-6').length;
+  	if (!isHome){return;}
+  	const lenis = new Lenis({ resize: true });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    // Grab all elements that have a "data-target" attribute
+    const scrollButtons = document.querySelectorAll('[data-target]');
+
+    // For each element, listen to a "click" event
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // get the DOM element by the ID (data-target value)
+            const target = button.dataset.target;
+            const $el = document.getElementById(target.replace('#', ''));
+
+            // Use lenis.scrollTo() to scroll the page to the right element
+            lenis.scrollTo($el, {
+                offset: 0,
+                immediate: false,
+                duration: 1,
+                easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2) // https://easings.net
+            });
+        });
+    });
+
+    requestAnimationFrame(raf);
+}
+
+function init() {
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  myLazyLoad.update();
+    smoothscroll();
+    new WordPlay({
+        className: 'n-heder-line-one', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+
+    new WordPlay({
+        className: 'n-heder-line-two', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+    // document.getElementById('n-video-bg').play();
+}
+
+function loader() {
+    // Отримуємо посилання на елемент
+    const target = document.querySelector('.n-page_loading');
+
+    // Функція, яка перевіряє, чи display: none
+    function isHidden(element) {
+        return window.getComputedStyle(element).display === 'none';
+    }
+
+    if (target) {
+        // Створюємо обсервер
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                    if (isHidden(target)) {
+                        console.log('Елемент став display: none');
+                        init();
+                        // Зупиняємо обсервер після спрацювання
+                        observer.disconnect();
+                        // Можна викликати додаткову логіку тут
+                    }
+                }
+            }
+        });
+
+        // Налаштування обсерверу: слідкуємо за змінами атрибутів
+        observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    } else {
+        init();
+    }
+}
+window.Webflow.push(loader);
+  </script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header2", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header3", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+<!-- Headers animation End -->
+
+
+
+
+
+<!-- Button text animation start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+<script>
+const letterWrapClass = 'n-letter-wrap';
+const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+[...letterWrapElements].forEach(el => {
+  letterWrap(el, letterWrapClass);
+  letterAnimation(el, letterWrapClass);
+});
+function letterWrap(el, cls) {
+  const words = el.textContent.split(' ');
+  const letters = []; 
+  cls = cls || 'n-letter-wrap'  
+  words.forEach(word => {
+    let html = '';
+    for (var letter in word) {
+      html += `
+        <span class="${cls}__char">
+          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+            ${word[letter]}
+          </span>
+        </span>
+      `;
+    };   
+    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+    letters.push(wrappedWords);
+  });
+  return el.innerHTML = letters.join(' ');
+}
+function letterAnimation(el, cls) {
+  const tl = new TimelineMax({ paused: true });
+  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.025; 
+  el.animation = tl.staggerTo(characters, duration, {
+    y: '-100%',
+    delay: 0.1,
+    ease: Power2.easeOut
+  }, stagger);      
+  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+  el.addEventListener('mouseout', (event) => el.animation.pause(0)());
+}
+</script>
+<!-- Button text animation end --></body></html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html><!-- Last Published: Thu Apr 23 2026 13:48:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="kolo.xyz" data-wf-page="64918aa7c1eb2dea6938a0b3" data-wf-site="641863621e81371558abea11" lang="uk" data-wf-collection="64918aa1c1eb2dea69389a9e" data-wf-item-slug="crypto-card-fees-interchange-fx-spread"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo</title><link rel="alternate" hrefLang="x-default" href="https://kolo.xyz/blog/crypto-card-fees-interchange-fx-spread"/><link rel="alternate" hrefLang="en-US" href="https://kolo.xyz/blog/crypto-card-fees-interchange-fx-spread"/><link rel="alternate" hrefLang="uk" href="https://kolo.xyz/ua/blog/crypto-card-fees-interchange-fx-spread"/><link rel="alternate" hrefLang="ru" href="https://kolo.xyz/ru/blog/crypto-card-fees-interchange-fx-spread"/><meta content="The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo" property="og:title"/><meta content="The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained ∙ Kolo" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="/cdn/641863621e81371558abea11/css/777ex.shared.97839c652.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/641863621e81371558abea11/65fbc4e9777e6eaf1633f75a_KoloFavicon.png" rel="apple-touch-icon"/><link href="https://kolo.xyz/ua/blog/crypto-card-fees-interchange-fx-spread" rel="canonical"/><!-- Auto hreflang + canonical -->
+<script>
+(function () {
+  var BASE = 'https://kolo.xyz';
+  var path = window.location.pathname;
+
+  // Normalize: strip trailing slash except root
+  var p = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+  var enPath, locale;
+
+  if (/^\/ru(\/|$)/.test(p)) {
+    locale = 'ru';
+    enPath = p.replace(/^\/ru/, '') || '/';
+  } else if (/^\/ua(\/|$)/.test(p)) {
+    locale = 'ua';
+    enPath = p.replace(/^\/ua/, '') || '/';
+  } else {
+    locale = 'en';
+    enPath = p;
+  }
+
+  var ruPath = '/ru' + (enPath === '/' ? '' : enPath);
+  var uaPath = '/ua' + (enPath === '/' ? '' : enPath);
+
+  // Remove wrong canonical Webflow may have added
+  var existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) existingCanonical.parentNode.removeChild(existingCanonical);
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  // Hreflang tags
+  var hreflangs = [
+    { lang: 'en',        href: BASE + enPath },
+    { lang: 'ru',        href: BASE + ruPath },
+    { lang: 'uk',        href: BASE + uaPath },
+    { lang: 'x-default', href: BASE + enPath }
+  ];
+
+  hreflangs.forEach(function (item) {
+    var link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = item.lang;
+    link.href = item.href;
+    head.appendChild(link);
+  });
+
+  // Self-referencing canonical
+  var canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = BASE + p;
+  head.appendChild(canonical);
+})();
+<\/script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VWPZZ8G');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZ815EGP84" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript" type="fs-consent"></script>
+
+<script type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-MZ815EGP84');</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Kolo Crypto Visa Card",
+  "description": "Crypto Visa debit card with BTC cashback. Spend in 60+ countries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Kolo",
+    "url": "https://kolo.xyz"
+  },
+  "url": "https://kolo.xyz",
+  "category": "Crypto Debit Card",
+  "areaServed": ["Europe", "United Kingdom", "UAE", "CIS"],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceType": "Mobile App, Web, Telegram"
+  }
+}
+</script>
+
+
+
+<!-- For smooth scroll -->
+<!--
+<style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+</style>
+<style>
+.loading {
+  display: flex;
+}
+</style>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="/cdn/641863621e81371558abea11_2F6544eda5f000985a163a8687_2F6877797c65a77ee100fcd989_2Ffinsweetcomponentsconfig-1.0.2.js" type="module" async="" siteId="641863621e81371558abea11" finsweet="components"></script></head><body class="body-personal"><div class="navigation"><div class="w-layout-blockcontainer conteiner-width w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-business w-nav"><div class="navbar-business-content"><div class="navbar-wrapper"><div class="logo-header"><a href="/ua" class="combine-nav-logo-link w-inline-block"><img src="/cdn/641863621e81371558abea11/65f83b83a7dc6825efaae8e3_logo_205.svg" loading="lazy" alt="" class="image-11"/></a></div><nav role="navigation" class="navbar-right-side w-nav-menu"><div class="navigation-items"><div class="menu-list-adaptive"><a href="/ua/exchanger" class="customer-switcher">Personal</a><a href="/ua/for-business/business" class="customer-switcher">Business</a></div></div></nav><div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></div></div><div class="w-layout-blockcontainer conteiner-width-blog w-container"><div class="blog-header"><a href="/ua/blog" class="back-blog w-inline-block"><img src="/cdn/641863621e81371558abea11/658d69ab464ea3ca8aa933ad_Frame_201.svg" loading="lazy" alt="" class="back-button-icon"/><div class="text-block-26">До блогу</div></a><div style="background-image:url(&quot;/cdn/64895abf18b47a0c31b8a51f/68f76d4821c9fe6b5f074f79_t5d1zewl3m55v6dnaf9k.webp&quot;)" class="blog-cover"></div></div><div class="blog-content"><div class="article-tittle hide">The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained</div><h2 class="n-header2">The Fee Stack of a Crypto Card Swipe: Interchange, FX, and Spread Explained</h2><div class="article-content w-richtext"><h1>Crypto Card Fees: Interchange, FX &amp; Spread Guide</h1><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76ca06f4dfdd9d426d558_ldje3ievtpdfkoe1e2if.webp"/></div><figcaption><em>Image credit</em>: <em>GoDaddy Blog</em></figcaption></figure><p>‍</p><p>Crypto card fees, or how do they charge you? Explore all about fees, tips on picking a proper card and the top offers 2025.</p><p>At the forefront of any crypto card lies the challenge of enabling the use of digital assets for payments. This involves the global component, namely, countries and locations that accept Visa or Mastercard. The <strong>2024</strong> blockchain cards market<a href="https://www.verifiedmarketreports.com/product/crypto-credit-card-market"> reached</a> a value of <strong>$1.6 billion</strong> and is expected to continue growing.</p><p>Today&#x27;s guide aims to explain the nature of crypto card fees, like interchange, FX, and conversion spreads. What are they? What&#x27;s the real cost behind crypto payments? <strong><em>Belt up and let&#x27;s go!</em></strong></p><h3>Key Takeaways</h3><p>Here are some crypto card fee withdrawals relevant for 2025:</p><ul role="list"><li>Interchange costs make up <strong>70–90%</strong> of card fees</li><li>Global crypto payment market hit <strong>$1.6B </strong>by 2024</li><li>FX fees average<strong> 0.5–3%</strong> on cross-border payments</li><li>Conversion spreads range from <strong>0.5–2.5%</strong> per swap</li><li>Visa and Mastercard control global card networks</li><li>ATM withdrawals add <strong>$2–5</strong> or <strong>1–3% </strong>fees</li><li>Crypto volatility can double effective conversion costs</li></ul><p>Now, when you&#x27;ve learned the ropes and seen the trend numbers, it&#x27;s time to proceed further. Let&#x27;s explore how crypto debit card costs form and what&#x27;s behind most people&#x27;s eyes.</p><h2>What Are Crypto Card Fees?</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76cb1d9e9e70b922ef41a_asie3u52izzmuxwhnakd.webp"/></div><figcaption><em>Image credit</em>: <em>Zoho</em></figcaption></figure><p>‍</p><p>In plain English? These are the fees users pay for using a crypto debit or credit card to purchase goods or services. It&#x27;s important to note that the final fee amount will always vary depending on the provider, card type, and location of use.</p><p>If we remove all the marketing noise, payment providers charge you for:</p><ul role="list"><li>FX fees on cross-border payments</li><li>Conversion spread on crypto-to-fiat swaps</li><li>ATM withdrawal charges for cash access</li><li>Monthly or annual subscription fees</li><li>Regulatory and compliance costs</li><li>Hidden fees, like inactivity fees</li><li>Rewards trade-offs via cashback spreads</li></ul><p><strong>Key takeaway</strong>: Yes, using cryptocurrency cards comes at a cost. Fees include standard payment fees, as well as crypto-specific costs. Understanding the fee structure will help you choose the most optimal payment solution, as well as a provider with a reasonable charging policy.</p><h2>The Three-Layer Fee Structure</h2><p>Every transaction with a virtual card involves three primary levels of crypto payment fees. Understanding how these levels are formed will help you define the actual cost of each swipe or tap in the real world.</p><h3>Interchange Fees</h3><p>These are charges that payment services pay to card issuers for the use of their cards. Typically, this type of fee makes up the<a href="https://en.wikipedia.org/wiki/Interchange_fee"> majority</a> (<strong>70-90%</strong>) of all transaction costs and has the greatest impact on the final price for consumers.</p><p>Here is the average interchange fee for the US and EU countries:</p><ul role="list"><li><strong>0.2%</strong><a href="https://stripe.com/resources/more/interchange-fees-101-what-they-are-how-they-work-and-how-to-cut-costs"> average</a> debit card interchange in the EU</li><li><strong>0.3% </strong>average credit card interchange in the EU</li><li><strong>1.5–3.5%</strong> interchange range in the US</li></ul><p>No matter how we like it, the charges are almost inevitable. Their final amount always varies by region, card type, and payment system.</p><h3>FX Fees Crypto Cards</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76ccf1379ade8d17b8ee1_w1ynovebs7btiturz8sd.webp"/></div><figcaption><em>Image credit</em>: <em>Aspire</em></figcaption></figure><p>‍</p><p>These are fees charged for payments made in a foreign currency or abroad. Most card providers add them to their conversion fees.</p><p>Ready to crunch the numbers? Here you go:</p><ul role="list"><li>Typical FX fee range: <strong>0.5–3%</strong></li><li>Fintech providers: <strong>0%–1%</strong></li><li>Weekend markups: <strong>0.5–1%</strong></li><li>The average markup at US banks: <strong>3–5%</strong></li><li>Every<strong> $1,000</strong> spent at <strong>3%</strong> = <strong>$30</strong> lost</li></ul><p>Understanding this fee metric will help you avoid icky surprises while enjoying traveling or cross-border shopping.</p><p>Crypto Conversion Spread</p><p>First time hearing the term &quot;<strong><em>bid-ask spread</em></strong>?&quot; No worries, it&#x27;s a no-brainer. Picture that as a difference between the actual price of a crypto asset and the rate set by the card issuer.</p><p>Some &quot;<em>smart</em>&quot; providers add hidden costs to every transaction, which is something to consider when choosing a card. Here are a few true-life stats to follow:</p><ul role="list"><li><strong>0.5–2.5%</strong> is a common crypto-to-fiat spread</li><li><strong>$25</strong> cost on <strong>$1,000</strong> spent at<strong> 2.5%</strong></li><li>Coinbase adds a <strong>2.49%</strong> liquidation fee in the US</li><li>Wirex charges a <strong>1%</strong> top-up fee</li><li>Bybit&#x27;s conversion fee is around <strong>0.9%</strong></li></ul><p><strong>Key takeaway</strong>: Interchange, FX, and conversion spreads are key elements that shape the real cost of using crypto cards. Focus on these metrics to calculate the real value that extends beyond marketing, such as cash back.</p><h2>Crypto Card Transaction Flow: Who Gets Paid When You Swipe</h2><p>Each transaction is subject to a chain of actions called processing. Understanding this procedure and its components enables us to determine the crypto payment provider&#x27;s fee structure and identify who benefits from each stage of the process. </p><h3>Payment Network Processing</h3><p>Most modern-day merchant accounts use Visa and Mastercard routes for each transaction. One doesn&#x27;t have to be a rocket scientist to know that they charge users to cover their expenses and infrastructure, security, and fraud prevention.</p><p>And here&#x27;s a mind-blowing trivia:</p><ul role="list"><li>Visa processed <strong>$14.5T</strong> transactions in 2022</li><li>Mastercard volume reached <strong>$8.2T</strong> in 2022</li><li>Card networks levy <strong>0.13–0.15%</strong> fees</li><li><strong>100M+</strong> global merchants accept cards</li><li>Contactless usage surged <strong>30%</strong> annually</li></ul><p>‍</p><p><strong><em>&quot;Today, the primary challenges networks face are about ensuring fast, secure, and global transaction processing.&quot;</em></strong></p><h3>Card Issuer Role in Crypto Payment Fees</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76ce21379ade8d17ba138_pfrxph2z8n6yn0bp5kul.webp"/></div><figcaption><em>Image credit</em>: <em>Aspire</em></figcaption></figure><p>‍</p><p>It&#x27;s old news that the bulk of card issuers are banks or fintech companies. These parties generate revenue through interchange, interest, and sometimes subscription fees, among others.</p><p>Their stats speak volumes:</p><ul role="list"><li>Interchange share averages 1–2% per swipe in the US</li><li>Issuers funded $35B in cashback rewards in 2022</li><li>Annual fees range $0–$500 on premium cards</li><li>ATM withdrawal fees add $2–$5 per transaction</li><li>Staking benefits offset some issuer costs</li></ul><p>In 2025, issuers will strive to strike a balance between risk management, customer perks, and revenue size to suit their appetite.</p><h3>Crypto Exchange Conversion Process</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76cf28b3aac680563dd52_m3jzjpuatwgfggqwxb7c.webp"/></div><figcaption><em>Image credit</em>: <em>Financefeeds</em></figcaption></figure><p>‍</p><p>The currency exchange process involves converting your crypto into local fiat currency, allowing card payments to be processed at the point of sale.</p><p>Here&#x27;s how the entire workflow looks under the hood:</p><ul role="list"><li><strong>Step 1</strong>: Card request reaches the conversion engine</li><li><strong>Step 2</strong>: The system verifies wallet balance availability</li><li><strong>Step 3</strong>: Crypto sold at market or spread rate</li><li><strong>Step 4</strong>: Fiat value assigned to a payment network</li><li><strong>Step 5</strong>: A network sends funds to the acquiring bank</li><li><strong>Step 6</strong>: Merchant receives fiat minus transaction fees</li></ul><p>The crypto exchange process triggers costs related to liquidation and bid-ask spreads. This is where providers make a profit by applying conversion spreads and extra trading fees.</p><h3>Merchant Settlement and Costs</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76cffd2b744a6cc845292_jrnb8czmh3fr4gkbpeat.webp"/></div><figcaption><em>Image credit</em>: <em>Legalkitz</em></figcaption></figure><p>‍</p><p>Merchants also adjust their timing by receiving funds net of all fees and expenses. All settlements occur within one or two business days, although the exact timeframe always depends on the acquiring banks. </p><p>Here are the core details on merchant settlement:</p><ul role="list"><li>Merchants lose 2-4% of revenue to fees</li><li>Settlement delays add cash flow pressure</li><li>Acquirer banks keep a 0.1–0.3% processing cut</li><li>Cross-border sales cost 3–5% more in fees</li><li>Chargebacks cost $20–$100 each case</li></ul><p><strong>Key takeaway</strong>: Each transaction serves as fuel for payment networks, card issuers, exchanges, and acquiring banks. This flow forms the end-to-end crypto fees that the user sees and covers after each purchase.</p><h2>Real-World Crypto Card Fee Calculations</h2><p>The cost of using crypto payment solutions varies depending on the location where you make payments. Real-world cases provide an excellent opportunity to study how exchange, foreign exchange, and spreads interact in practice.</p><h3>Domestic Crypto Spending Fees</h3><p>By converting crypto into local currency, you won&#x27;t have to pay FX charges, but spreads and interchange fees still apply. Just check what a $100 local purchase might look like.</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Component</b></th>
+            <th><b>Fee %</b></th>
+            <th><b>Cost on $100:</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Interchange fee</td>
+            <td>1.8%</td>
+            <td>$1.80</td>
+        </tr>
+        <tr>
+            <td>Network assessment</td>
+            <td>0.13%</td>
+            <td>$0.13</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Crypto-to-fiat conversion</p>
+            </td>
+            <td>1%</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>Total fees</td>
+            <td>~2.9%</td>
+            <td>$2.93</td>
+        </tr>
+    </tbody></div><p>‍</p><p>Generally, local purchases incur a fee of up to 3% for each transaction.</p><h3>International Crypto Card Transaction</h3><p>International purchases are marked by extra crypto card fees, including FX commissions and higher conversion spreads. Here&#x27;s what a $500 cross-border purchase looks like, considering the payment provider fees and beyond:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Component</b></th>
+            <th><b>Fee %</b></th>
+            <th><b>Cost on $500:</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Interchange fee</td>
+            <td>2%</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Network assessment</td>
+            <td>0.15%</td>
+            <td>$0.75</td>
+        </tr>
+        <tr>
+            <td>
+                <p>FX fee (average)</p>
+            </td>
+            <td>3%</td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td>Conversion spread</td>
+            <td>1.5%</td>
+            <td>$7.50</td>
+        </tr>
+        <tr>
+            <td>Total fees</td>
+            <td>~6.7%</td>
+            <td>$33.25</td>
+        </tr>
+    </tbody></div><p>‍</p><p>In some cases, international purchases can double the cost of using a virtual card compared to local transactions.</p><h3>Volatile Market Impact on Conversion Fees</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76d118b3aac680563f04d_stketibcqaj8advpnefh.webp"/></div><figcaption><em>Image credit</em>: <em>Masterthecrypto</em></figcaption></figure><p>‍</p><p>The crypto market and volatility have practically become synonymous these days. Market fluctuations increase the cost of converting digital assets into fiat currencies. Spreads are growing more, while liquidation fees also don&#x27;t lag behind:</p><ul role="list"><li>Spreads widen from 1% to 3% during peaks</li><li>$1,000 spent adds $20 extra during swings</li><li>Bid-ask spread doubles in 24-hour volatility</li><li>Exchange slippage costs increase by 0.5–1%</li><li>Liquidation fees rise when liquidity thins</li></ul><p><strong>Key takeaway</strong>: Local transactions typically don&#x27;t exceed 3%. Meanwhile, crypto card provider fees rates for cross-border purchases and market volatility can increase fees to as high as 8%. The time and location of card use will always have the most significant impact on the final cost of using this contactless payment solution.</p><h2>Best Crypto Card 2025: Fee Comparison Analysis</h2><p>Fees for using virtual cards vary from provider to provider. This fact makes comparing market operators extremely important. Additionally, this data will reveal the actual cost of each card in 2025. </p><h3>Crypto Card Provider Fees Breakdown</h3><p>Each blockchain payment card provider uses its own fee structure, which includes, but is not limited to, interchange, FX, spreads, and monthly fees. Here&#x27;s a side-by-side look at their current offerings:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Provider</b></th>
+            <th><b>Interchange</b></th>
+            <th><b>FX Fees</b></th>
+            <th><b>Conversion Spread</b></th>
+            <th><b>Monthly Fees</b></th>
+            <th><b>ATM Withdrawal</b></th>
+            <th><b>Cashback Rewards</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Crypto.com</td>
+            <td>1.5%</td>
+            <td>2%</td>
+            <td>1%</td>
+            <td>$0</td>
+            <td>$2.50</td>
+            <td>Up to 5%</td>
+        </tr>
+        <tr>
+            <td>Kolo card</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>$0</td>
+            <td>-</td>
+            <td>100%</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Binance card</p>
+            </td>
+            <td>1.8%</td>
+            <td>2.5%</td>
+            <td>1%</td>
+            <td>$0</td>
+            <td>$3</td>
+            <td>Up to 4%</td>
+        </tr>
+        <tr>
+            <td>Coinbase card</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>0.5%</td>
+            <td>$0</td>
+            <td>$3</td>
+            <td>Up to 4%</td>
+        </tr>
+        <tr>
+            <td>Wirex</td>
+            <td>1.7%</td>
+            <td>2%</td>
+            <td>1%</td>
+            <td>$1.50</td>
+            <td>$2.50</td>
+            <td>Up to 2%</td>
+        </tr>
+        <tr>
+            <td>WhiteBIT Nova</td>
+            <td>1.6%</td>
+            <td>2%</td>
+            <td>1%</td>
+            <td>$0</td>
+            <td>$2</td>
+            <td>Up to 10%</td>
+        </tr>
+    </tbody></div><p>‍</p><p>Now you understand that even small fees, added up over time, can amount to a round amount with frequent use.</p><h3>Identifying Hidden Crypto Card Fees</h3><p>It&#x27;s unlikely you&#x27;ll find anyone who doesn&#x27;t feel overwhelmed by the so-called hidden fees. These costs are typically listed in the fine print of the terms of use. Here are some valuable tips on how to spot hidden crypto card fees and avoid costly surprises:</p><ul role="list"><li>Look for weekend FX markups above 1%</li><li>Check inactivity costs after 6–12 months</li><li>Watch for tiered staking requirements rising annually</li><li>Confirm ATM fee waivers have monthly caps</li><li>Read the terms on cashback rewards in tokens</li><li>Check cross-border fees in unsupported regions</li><li>Track compliance costs passed directly to users</li></ul><p>These costs can significantly increase the actual cost of a transaction, especially in the long run.</p><h2>Fees Optimization Strategies</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76d246810cc76b3163841_jejnnrk633bxufzbbpjx.webp"/></div><figcaption><em>Image credit</em>: <em>Istockphoto</em></figcaption></figure><p>‍</p><p>Using cards in everyday life incurs further costs in the form of fees. However, proper planning can minimize these fees. Such strategies help users reduce expenses, expand cashback, and enhance overall usability. </p><h3>Choosing Low-Fee Crypto Cards</h3><p>Struggling to pick up your card? Here are the tips to check in the right column:</p><ul role="list"><li>Compare FX rates during weekdays vs weekends</li><li>Check ATM withdrawal limits and monthly caps</li><li>Pick cards with flat or zero monthly fees</li><li>Verify cashback rewards in spendable currencies</li><li>Choose issuers offering fee transparency dashboards</li></ul><p>Pace yourself while picking the crypto payment card. Besides, it&#x27;s advisable to review all commissions and terms of use before selecting your match.</p><h3>Market Timing for Lower Crypto Payment Fees</h3><p>Timing purchases is a great way to lower the spread and cut FX costs, no matter how you slice it. Volatility and network load are the factors that directly influence the fee size. Use these time-tested tips to turn a daily purchase into a smart spending:</p><ol role="list"><li><strong>Transact</strong> during off-peak global trading hours</li><li><strong>Avoid</strong> high-volatility events like Fed meetings</li><li><strong>Batch</strong> purchases to reduce repeated conversions</li><li><strong>Use</strong> stablecoins for lower spread exposure</li><li><strong>Check</strong> gas trackers before large transfers</li></ol><p>It doesn&#x27;t mean that your morning coffee one-tap purchase should be moved from pick hours. It&#x27;s more about buying some costly things.</p><h3>Alternative Payment Methods vs Crypto Cards</h3><p>Believe it or not, but some good-old fiat payments may appear to be more cost-effective. Let&#x27;s compare crypto and traditional payments and their best use-cases:</p><ul role="list"><li>Use bank transfers for large settlements</li><li>Leverage mobile wallets for micro-transactions</li><li>Adopt stablecoins for cross-border low-cost payments</li><li>Select ACH or SEPA for recurring bills</li><li>Reserve cards for cashback-heavy retail purchases</li></ul><p><strong>Key takeaway</strong>: Start by picking the right card if you are about to optimize card interchange rate or any other type of fees. Low commission payments are achieved through blending the right card, smart timing, and alternative payment methods to optimize results.</p><h2>Risks &amp; Limitations of Crypto Card Usage</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76d344ece9b9994cbaf09_vonwzjdmejiek8rjymuy.webp"/></div><figcaption><em>Image credit</em>: <em>Marketresearchintellect</em></figcaption></figure><p>‍</p><p>Today, a few people question the edges of crypto payments. Yet, every coin has a flip side. That&#x27;s why identifying the risks also matters here. Check the core limitations that may come your way:</p><ul role="list"><li>Exposure to the crypto price market volatility</li><li>Regulatory fees vary across jurisdictions</li><li>Spending limits cap daily or monthly usage</li><li>Tax liabilities on every crypto conversion</li><li>Compliance costs are passed down to end users</li><li>Merchant account restrictions in some industries</li><li>Limited acceptance at smaller point-of-sale terminals</li></ul><p>Now that you know them, it&#x27;s far easier to set lifelike expectations and avoid costly surprises.</p><h2>Conclusion</h2><p>There&#x27;s no need to fear crypto card fees if the card is appropriately picked. In this case, commissions can be particularly stealthy, even when purchasing expensive items. The lowest costs are far less than 1%. </p><p>On the other hand, if not chosen wisely, one may face commissions of up to 3% even for local transactions. For international fees on purchases, this amount can increase by up to 8%. Remember that interchange, FX, and spreads will always impact the final cost.</p><p>It&#x27;s better to start the story with a crypto card by comparing providers, spotting hidden charges, and timing transactions. All these things can easily lower your fee rate and help make global spending even more enjoyable.</p><h2>FAQ</h2><h3>What Are Interchange Fees on Crypto Cards?</h3><p>These are network-set charges that the merchant&#x27;s acquirer bank pays to the card issuer.</p><h3>How Much Do FX Fees Add to Crypto Card Transactions?</h3><p>Typically, they range between 0% and 3%, although the size will always depend on the card provider&#x27;s rate policy.</p><h3>What Is Conversion Spread in Crypto Payments?</h3><p>Conversion spread is a hidden cost incurred between the buy and sell prices of crypto when a wallet converts it from one form to another, such as from fiat to cryptocurrency. The average size of a spread fee is around 0.5%–2%.</p><h3>Which Crypto Card Has the Lowest Fees in 2025?</h3><p>It&#x27;s definitely the Kolo card. Bend your fingers. It has zero FX fees, doesn&#x27;t charge crypto payment fees for spending on weekends, and uses fair-market rates when converting local currencies to crypto.</p></div></div></div><div class="footer"><div class="w-layout-blockcontainer block-container w-container"><div class="footerbusinesscontent"><div class="top-row"><div class="footer-logo-wrapper"><img src="/cdn/641863621e81371558abea11/65fb0f6a4fc28c826816028d_Layer_7.svg" loading="lazy" alt="" class="image-5"/></div><div class="bottom-row-rights"><div class="text-block-6">© 2025. Всі права захищені</div></div></div><div class="links-personal"><div class="footerlinksblock"><a href="#" class="new-footer-link">Wallet</a><a href="/ua/exchanger" class="new-footer-link">Exchanger</a><a href="/ua/for-business/business" class="new-footer-link">Business</a><a href="#" class="link hide">Terms</a><a href="#" class="link hide">Privacy</a><a href="/ua/blog" class="new-footer-link">Blog</a><a href="#" class="link disabled hide">Support</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641863621e81371558abea11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.0be0ff630adfe789.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.6d502c0af9c01e12.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.eeff05e8.b9d868b31419297d.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTMCWKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Проверяем наличие всех UTM меток
+    const utmId = urlParams.get('utm_id');
+    const utmTerm = urlParams.get('utm_term');
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmContent = urlParams.get('utm_content');
+    const utmCampaign = urlParams.get('utm_campaign');
+
+    // Функция для добавления UTM меток к каждой ссылке (включая внешние)
+    function addUtmToLinks() {
+      const allLinks = document.querySelectorAll('a'); // Все ссылки
+
+      allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        // Пропускаем якорные ссылки (те, которые ведут только на эту же страницу)
+        if (href && !href.includes('#')) {
+          let utmParamsArray = [];
+
+          // Добавляем только не пустые UTM параметры
+          if (utmId) {
+            utmParamsArray.push(`utm_id=${utmId}`);
+          }
+          if (utmTerm) {
+            utmParamsArray.push(`utm_term=${utmTerm}`);
+          }
+          if (utmSource) {
+            utmParamsArray.push(`utm_source=${utmSource}`);
+          }
+          if (utmMedium) {
+            utmParamsArray.push(`utm_medium=${utmMedium}`);
+          }
+          if (utmContent) {
+            utmParamsArray.push(`utm_content=${utmContent}`);
+          }
+          if (utmCampaign) {
+            utmParamsArray.push(`utm_campaign=${utmCampaign}`);
+          }
+
+          // Добавляем параметры, только если есть хотя бы один UTM параметр
+          if (utmParamsArray.length > 0) {
+            const separator = href.includes('?') ? '&' : '?';
+            const utmParams = utmParamsArray.join('&');
+
+            // Добавляем UTM параметры к ссылке
+            link.setAttribute('href', href + separator + utmParams);
+          }
+        }
+      });
+    }
+
+    // Добавляем UTM метки к ссылкам на текущей странице
+    addUtmToLinks();
+  });
+</script>
+
+<!-- Smooth scroll start -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+<!-- Smooth scroll end -->
+
+
+
+<!-- Lazy loaging for video -->
+<script
+     
+  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"
+></script>
+
+<!-- header animation -->
+<script src="https://cdn.jsdelivr.net/gh/waveshape-co/word-play@1.0.0/script.min.js"></script>
+
+<style>
+  .n-heder-line-one:not(:has(.ws__span)),
+  .n-heder-line-two:not(:has(.ws__span)){opacity:0}
+  
+  body.body-6:not(:has(.n-page_loading[style*='display: none'])) {
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+  
+ </style>
+
+
+<!-- +++ -->
+ <script>
+function smoothscroll() {
+    // Smooth scrolling
+    const isHome = document.querySelectorAll('.body-6').length;
+  	if (!isHome){return;}
+  	const lenis = new Lenis({ resize: true });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    // Grab all elements that have a "data-target" attribute
+    const scrollButtons = document.querySelectorAll('[data-target]');
+
+    // For each element, listen to a "click" event
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // get the DOM element by the ID (data-target value)
+            const target = button.dataset.target;
+            const $el = document.getElementById(target.replace('#', ''));
+
+            // Use lenis.scrollTo() to scroll the page to the right element
+            lenis.scrollTo($el, {
+                offset: 0,
+                immediate: false,
+                duration: 1,
+                easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2) // https://easings.net
+            });
+        });
+    });
+
+    requestAnimationFrame(raf);
+}
+
+function init() {
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  myLazyLoad.update();
+    smoothscroll();
+    new WordPlay({
+        className: 'n-heder-line-one', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+
+    new WordPlay({
+        className: 'n-heder-line-two', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+    // document.getElementById('n-video-bg').play();
+}
+
+function loader() {
+    // Отримуємо посилання на елемент
+    const target = document.querySelector('.n-page_loading');
+
+    // Функція, яка перевіряє, чи display: none
+    function isHidden(element) {
+        return window.getComputedStyle(element).display === 'none';
+    }
+
+    if (target) {
+        // Створюємо обсервер
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                    if (isHidden(target)) {
+                        console.log('Елемент став display: none');
+                        init();
+                        // Зупиняємо обсервер після спрацювання
+                        observer.disconnect();
+                        // Можна викликати додаткову логіку тут
+                    }
+                }
+            }
+        });
+
+        // Налаштування обсерверу: слідкуємо за змінами атрибутів
+        observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    } else {
+        init();
+    }
+}
+window.Webflow.push(loader);
+  </script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header2", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header3", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+<!-- Headers animation End -->
+
+
+
+
+
+<!-- Button text animation start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+<script>
+const letterWrapClass = 'n-letter-wrap';
+const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+[...letterWrapElements].forEach(el => {
+  letterWrap(el, letterWrapClass);
+  letterAnimation(el, letterWrapClass);
+});
+function letterWrap(el, cls) {
+  const words = el.textContent.split(' ');
+  const letters = []; 
+  cls = cls || 'n-letter-wrap'  
+  words.forEach(word => {
+    let html = '';
+    for (var letter in word) {
+      html += `
+        <span class="${cls}__char">
+          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+            ${word[letter]}
+          </span>
+        </span>
+      `;
+    };   
+    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+    letters.push(wrappedWords);
+  });
+  return el.innerHTML = letters.join(' ');
+}
+function letterAnimation(el, cls) {
+  const tl = new TimelineMax({ paused: true });
+  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.025; 
+  el.animation = tl.staggerTo(characters, duration, {
+    y: '-100%',
+    delay: 0.1,
+    ease: Power2.easeOut
+  }, stagger);      
+  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+  el.addEventListener('mouseout', (event) => el.animation.pause(0)());
+}
+</script>
+<!-- Button text animation end --></body></html>

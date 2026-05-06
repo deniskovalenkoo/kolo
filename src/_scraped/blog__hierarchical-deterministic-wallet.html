@@ -1,0 +1,485 @@
+<!DOCTYPE html><!-- Last Published: Thu Apr 23 2026 13:48:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="kolo.xyz" data-wf-page="64918aa7c1eb2dea6938a0b3" data-wf-site="641863621e81371558abea11" lang="en-US" data-wf-collection="64918aa1c1eb2dea69389a9e" data-wf-item-slug="hierarchical-deterministic-wallet"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work? ∙ Kolo</title><link rel="alternate" hrefLang="x-default" href="https://kolo.xyz/blog/hierarchical-deterministic-wallet"/><link rel="alternate" hrefLang="en-US" href="https://kolo.xyz/blog/hierarchical-deterministic-wallet"/><meta content="What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work? ∙ Kolo" property="og:title"/><meta content="What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work? ∙ Kolo" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="/cdn/641863621e81371558abea11/css/777ex.shared.97839c652.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/641863621e81371558abea11/65fbc4e9777e6eaf1633f75a_KoloFavicon.png" rel="apple-touch-icon"/><link href="https://kolo.xyz/blog/hierarchical-deterministic-wallet" rel="canonical"/><!-- Auto hreflang + canonical -->
+<script>
+(function () {
+  var BASE = 'https://kolo.xyz';
+  var path = window.location.pathname;
+
+  // Normalize: strip trailing slash except root
+  var p = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+  var enPath, locale;
+
+  if (/^\/ru(\/|$)/.test(p)) {
+    locale = 'ru';
+    enPath = p.replace(/^\/ru/, '') || '/';
+  } else if (/^\/ua(\/|$)/.test(p)) {
+    locale = 'ua';
+    enPath = p.replace(/^\/ua/, '') || '/';
+  } else {
+    locale = 'en';
+    enPath = p;
+  }
+
+  var ruPath = '/ru' + (enPath === '/' ? '' : enPath);
+  var uaPath = '/ua' + (enPath === '/' ? '' : enPath);
+
+  // Remove wrong canonical Webflow may have added
+  var existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) existingCanonical.parentNode.removeChild(existingCanonical);
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  // Hreflang tags
+  var hreflangs = [
+    { lang: 'en',        href: BASE + enPath },
+    { lang: 'ru',        href: BASE + ruPath },
+    { lang: 'uk',        href: BASE + uaPath },
+    { lang: 'x-default', href: BASE + enPath }
+  ];
+
+  hreflangs.forEach(function (item) {
+    var link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = item.lang;
+    link.href = item.href;
+    head.appendChild(link);
+  });
+
+  // Self-referencing canonical
+  var canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = BASE + p;
+  head.appendChild(canonical);
+})();
+<\/script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VWPZZ8G');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZ815EGP84" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript" type="fs-consent"></script>
+
+<script type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-MZ815EGP84');</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Kolo Crypto Visa Card",
+  "description": "Crypto Visa debit card with BTC cashback. Spend in 60+ countries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Kolo",
+    "url": "https://kolo.xyz"
+  },
+  "url": "https://kolo.xyz",
+  "category": "Crypto Debit Card",
+  "areaServed": ["Europe", "United Kingdom", "UAE", "CIS"],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceType": "Mobile App, Web, Telegram"
+  }
+}
+</script>
+
+
+
+<!-- For smooth scroll -->
+<!--
+<style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+</style>
+<style>
+.loading {
+  display: flex;
+}
+</style>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="/cdn/641863621e81371558abea11_2F6544eda5f000985a163a8687_2F6877797c65a77ee100fcd989_2Ffinsweetcomponentsconfig-1.0.2.js" type="module" async="" siteId="641863621e81371558abea11" finsweet="components"></script></head><body class="body-personal"><div class="navigation"><div class="w-layout-blockcontainer conteiner-width w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-business w-nav"><div class="navbar-business-content"><div class="navbar-wrapper"><div class="logo-header"><a href="/" class="combine-nav-logo-link w-inline-block"><img src="/cdn/641863621e81371558abea11/65f83b83a7dc6825efaae8e3_logo_205.svg" loading="lazy" alt="" class="image-11"/></a></div><nav role="navigation" class="navbar-right-side w-nav-menu"><div class="navigation-items"><div class="menu-list-adaptive"><a href="/exchanger" class="customer-switcher">Personal</a><a href="/for-business/business" class="customer-switcher">Business</a></div></div></nav><div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></div></div><div class="w-layout-blockcontainer conteiner-width-blog w-container"><div class="blog-header"><a href="/blog" class="back-blog w-inline-block"><img src="/cdn/641863621e81371558abea11/658d69ab464ea3ca8aa933ad_Frame_201.svg" loading="lazy" alt="" class="back-button-icon"/><div class="text-block-26">Back to blog</div></a><div style="background-image:url(&quot;/cdn/64895abf18b47a0c31b8a51f/68c2acbfaf741cbf71c74a51_What_20Is_20a_20Hierarchical_20Deterministic_20_HD)%20Wallet%20and%20How%20Does%20It%20Work_.webp&quot;)" class="blog-cover"></div></div><div class="blog-content"><div class="article-tittle hide">What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work?</div><h2 class="n-header2">What Is a Hierarchical Deterministic (HD) Wallet and How Does It Work?</h2><div class="article-content w-richtext"><p>2025 guide on hierarchical deterministic wallet. Edges, drawbacks, and trendy types used by pros. Still worthy in 2025? Read before installing any!</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68bed1b1c9db6c72c210a3ce_hxxs37bdd7mudr3bzgpy.webp"/></div><figcaption><em>Image credit</em>: <em>Unsplash</em></figcaption></figure><p>Working through the Web3 forest, and it&#x27;s your first time hearing the term hierarchical deterministic wallet? Let&#x27;s lighten the burden and explain it in plain English. These are crypto wallets that generate keys and addresses from a so-called single master seed phrase. The choice of such a structure is not random. This approach enables users to manage multiple digital assets and accounts much <a href="https://en.bitcoin.it/wiki/BIP_0032">more efficiently</a>.</p><p>Today, these apps are a benchmark in the industry. This guide will highlight the HD wallet&#x27;s crypto features, use cases, and assess whether the solution remains worthy in 2025.</p><h3>Key Takeaways</h3><p>Here are the core things to keep in mind as a quick summary:</p><ul role="list"><li>The wallets were brought by BIP32 in 2012</li><li>They generate a hierarchical tree of private and public keys</li><li>Each transaction uses a unique address for better encryption</li><li>An extended public key (xPub) can safely display balances</li><li>Bitcoin HD wallets support multiple cryptos from one seed</li><li>Single seed works perfectly for the full wallet recovery</li><li>Hierarchical deterministic approach enhances privacy by unlinking addresses</li><li>These solutions lower the risk of losing funds due to mismanagement</li></ul><p>Now, let&#x27;s delve deeper into the subject to gain wisdom of these tools in the everyday DeFi world.</p><h2>What Is an HD Wallet?</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68bed1ba23b44eaadaa9b9f6_f4avx6kcxto16yqpsod6.webp"/></div><figcaption><em>Image credit</em>: <em>Unsplash</em></figcaption></figure><p>You keep asking yourself, <em>&quot;What is an HD wallet?&quot;</em> In crude terms, it&#x27;s a smart way to manage your blockchain assets. Now, users do not need to load memory with an infinite number of separate private keys. Instead, a single, yet master seed key sets the tone. </p><p>A single seed phrase will be sufficient for a deterministic wallet to generate multiple key pairs. The best part? It makes holding, sending, and accepting crypto, such as from Binance or Gemini accounts, easier and safer.</p><p>Core features of HD wallets to remember:</p><ul role="list"><li><strong>Single seed phrase</strong>: One phrase backs up all keys</li><li><strong>Deterministic key generation</strong>: The same seed produces duplicate keys</li><li><strong>Extended keys</strong>: XPRIV manages private keys, XPUB key monitors balances</li><li><strong>Enhanced privacy</strong>: Generates a new address per transaction</li><li><strong>Easy backup &amp; recovery</strong>: Restore wallet from one seed</li><li><strong>Hierarchical paths</strong>: Organizes accounts and addresses neatly</li></ul><p>Today&#x27;s HD tools accept all digital assets on everyone&#x27;s lips, including the well-known BTC, ETH, and beyond. By doing this, users can oversee approximately<strong> </strong><a href="https://bitcoin.stackexchange.com/questions/109723/according-to-bip44-each-hd-wallet-have-a-finite-number-of-232-addresses-why-is"><strong>4.29 billion</strong> addresses</a> in one place per account, simply by remembering and using a seed phrase.</p><h3>Key Concepts &amp; Definitions</h3><p>It&#x27;s no secret that understanding HD wallets begins with the proper terminology. First, let&#x27;s explain the wallet&#x27;s structure. The &quot;<strong><em>Hierarchical</em></strong>&quot; concept refers to the type of keys, while &quot;<strong><em>deterministic</em></strong>&quot; means that every key is related to addresses that emerge from a seed phrase.</p><p>Here are some more key concepts that you may come across along the way:</p><ul role="list"><li><strong>Seed phrase</strong>: Words that restore all wallet keys</li><li><strong>Master key</strong>: The primary key that generates all others</li><li><strong>Child keys</strong>: Keys derived from the master for transactions</li><li><strong>XPRIV</strong>: Extended private key controlling all child keys</li><li><strong>XPUB</strong>: Extended public key showing balances only</li><li><strong>Deterministic wallet</strong>: Creates all keys from one seed</li><li><strong>Non-deterministic wallet</strong>: Random keys, no master seed</li><li><strong>Derivation path</strong>: Route defining which key comes next</li><li><strong>BIP32</strong>: Bitcoin proposal that introduced the vaults</li><li><strong>BIP44</strong>: Standardized multi-account structure and paths</li></ul><p>Knowing the terminology will make it easier for you to navigate how to use the HD wallet solution according to your needs.</p><h3>Hierarchical Structure Explained</h3><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68bed1c2df9238495fb88a55_rvt7rji8dm2vj0wyim7i.webp"/></div><figcaption><em>Image credit</em>: <em>Unsplash</em></figcaption></figure><p>Hierarchical deterministic wallets run on a tree-like system for all keys. Fancy this as the master key works as the trunk, and child keys act as its branches. Furthermore, each branch can have its own sub-branches with numerous addresses available for activation.</p><p>Here are the core items of this system to grasp the idea:</p><ul role="list"><li><strong>Master key</strong>: Root of the wallet tree</li><li><strong>Child key</strong>: Derived key for individual transactions</li><li><strong>Grandchild key</strong>: Deeper key under a child</li><li><strong>External chain</strong>: Addresses for receiving funds</li><li><strong>Internal chain</strong>: Addresses for change</li><li><strong>Derivation path</strong>: Example: m / 44&#x27; / 0&#x27; / 0&#x27; / 0 / 0</li><li><strong>Purpose (44&#x27;)</strong>: Follows BIP44 standard</li><li><strong>Coin Type (0&#x27;)</strong>: Differentiates cryptocurrencies</li><li><strong>Account</strong>: Sub-wallet under the same coin type</li><li><strong>Address </strong>index: Each address</li></ul><p>Now, you know which keys control what and how to recover them safely.</p><p><strong>Key takeaway</strong>: Seed phrase wallets transform a complex system into a transparent, protected, and elastic structure. This results in making privacy, backups, and multi-currency management really effortless.</p><h2>How Do HD Wallets Work?</h2><p>Once all terminology is defined, the next logical step is to understand how it all works under the hood. Let&#x27;s explore it and cover how an HD wallet generates addresses, performs main key derivation, seed phrases, and ultimately, transaction signing.</p><h3>Seed Phrase Generation</h3><p>Every HD wallet starts with a seed phrase, which serves as the foundation of a decentralized vault. Its main purpose? To assist users who need to cover all addresses and private keys.</p><p>This process works in four core stages:</p><ol role="list"><li>Random words are generated offline</li><li>Words are picked from a standard mnemonic list</li><li>The wallet shows the phrase for secure storage</li><li>User confirms the phrase to avoid mistakes</li></ol><p>‍</p><p><em>“Once generated, ensure to store it safely, as the phrase becomes the master key source. Losing it means saying farewell to all your digital assets.”</em></p><h3>Master Key Derivation</h3><p>This stage involves creating a master key pair, including a master private key and a master public key. Their purpose? The private one comes as a tool to build all child private keys, while the public one acts as a means to monitor portfolio balances without exposing private keys.</p><h3>Address Generation</h3><p>Every new transaction with an HD wallet means the creation of a new address. This results in advanced privacy and well-designed payment systems. </p><p>The mechanics look as follows:</p><ol role="list"><li>Master public key generates child public keys</li><li>Child keys can generate grandchild keys if needed</li><li>Each new key is a unique address for crypto</li><li>Addresses are split into external (receive) and internal (change) chains</li></ol><p>This system opens the door to using unlimited addresses from a single seed. Meanwhile, users can receive payments without exposing other keys, adding another layer of security.</p><h3>Transaction Signing</h3><p>Every transfer of crypto assets is followed by a final stage called transaction signing. Here, a hierarchical deterministic wallet uses the correct private key, authorizing the transfer of funds. The signing action ensures user funds remain secure, even when addresses are publicly available.</p><p><strong>Key takeaway</strong>: HD wallets synthesize, organize, and protect all addresses from one seed. These blockchain-powered vaults simplify backups, improve privacy, and secure private keys for every transaction.</p><h2>What Are the Benefits and Drawbacks of Using an HD Wallet?</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68bed1cc3d1c3c5ce2b1d7ac_iiixkgjlo1tbmiu8yvv7.webp"/></div><figcaption><em>Image credit</em>: <em>Unsplash</em></figcaption></figure><p>It&#x27;s evident that every tool, no matter how worthwhile it may be, comes with its own edges and downsides to consider. On the one hand, HD keys make sure all transactions have sound privacy protection, reducing traceability on the blockchain. On the flip side, if a seed phrase is lost, all funds can be compromised.</p><p>Below, you&#x27;ll find a few more arguments for and against their usage in 2025.</p><h3>Pros &amp; Cons</h3><p>Pros:</p><ul role="list"><li>Easy backup and recovery</li><li>Enhanced privacy for transactions</li><li>Organized key management</li><li>Supports multiple cryptocurrencies</li><li>Secure private key storage</li></ul><p>Cons:</p><ul role="list"><li>Seed loss risks everything</li><li>Extended keys can be exposed</li><li>An HD wallet can be complex for beginners</li><li>Recovery requires the correct seed</li><li>Dependent on wallet software</li></ul><p><strong>Key takeaway</strong>: The HD vaults strike a balance between convenience, privacy, and security. Users get better control and advanced privacy on every transaction. Still, a seed phrase loss can be critical, potentially leading to significant asset loss.</p><h2>HD Crypto Wallet Improvements</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68bed1d42b4b6add5c0bb5b9_y0cdhzejs2wp4gudueg8.webp"/></div><figcaption><em>Image credit</em>: <em>Unsplash</em></figcaption></figure><p><strong>Introduced in</strong> <strong>2012</strong>, the digital vaults evolved into advanced versions that enhanced security and flexibility. Today&#x27;s market knows three<strong> Bitcoin Improvement Proposals</strong> (BIPs) that play a significant role in this transition: <strong>BIP 32</strong>, <strong>BIP 44</strong>, and <strong>BIP 39</strong>. </p><p>‍</p><p><em>“Each BIP has all the edges of its forerunners, while offering new, structured standards for key management, multi-asset support, and easier recovery.”</em></p><h3>Bitcoin Improvement Proposal (BIP) 32</h3><p>The solution was introduced in 2012 and became the blueprint for hierarchical deterministic vaults. (BIP) 32 primary features include:</p><ul role="list"><li>Single master seed</li><li>Hierarchical structure</li><li>Public and private keys derivation</li><li>Chain code for security</li></ul><p>The on-chain storage delivers the option to generate a vast number of keys deterministically. This means improved privacy and simplified backup procedures.</p><h3>BIP 44</h3><p>This one came as the next evolution stage that took all the value-adds of (BIP) 32. The main thing it delivers is a progressive hierarchy organization that eases asset management. Here are the core features it offers:</p><ul role="list"><li>Multi-asset support</li><li>Defined derivation path</li><li>Coin type specification</li><li>Account separation</li><li>Change chain distinction</li></ul><p><strong>BIP 44</strong> brings clear and systematic management of different cryptocurrencies. New standardization became critical for general interoperability between HD vault software.</p><h3>BIP 39</h3><p>The most evolved version introduced mnemonic phrases, converting a random seed into an easily readable format. The primary edge made wallet recovery simpler and safer.</p><p>BIP 39 core features to keep in mind:</p><ul role="list"><li>Mnemonic phrase generation</li><li>Human-readable format</li><li>12 to 24 words</li><li>Language-specific word lists</li><li>Conversion to binary seed</li></ul><p>The security level maintained a high level of privacy, yet made the wallet backup and recovery stage even more seamless.</p><p><strong>Key takeaway</strong>: BIPs 32, 44, and 39 are enhancements designed to improve HD storage capabilities. Each took the best aspects of previous versions and introduced new features to enhance security and backups.</p><h3>Deterministic vs. Hierarchical Deterministic Wallets</h3><p>The primary difference between these two solutions lies in their approaches to handling keys and addresses. Below you will find a comparison table with visual differences for each.</p><p><strong>Feature:</strong></p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <thead>
+        <tr>
+            <th><b>Feature</b></th>
+            <th><b>HD Wallets</b></th>
+            <th><b>Non-HD </b><b>Wallets</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Key Generation</td>
+            <td>Derived from one master seed</td>
+            <td>Random, independent keys</td>
+        </tr>
+        <tr>
+            <td>Backup</td>
+            <td>Single seed backup</td>
+            <td>Each key must be backed up separately</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Structure</p>
+            </td>
+            <td>Hierarchical tree</td>
+            <td>Flat, unorganized</td>
+        </tr>
+        <tr>
+            <td>Privacy</td>
+            <td>Unique address per transaction</td>
+            <td>Addresses can be reused</td>
+        </tr>
+        <tr>
+            <td>Multi-Currency</td>
+            <td>Supports multiple coins</td>
+            <td>Limited or manual support</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Recovery</p>
+            </td>
+            <td>Full wallet recoverable via seed</td>
+            <td>Each key must be recovered individually</td>
+        </tr>
+        <tr>
+            <td>Management</td>
+            <td>Organized accounts and addresses</td>
+            <td>Hard to track multiple keys</td>
+        </tr>
+    </tbody>
+</table></div><p><strong>Key takeaway</strong>: HD tools offer organized key management and easier backups. Plus, they have pro-level privacy options. Meanwhile, non-HD wallets deliver separate backups for each key and lack a well-organized structure.</p><h2>Future Outlook</h2><p>Here are the 2025 trends that are about to appear in the conceptual models:</p><ol role="list"><li><strong>Enhanced</strong> mobile wallet experiences</li><li><strong>Multi-chain</strong> and multi-asset support</li><li><strong>Biometric </strong>authentication features</li><li><strong>Layer-2</strong> blockchain compatibility</li><li><strong>Hardware </strong>wallet integration</li></ol><p>Summary</p><p>The development of cryptocurrencies is an engine of progress for hdwallets. All modern storage tools combine three primary features: a single master seed, hierarchical key generation, and unique addresses. These days, their adoption grows among individuals, businesses, and custodial services.</p><p>Historically speaking, hdwallets were introduced by Bitcoin Improvement Proposal (BIP) 32 back in 2012. Their main goal was to create a tree-like structure of key pairs. The result? It significantly improved privacy and security. Subsequently, the world saw more advanced versions, including BIP 44 and BIP 49.</p><p>Core points to remember:</p><ul role="list"><li>A single seed generates multiple keys</li><li>Hierarchical structure organizes addresses</li><li>Unique addresses enhance privacy</li><li>BIP32, BIP44, and BIP39 standardize wallets</li><li>Streamlined backup and recovery</li></ul><p>HD wallet tools remain a crucial component of safe and efficient cryptocurrency management. The only thing that can become a blot on the landscape is the seed phrase loss. Therefore, storing it safely is the only thing that matters most.</p></div></div></div><div class="footer"><div class="w-layout-blockcontainer block-container w-container"><div class="footerbusinesscontent"><div class="top-row"><div class="footer-logo-wrapper"><img src="/cdn/641863621e81371558abea11/65fb0f6a4fc28c826816028d_Layer_7.svg" loading="lazy" alt="" class="image-5"/></div><div class="bottom-row-rights"><div class="text-block-6">© 2025. All rights reserved.</div></div></div><div class="links-personal"><div class="footerlinksblock"><a href="#" class="new-footer-link">Wallet</a><a href="/exchanger" class="new-footer-link">Exchanger</a><a href="/for-business/business" class="new-footer-link">Business</a><a href="#" class="link hide">Terms</a><a href="#" class="link hide">Privacy</a><a href="/blog" class="new-footer-link">Blog</a><a href="#" class="link disabled hide">Support</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641863621e81371558abea11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.0be0ff630adfe789.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.6d502c0af9c01e12.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.eeff05e8.b9d868b31419297d.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTMCWKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Проверяем наличие всех UTM меток
+    const utmId = urlParams.get('utm_id');
+    const utmTerm = urlParams.get('utm_term');
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmContent = urlParams.get('utm_content');
+    const utmCampaign = urlParams.get('utm_campaign');
+
+    // Функция для добавления UTM меток к каждой ссылке (включая внешние)
+    function addUtmToLinks() {
+      const allLinks = document.querySelectorAll('a'); // Все ссылки
+
+      allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        // Пропускаем якорные ссылки (те, которые ведут только на эту же страницу)
+        if (href && !href.includes('#')) {
+          let utmParamsArray = [];
+
+          // Добавляем только не пустые UTM параметры
+          if (utmId) {
+            utmParamsArray.push(`utm_id=${utmId}`);
+          }
+          if (utmTerm) {
+            utmParamsArray.push(`utm_term=${utmTerm}`);
+          }
+          if (utmSource) {
+            utmParamsArray.push(`utm_source=${utmSource}`);
+          }
+          if (utmMedium) {
+            utmParamsArray.push(`utm_medium=${utmMedium}`);
+          }
+          if (utmContent) {
+            utmParamsArray.push(`utm_content=${utmContent}`);
+          }
+          if (utmCampaign) {
+            utmParamsArray.push(`utm_campaign=${utmCampaign}`);
+          }
+
+          // Добавляем параметры, только если есть хотя бы один UTM параметр
+          if (utmParamsArray.length > 0) {
+            const separator = href.includes('?') ? '&' : '?';
+            const utmParams = utmParamsArray.join('&');
+
+            // Добавляем UTM параметры к ссылке
+            link.setAttribute('href', href + separator + utmParams);
+          }
+        }
+      });
+    }
+
+    // Добавляем UTM метки к ссылкам на текущей странице
+    addUtmToLinks();
+  });
+</script>
+
+<!-- Smooth scroll start -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+<!-- Smooth scroll end -->
+
+
+
+<!-- Lazy loaging for video -->
+<script
+     
+  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"
+></script>
+
+<!-- header animation -->
+<script src="https://cdn.jsdelivr.net/gh/waveshape-co/word-play@1.0.0/script.min.js"></script>
+
+<style>
+  .n-heder-line-one:not(:has(.ws__span)),
+  .n-heder-line-two:not(:has(.ws__span)){opacity:0}
+  
+  body.body-6:not(:has(.n-page_loading[style*='display: none'])) {
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+  
+ </style>
+
+
+<!-- +++ -->
+ <script>
+function smoothscroll() {
+    // Smooth scrolling
+    const isHome = document.querySelectorAll('.body-6').length;
+  	if (!isHome){return;}
+  	const lenis = new Lenis({ resize: true });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    // Grab all elements that have a "data-target" attribute
+    const scrollButtons = document.querySelectorAll('[data-target]');
+
+    // For each element, listen to a "click" event
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // get the DOM element by the ID (data-target value)
+            const target = button.dataset.target;
+            const $el = document.getElementById(target.replace('#', ''));
+
+            // Use lenis.scrollTo() to scroll the page to the right element
+            lenis.scrollTo($el, {
+                offset: 0,
+                immediate: false,
+                duration: 1,
+                easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2) // https://easings.net
+            });
+        });
+    });
+
+    requestAnimationFrame(raf);
+}
+
+function init() {
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  myLazyLoad.update();
+    smoothscroll();
+    new WordPlay({
+        className: 'n-heder-line-one', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+
+    new WordPlay({
+        className: 'n-heder-line-two', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+    // document.getElementById('n-video-bg').play();
+}
+
+function loader() {
+    // Отримуємо посилання на елемент
+    const target = document.querySelector('.n-page_loading');
+
+    // Функція, яка перевіряє, чи display: none
+    function isHidden(element) {
+        return window.getComputedStyle(element).display === 'none';
+    }
+
+    if (target) {
+        // Створюємо обсервер
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                    if (isHidden(target)) {
+                        console.log('Елемент став display: none');
+                        init();
+                        // Зупиняємо обсервер після спрацювання
+                        observer.disconnect();
+                        // Можна викликати додаткову логіку тут
+                    }
+                }
+            }
+        });
+
+        // Налаштування обсерверу: слідкуємо за змінами атрибутів
+        observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    } else {
+        init();
+    }
+}
+window.Webflow.push(loader);
+  </script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header2", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header3", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+<!-- Headers animation End -->
+
+
+
+
+
+<!-- Button text animation start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+<script>
+const letterWrapClass = 'n-letter-wrap';
+const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+[...letterWrapElements].forEach(el => {
+  letterWrap(el, letterWrapClass);
+  letterAnimation(el, letterWrapClass);
+});
+function letterWrap(el, cls) {
+  const words = el.textContent.split(' ');
+  const letters = []; 
+  cls = cls || 'n-letter-wrap'  
+  words.forEach(word => {
+    let html = '';
+    for (var letter in word) {
+      html += `
+        <span class="${cls}__char">
+          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+            ${word[letter]}
+          </span>
+        </span>
+      `;
+    };   
+    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+    letters.push(wrappedWords);
+  });
+  return el.innerHTML = letters.join(' ');
+}
+function letterAnimation(el, cls) {
+  const tl = new TimelineMax({ paused: true });
+  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.025; 
+  el.animation = tl.staggerTo(characters, duration, {
+    y: '-100%',
+    delay: 0.1,
+    ease: Power2.easeOut
+  }, stagger);      
+  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+  el.addEventListener('mouseout', (event) => el.animation.pause(0)());
+}
+</script>
+<!-- Button text animation end --></body></html>

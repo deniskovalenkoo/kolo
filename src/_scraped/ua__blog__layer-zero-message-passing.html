@@ -1,0 +1,721 @@
+<!DOCTYPE html><!-- Last Published: Thu Apr 23 2026 13:48:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="kolo.xyz" data-wf-page="64918aa7c1eb2dea6938a0b3" data-wf-site="641863621e81371558abea11" lang="uk" data-wf-collection="64918aa1c1eb2dea69389a9e" data-wf-item-slug="layer-zero-message-passing"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo</title><link rel="alternate" hrefLang="x-default" href="https://kolo.xyz/blog/layer-zero-message-passing"/><link rel="alternate" hrefLang="en-US" href="https://kolo.xyz/blog/layer-zero-message-passing"/><link rel="alternate" hrefLang="uk" href="https://kolo.xyz/ua/blog/layer-zero-message-passing"/><link rel="alternate" hrefLang="ru" href="https://kolo.xyz/ru/blog/layer-zero-message-passing"/><meta content="LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo" property="og:title"/><meta content="LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers) ∙ Kolo" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="/cdn/641863621e81371558abea11/css/777ex.shared.97839c652.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/641863621e81371558abea11/65fbc4dbfd3ca0bccfeba99b_KoloFavicon.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/641863621e81371558abea11/65fbc4e9777e6eaf1633f75a_KoloFavicon.png" rel="apple-touch-icon"/><link href="https://kolo.xyz/ua/blog/layer-zero-message-passing" rel="canonical"/><!-- Auto hreflang + canonical -->
+<script>
+(function () {
+  var BASE = 'https://kolo.xyz';
+  var path = window.location.pathname;
+
+  // Normalize: strip trailing slash except root
+  var p = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+  var enPath, locale;
+
+  if (/^\/ru(\/|$)/.test(p)) {
+    locale = 'ru';
+    enPath = p.replace(/^\/ru/, '') || '/';
+  } else if (/^\/ua(\/|$)/.test(p)) {
+    locale = 'ua';
+    enPath = p.replace(/^\/ua/, '') || '/';
+  } else {
+    locale = 'en';
+    enPath = p;
+  }
+
+  var ruPath = '/ru' + (enPath === '/' ? '' : enPath);
+  var uaPath = '/ua' + (enPath === '/' ? '' : enPath);
+
+  // Remove wrong canonical Webflow may have added
+  var existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) existingCanonical.parentNode.removeChild(existingCanonical);
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+
+  // Hreflang tags
+  var hreflangs = [
+    { lang: 'en',        href: BASE + enPath },
+    { lang: 'ru',        href: BASE + ruPath },
+    { lang: 'uk',        href: BASE + uaPath },
+    { lang: 'x-default', href: BASE + enPath }
+  ];
+
+  hreflangs.forEach(function (item) {
+    var link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = item.lang;
+    link.href = item.href;
+    head.appendChild(link);
+  });
+
+  // Self-referencing canonical
+  var canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = BASE + p;
+  head.appendChild(canonical);
+})();
+<\/script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VWPZZ8G');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZ815EGP84" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript" type="fs-consent"></script>
+
+<script type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-MZ815EGP84');</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Kolo Crypto Visa Card",
+  "description": "Crypto Visa debit card with BTC cashback. Spend in 60+ countries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Kolo",
+    "url": "https://kolo.xyz"
+  },
+  "url": "https://kolo.xyz",
+  "category": "Crypto Debit Card",
+  "areaServed": ["Europe", "United Kingdom", "UAE", "CIS"],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceType": "Mobile App, Web, Telegram"
+  }
+}
+</script>
+
+
+
+<!-- For smooth scroll -->
+<!--
+<style>
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+</style>
+<style>
+.loading {
+  display: flex;
+}
+</style>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="/cdn/641863621e81371558abea11_2F6544eda5f000985a163a8687_2F6877797c65a77ee100fcd989_2Ffinsweetcomponentsconfig-1.0.2.js" type="module" async="" siteId="641863621e81371558abea11" finsweet="components"></script></head><body class="body-personal"><div class="navigation"><div class="w-layout-blockcontainer conteiner-width w-container"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-business w-nav"><div class="navbar-business-content"><div class="navbar-wrapper"><div class="logo-header"><a href="/ua" class="combine-nav-logo-link w-inline-block"><img src="/cdn/641863621e81371558abea11/65f83b83a7dc6825efaae8e3_logo_205.svg" loading="lazy" alt="" class="image-11"/></a></div><nav role="navigation" class="navbar-right-side w-nav-menu"><div class="navigation-items"><div class="menu-list-adaptive"><a href="/ua/exchanger" class="customer-switcher">Personal</a><a href="/ua/for-business/business" class="customer-switcher">Business</a></div></div></nav><div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div></div></div><div class="w-layout-blockcontainer conteiner-width-blog w-container"><div class="blog-header"><a href="/ua/blog" class="back-blog w-inline-block"><img src="/cdn/641863621e81371558abea11/658d69ab464ea3ca8aa933ad_Frame_201.svg" loading="lazy" alt="" class="back-button-icon"/><div class="text-block-26">До блогу</div></a><div style="background-image:url(&quot;/cdn/64895abf18b47a0c31b8a51f/68f764434bfa1695789022fc_20251003_1204_Cryptocurrency_20Network_20Illustration_remix_01k6mrary8fc7t4xxv44wv12y0_20_1).webp&quot;)" class="blog-cover"></div></div><div class="blog-content"><div class="article-tittle hide">LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers)</div><h2 class="n-header2">LayerZero Message Passing Explained: How Omnichain Apps Work (v2, ULN, Oracles &amp; Relayers)</h2><div class="article-content w-richtext"><h2>How Layer-Zero Message Passing Enables Truly Cross-Chain Apps<br/></h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f764fcac251e5f5e56a059_wedlia3bk5tkk752oj3e.webp"/></div><figcaption><em>Image credit: Boostylabs</em></figcaption></figure><p><br/>LayerZero cross chain message in 2025: Check out core features, how it works, and why it can skyrocket the modern-day DApps.<br/>‍</p><p>Let&#x27;s not rush out of the gate and start with understanding the term LayerZero cross-chain messaging. What is meant here is a blockchain messaging protocol that enables apps to unlock communication across more than 70 networks. </p><p>Plain English for that? The protocol allows for direct interaction between chains through an advanced security model and modular architecture capabilities. Official stats indicate that in 2024, the solution was involved in transactions <a href="https://messari.io/report/state-of-layerzero-q2-2024">exceeding</a> $25 billion.</p><p>Today&#x27;s article will guide you through all the intricacies of cross chain messaging, how it works, and its use cases in the world of Web3 apps.</p><h3>Key Takeaways</h3><p>We&#x27;re already aware that LayerZero solves key cross-chain challenges through a relatively lightweight and secure architecture. Below, you&#x27;ll find the fundamental features that describe the tool, its usage stats, and practical aspects:</p><ul role="list"><li>It enables native messaging between <a href="https://bitsgap.com/blog/layerzero-the-interoperability-engine-powering-the-next-generation-of-blockchain">70+ blockchains</a></li><li>Uses Ultra Light Nodes for cost-efficient messaging</li><li>Supports custom security via Decentralized Verifier Networks</li><li>OFTs maintain unified token supply across chains</li><li>No wrapped tokens or asset custody required</li><li>Over $25B in cross-chain volume processed</li><li>Stargate and Radiant use the protocol for liquidity</li><li>Message flow includes oracles, relayers, endpoints, and executors</li></ul><p>Each of the above features has a direct connection to the LayerZero ecosystem, complementing and improving the solution. The following sections will detail its core purpose and design, which are actively used in the Web3 space.</p><h2>What Is LayerZero?</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f7650fbf1f2b7d002455ba_vqhrkpiazp7ko9qqdqhz.webp"/></div><figcaption><em>Image credit: The Block</em></figcaption></figure><p>Okay, let&#x27;s make haste slowly and take a minute to answer &quot;What is Layer Zero?&quot; for a start. This is nothing less than a cross-chain messaging protocol. Its aim? Lies in allowing dApps (decentralized applications) to interact with different blockchains natively. In fact, it all goes around solving the so-called interoperability challenges without the need to use wrapped tokens, custodians, or any third-party bridges.</p><p>LayerZero message passing eliminates all the flaws of manually bridging assets or duplicating token supply. Instead, it lets smart contracts send direct messages and execute their conditions across chains.</p><p>As a result, developers gain broad opportunities to create apps that function as a holistic ecosystem. The solution has already proven its worth on over 70 supported networks, including Ethereum, Arbitrum, Optimism, Solana, BNB Chain, and beyond.</p><p>Here are the core features of the protocol to keep in mind:</p><ul role="list"><li>Connects 70+ blockchains directly</li><li>Uses lightweight Ultra Light Nodes</li><li>Noncustodial and immutable protocol</li><li>Supports secure omnichain token transfers</li><li>Customizable security via verifier networks</li><li>Trusted by major DeFi and LST protocols</li></ul><p><strong>Key takeaway</strong>: The technology provides a secure method for exchanging messages between smart contracts. It enables the seamless operation of cross-chain dApps without the need for extra means, such as bridges or wrapped assets.</p><h2>Why Cross-Chain Interoperability Matters</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f7651e1f03a9c417f4d94d_mcksii3sk7ych313klj8.webp"/></div><figcaption><em>Image credit: CGAI</em></figcaption></figure><p>Now, let&#x27;s explore how the protocol can work favorably for users and developers. Most retailers interact with blockchain networks, such as Ethereum and Solana, as isolated ecosystems. LayerZero expands the horizons of possibilities by uniting networks into a single, seamless interface.</p><p>Need more arguments for it? See the table below:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Reason</b></th>
+            <th><b>Why It Matters</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Unified liquidity</td>
+            <td>Reduces slippage and improves trading depth</td>
+        </tr>
+        <tr>
+            <td>Cross-chain DeFi strategies</td>
+            <td>Enables borrowing and lending across chains</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Better dApp UX</p>
+            </td>
+            <td>No bridging or wallet switching needed</td>
+        </tr>
+        <tr>
+            <td>Native asset transfers</td>
+            <td>Avoids wrapped tokens and third-party risks</td>
+        </tr>
+        <tr>
+            <td>Inter-chain composability</td>
+            <td>Apps interact across chains as one network</td>
+        </tr>
+        <tr>
+            <td>Developer flexibility</td>
+            <td>Deploy once, reach many ecosystems</td>
+        </tr>
+        <tr>
+            <td>Scalability</td>
+            <td>Distribute app logic across fast chains</td>
+        </tr>
+        <tr>
+            <td>Protocol expansion</td>
+            <td>Easy to grow into new environments</td>
+        </tr>
+    </tbody>
+</table></div><p>‍</p><p><strong><em>“The protocol is key to boosting liquidity, gaining quick access, and enjoying utility across well-known blockchains.”</em></strong></p><h2>How LayerZero Works</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76535d2b744a6cc8369e3_vuegsn3garyo1ak6q3rl.webp"/></div><figcaption><em>Image credit: The Block</em></figcaption></figure><p>No worries, it&#x27;s not rocket science anyway. The mechanism revolves around secure messaging between smart contracts on different blockchains. Due to the architecture, message exchange is separated into independent components.</p><p>This approach aims to reduce costs, increase flexibility, and maintain trust assumptions. In real-world contexts, each message undergoes thorough verification by multiple parties before delivery to the final recipient.</p><p>LayerZero scan uses five key building blocks to ensure seamless message flow between blockchains. It&#x27;s time to discover these core components, their features, and use cases.</p><h3>Ultra Light Node (ULN)</h3><p>ULN is an advanced alternative to full blockchain nodes, providing cost efficiency. Judge for yourself. It doesn&#x27;t store all the information in communication, but brings only the necessary block data.</p><p>Here are the fundamental features of ULNs to remember:</p><ul role="list"><li>Offloads storage to reduce fees</li><li>Retrieves block headers on demand</li><li>No full node replication required</li><li>Enables real-time verification</li><li>Runs efficiently on any chain</li></ul><p>In straightforward terms, ULNs reduce gas and complexity. The result? They minimize the time and resources needed to maintain verification trust.</p><h3>Oracles</h3><p>Oracles are third-party services that provide instant delivery of block headers to the destination information chain. This verifies that the message was received from a valid chain source.</p><p>Here are the features and objectives of oracles in omnichain interoperability:</p><ul role="list"><li>Retracts source chain header data</li><li>Delivers headers to the destination contract</li><li>Used once per message flow</li><li>Works with decentralized oracle networks</li><li>Enables trust-minimized communication</li></ul><p>Summing up all of the above, oracles act as a guarantee that the destination chain receives the correct data before final processing.</p><h3>Endpoint</h3><p>The endpoint is another core element that serves as the interface contract, handling all messages between chains. Essentially, its purpose is to abstract away the technical layers for developers. Being the core component of the ecosystem, the LayerZero endpoint:</p><ul role="list"><li>Unifies contracts per chain</li><li>Handles sending and receiving logic</li><li>Manages gas estimation and fees</li><li>Supports retries and error recovery</li><li>Connects to LayerZero SDKs</li></ul><p>Endpoints simplify omnichain development at all stages. This also significantly reduces the time required for integration.</p><h3>Relayers</h3><p>Relayers perform the function of confirming transactions from the source to the destination chain. Moreover, they work in tandem with oracles in data delivery, adding a vital layer of proof to the process.</p><p>Their core metrics to keep in mind:</p><ul role="list"><li>Delivers transaction proof</li><li>Operates independently of oracles</li><li>Can be picked by each DApp (decentralized app)</li><li>Can be third-party or in-house solutions</li><li>Triggers execution once verified</li></ul><p>In summary, the tool enhances message security with an additional verification layer.</p><h3>Message Lifecycle</h3><p>Finally, we&#x27;re getting to the fifth element. Here, you&#x27;ll learn how messaging works in omnichain apps. The process follows a well-structured path from start to finish. Meanwhile, delivery requires verification from two core sources, namely, the oracle and the relayer components.</p><p>Here&#x27;s how the flow looks step-by-step:</p><ol role="list"><li>The source chain contract sends the data</li><li>Oracle delivers the header to the destination</li><li>Relayer submits transaction proofs</li><li>The destination contract verifies both</li><li>Triggers target function execution</li></ol><p><strong>Key takeaway</strong>: LayerZero breaks message transmission into several modules or so-called verifiable stages. This approach ensures increased security while being easy to implement in various ecosystems.</p><h2>LayerZero v2: Security Model</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f7654bc21444de80697f60_x9mldmnv2yksczjryse4.webp"/></div><figcaption><em>Image credit: Medium</em></figcaption></figure><p>Control over trust assumptions, proof flow, and message validation paths is critical for developers. Therefore, LayerZero v2 offers a modular system that runs on an app-defined security model. Below, you&#x27;ll find a comparison table that highlights the differences between v1 and v2:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Feature</b></th>
+            <th>v2</th>
+            <th>v3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Security Model</td>
+            <td>Fixed oracle and relayer combo</td>
+            <td>App-level configurable trust model</td>
+        </tr>
+        <tr>
+            <td>Validator Permissions</td>
+            <td>Limited and centralized</td>
+            <td>Permissionless, open participation</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Customization</p>
+            </td>
+            <td>Minimal</td>
+            <td>Full modular architecture</td>
+        </tr>
+        <tr>
+            <td>Replay Protection</td>
+            <td>Basic</td>
+            <td>Built-in for all messages</td>
+        </tr>
+        <tr>
+            <td>Oracle and Relayer Coupling</td>
+            <td>Tightly coupled</td>
+            <td>Decoupled for flexibility</td>
+        </tr>
+        <tr>
+            <td>Message Routing</td>
+            <td>Static endpoints only</td>
+            <td>Dynamic paths and custom hops</td>
+        </tr>
+        <tr>
+            <td>Supported Use Cases</td>
+            <td>Basic token transfers</td>
+            <td>Complex app logic and crosschain state</td>
+        </tr>
+    </tbody></div><p>‍</p><p>The module-based approach enables developers to control messages at security, verification, and routing levels across multiple chains.</p><h3>Key Components &amp; Principles</h3><p>V2 has a clear separation of message responsibilities, while the architecture enables apps to choose components that suit their needs. Here are the key elements and their functions to get the whole picture:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Component:</b></th>
+            <th><b>Purpose:</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Endpoint</td>
+            <td>Main interface for sending and receiving cross-chain messages</td>
+        </tr>
+        <tr>
+            <td>Oracle</td>
+            <td>Delivers block headers to the destination chain</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Relayer</p>
+            </td>
+            <td>Supplies proof of source-chain transaction</td>
+        </tr>
+        <tr>
+            <td>OApp Framework</td>
+            <td>Standardizes how apps send, receive, and process messages</td>
+        </tr>
+        <tr>
+            <td>Modules</td>
+            <td>Pluggable functions for routing, quoting, and execution</td>
+        </tr>
+        <tr>
+            <td>Config Layer</td>
+            <td>Stores app-specific security and routing preferences</td>
+        </tr>
+        <tr>
+            <td>Replay Protection</td>
+            <td>Prevents duplicate or malicious message execution</td>
+        </tr>
+        <tr>
+            <td>Path Customization</td>
+            <td>Enables developers to define specific chain routes</td>
+        </tr>
+    </tbody></div><p>‍</p><p>This modular approach is excellent for builders, enabling them to replace necessary components for varying levels of trust, performance, or cost.</p><p><strong>Key takeaway</strong>: The v2 version utilizes customizable components in the system to provide considerable room for securing cross-chain apps.</p><h2>Omnichain Tokens &amp; OApps</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f765606810cc76b310f02c_h3x6mrgovmuo3grbsx93.webp"/></div><figcaption><em>Image credit: GitHub</em></figcaption></figure><p>How can data move freely between chains without relying on wrapped assets or bridges? Here&#x27;s where omnichain tokens and applications come into play. The protocol facilitates this transition through a system of standards that sets the terms for how tokens operate and communicate across chains.</p><p>Below, you&#x27;ll learn about two fundamental components that make this possible.</p><h3>OFT (Omnichain Fungible Token) Standard</h3><p>OFT chain is a widely accepted standard that developers use for deploying tokens across multiple chains. This eliminates the need for minting, burning, bridging, or duplication of supply.</p><p>Key features of omnichain fungible tokens:</p><ul role="list"><li>Native transfers across supported chains</li><li>Supply tracked only on the source chain</li><li>Compatible with standard ERC-20 tokens</li><li>Built-in support for chain messaging</li><li>Secure, noncustodial transfers</li><li>Core component for protocols like Stargate and Radiant</li></ul><p>Using a standardized approach with the OFT chain reduces fragmentation. Additionally, it enables tokens to scale across ecosystems without undue complexity.</p><h3>OFT Adapters</h3><p>There are times when using tokens implies more complex behavior. For example, this could apply to scenarios such as integrating yield-bearing tokens or liquidity staking. In these cases, OFT Adapters expand the core standard by adapting the logic to meet the needs of the ecosystem.</p><p>The tool&#x27;s features:</p><ul role="list"><li>Flexible architecture for new token types</li><li>Supports real-world token mechanics</li><li>Ecosystem-specific customization</li><li>No need to change the OFT base</li><li>Maintains omnichain compatibility</li></ul><p><strong>Key takeaway</strong>: Omnichain tokens utilize OFT standards and adapters, offering more advanced capabilities. They enable free movement across chains without the need to fall back on wrapping.</p><h2>Use Cases</h2><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="/cdn/64895abf18b47a0c31b8a51f/68f76579ac251e5f5e570d43_apqlmg2mvvhwpha3rdq8.webp"/></div><figcaption><em>Image credit: Bankless</em></figcaption></figure><p>The Layer Zero bridge architecture is used in a wide range of real-world applications. Typically, these projects utilize on-chain messages for three primary purposes:</p><ol role="list"><li><strong>Unify</strong> liquidity</li><li><strong>Simplify</strong> bridging</li><li><strong>Improve</strong> user experience</li></ol><p>Now, let&#x27;s move on to two real-world examples where the solution has successfully integrated cases.</p><h3>Stargate Finance</h3><p>This is a well-known liquidity transport protocol that utilizes LayerZero capabilities as its foundation. It allows users to deposit funds on one chain and withdraw them to another without resorting to the well-established approach called wrapped tokens. </p><p>A few things to bear in mind on how the solution works for Stargate Finance:</p><ul role="list"><li>Instant guaranteed finality</li><li>Unified liquidity pools</li><li>No wrapped tokens or synthetic assets</li><li>Supports ETH, ARB, BNB, OP chains, and more</li><li>Built-in message routing</li><li>Used by protocols like Curve and Sushi</li></ul><p>Stargate has proven that using the v2 can provide a seamless user experience across ecosystems.</p><h3>Radiant Capital</h3><p>This is another equally well-known money market protocol that provides cross-chain borrowing and lending. It lets users deposit collateral on one chain and borrow on another. The best part? There&#x27;s no need for bridges or manual fund moves.</p><p>Core options and features today:</p><ul role="list"><li>Omnichain money market design</li><li>Single collateral base for multiple chains</li><li>Borrow and repay across supported networks</li><li>LayerZero governs messaging and state sync</li><li>Lower gas costs compared to traditional bridge-based lending</li><li>Expands to new chains like zkSync and Base</li></ul><p><strong>Key takeaway</strong>: Stargate and Radiant set the protocol to provide users with quick and seamless omnichain access. This resulted in improved liquidity, a better user experience, and scalability with no additional bridges required.</p><h2>Risks &amp; Limitations</h2><p>Hardly anyone can find a protocol architecture devoid of risks for the end user. Here is a list of the most obvious exposures inherent to cross-chain DApps:</p><div class="w-embed"><style>
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+</style>
+<div class="table_component" role="region" tabindex="0">
+<table>
+    <caption>
+        <p><br></p>
+    </caption>
+    <thead>
+        <tr>
+            <th><b>Risks</b></th>
+            <th><b>Explanation</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Message failure</td>
+            <td>Oracles or relayers can fail, blocking delivery</td>
+        </tr>
+        <tr>
+            <td>Trust assumptions</td>
+            <td>Security depends on the selected oracle-relayer combo</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Higher gas cost</p>
+            </td>
+            <td>Cross-chain messaging needs more on-chain transactions</td>
+        </tr>
+        <tr>
+            <td>Configuration risk</td>
+            <td>A wrong setup can expose routes to spoofing or failure</td>
+        </tr>
+        <tr>
+            <td>Partial decentralization</td>
+            <td>Oracle or relayer centralization can reduce trust</td>
+        </tr>
+        <tr>
+            <td>Chain onboarding delay</td>
+            <td>New chains need LayerZero to integrate them manually</td>
+        </tr>
+    </tbody></div><p>‍</p><p><strong>Key takeaway</strong>: The protocol is a powerful tool, but it has several drawbacks that are worth keeping in mind.</p><h2>Conclusion</h2><p>The send layer solution has already processed over <a href="https://www.kucoin.com/learn/crypto/what-is-layerzero-zro-and-how-does-it-work">100 million</a> cross-chain messages and connected more than 70 blockchains. Its primary goal is to facilitate the real-time movement of liquidity, NFTs, and data. The protocol significantly improved security and trust standards by eliminating the use of wrapped tokens or centralized custodians.</p><p>It supports multiple OFTs, NFTs (ONFTs), and full OApps. These formats are ideal for decentralized applications to operate seamlessly across blockchains without duplicating logic or deploying isolated contracts.</p><h2>FAQ</h2><h3>What is LayerZero?</h3><p>It is a cross-chain messaging protocol that has united over 70 blockchains. It enables DApps to exchange messages between smart contracts and transfer assets across different blockchains.</p><h3>How Do I Send a Cross-Chain Message?</h3><p>Use the lzSend() function from a LayerZero-powered contract to route the message to the target chain via oracles and relayers.</p><h3>What is an Endpoint?</h3><p>In plain terms, this is an on-chain contract that controls message routing, verification, and delivery functions.</p><h3>What Are the 3 Core LayerZero Principles?</h3><p>These are modular security, application-level configuration, and trustless cross-chain messaging.</p></div></div></div><div class="footer"><div class="w-layout-blockcontainer block-container w-container"><div class="footerbusinesscontent"><div class="top-row"><div class="footer-logo-wrapper"><img src="/cdn/641863621e81371558abea11/65fb0f6a4fc28c826816028d_Layer_7.svg" loading="lazy" alt="" class="image-5"/></div><div class="bottom-row-rights"><div class="text-block-6">© 2025. Всі права захищені</div></div></div><div class="links-personal"><div class="footerlinksblock"><a href="#" class="new-footer-link">Wallet</a><a href="/ua/exchanger" class="new-footer-link">Exchanger</a><a href="/ua/for-business/business" class="new-footer-link">Business</a><a href="#" class="link hide">Terms</a><a href="#" class="link hide">Privacy</a><a href="/ua/blog" class="new-footer-link">Blog</a><a href="#" class="link disabled hide">Support</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=641863621e81371558abea11" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.0be0ff630adfe789.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.schunk.6d502c0af9c01e12.js" type="text/javascript"></script><script src="/cdn/641863621e81371558abea11/js/777ex.eeff05e8.b9d868b31419297d.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTMCWKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем текущий URL и его параметры
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Проверяем наличие всех UTM меток
+    const utmId = urlParams.get('utm_id');
+    const utmTerm = urlParams.get('utm_term');
+    const utmSource = urlParams.get('utm_source');
+    const utmMedium = urlParams.get('utm_medium');
+    const utmContent = urlParams.get('utm_content');
+    const utmCampaign = urlParams.get('utm_campaign');
+
+    // Функция для добавления UTM меток к каждой ссылке (включая внешние)
+    function addUtmToLinks() {
+      const allLinks = document.querySelectorAll('a'); // Все ссылки
+
+      allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        // Пропускаем якорные ссылки (те, которые ведут только на эту же страницу)
+        if (href && !href.includes('#')) {
+          let utmParamsArray = [];
+
+          // Добавляем только не пустые UTM параметры
+          if (utmId) {
+            utmParamsArray.push(`utm_id=${utmId}`);
+          }
+          if (utmTerm) {
+            utmParamsArray.push(`utm_term=${utmTerm}`);
+          }
+          if (utmSource) {
+            utmParamsArray.push(`utm_source=${utmSource}`);
+          }
+          if (utmMedium) {
+            utmParamsArray.push(`utm_medium=${utmMedium}`);
+          }
+          if (utmContent) {
+            utmParamsArray.push(`utm_content=${utmContent}`);
+          }
+          if (utmCampaign) {
+            utmParamsArray.push(`utm_campaign=${utmCampaign}`);
+          }
+
+          // Добавляем параметры, только если есть хотя бы один UTM параметр
+          if (utmParamsArray.length > 0) {
+            const separator = href.includes('?') ? '&' : '?';
+            const utmParams = utmParamsArray.join('&');
+
+            // Добавляем UTM параметры к ссылке
+            link.setAttribute('href', href + separator + utmParams);
+          }
+        }
+      });
+    }
+
+    // Добавляем UTM метки к ссылкам на текущей странице
+    addUtmToLinks();
+  });
+</script>
+
+<!-- Smooth scroll start -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+<!-- Smooth scroll end -->
+
+
+
+<!-- Lazy loaging for video -->
+<script
+     
+  src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"
+></script>
+
+<!-- header animation -->
+<script src="https://cdn.jsdelivr.net/gh/waveshape-co/word-play@1.0.0/script.min.js"></script>
+
+<style>
+  .n-heder-line-one:not(:has(.ws__span)),
+  .n-heder-line-two:not(:has(.ws__span)){opacity:0}
+  
+  body.body-6:not(:has(.n-page_loading[style*='display: none'])) {
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+  
+ </style>
+
+
+<!-- +++ -->
+ <script>
+function smoothscroll() {
+    // Smooth scrolling
+    const isHome = document.querySelectorAll('.body-6').length;
+  	if (!isHome){return;}
+  	const lenis = new Lenis({ resize: true });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    // Grab all elements that have a "data-target" attribute
+    const scrollButtons = document.querySelectorAll('[data-target]');
+
+    // For each element, listen to a "click" event
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            // get the DOM element by the ID (data-target value)
+            const target = button.dataset.target;
+            const $el = document.getElementById(target.replace('#', ''));
+
+            // Use lenis.scrollTo() to scroll the page to the right element
+            lenis.scrollTo($el, {
+                offset: 0,
+                immediate: false,
+                duration: 1,
+                easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2) // https://easings.net
+            });
+        });
+    });
+
+    requestAnimationFrame(raf);
+}
+
+function init() {
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  myLazyLoad.update();
+    smoothscroll();
+    new WordPlay({
+        className: 'n-heder-line-one', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+
+    new WordPlay({
+        className: 'n-heder-line-two', // the text element
+        mode: 'letter', // choose between letter or word
+        offset: 100, // offset if revealed by scroll
+        speed: 0.5,
+        delay: 0.025 // stagger delay
+    });
+    // document.getElementById('n-video-bg').play();
+}
+
+function loader() {
+    // Отримуємо посилання на елемент
+    const target = document.querySelector('.n-page_loading');
+
+    // Функція, яка перевіряє, чи display: none
+    function isHidden(element) {
+        return window.getComputedStyle(element).display === 'none';
+    }
+
+    if (target) {
+        // Створюємо обсервер
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                    if (isHidden(target)) {
+                        console.log('Елемент став display: none');
+                        init();
+                        // Зупиняємо обсервер після спрацювання
+                        observer.disconnect();
+                        // Можна викликати додаткову логіку тут
+                    }
+                }
+            }
+        });
+
+        // Налаштування обсерверу: слідкуємо за змінами атрибутів
+        observer.observe(target, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    } else {
+        init();
+    }
+}
+window.Webflow.push(loader);
+  </script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header2", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+
+<!-- This script is managed by Finsweet Cookie Consent -->
+<script fs-consent-categories="essential" fs-consent-scripttype="text/javascript" type="fs-consent">
+new WordPlay({
+    className: "n-header3", // the text element
+    mode: "letter", // choose between letter or word
+    offset: 100, // offset if revealed by scroll
+    speed: 0.5, 
+    delay: 0.025, // stagger delay
+});
+</script>
+<!-- Headers animation End -->
+
+
+
+
+
+<!-- Button text animation start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" type="text/javascript"></script>
+<script>
+const letterWrapClass = 'n-letter-wrap';
+const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+[...letterWrapElements].forEach(el => {
+  letterWrap(el, letterWrapClass);
+  letterAnimation(el, letterWrapClass);
+});
+function letterWrap(el, cls) {
+  const words = el.textContent.split(' ');
+  const letters = []; 
+  cls = cls || 'n-letter-wrap'  
+  words.forEach(word => {
+    let html = '';
+    for (var letter in word) {
+      html += `
+        <span class="${cls}__char">
+          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+            ${word[letter]}
+          </span>
+        </span>
+      `;
+    };   
+    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+    letters.push(wrappedWords);
+  });
+  return el.innerHTML = letters.join(' ');
+}
+function letterAnimation(el, cls) {
+  const tl = new TimelineMax({ paused: true });
+  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.025; 
+  el.animation = tl.staggerTo(characters, duration, {
+    y: '-100%',
+    delay: 0.1,
+    ease: Power2.easeOut
+  }, stagger);      
+  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+  el.addEventListener('mouseout', (event) => el.animation.pause(0)());
+}
+</script>
+<!-- Button text animation end --></body></html>

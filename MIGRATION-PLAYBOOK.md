@@ -450,6 +450,117 @@ Two patterns work — see "Blog content strategy" in the project README.
 Pattern: one Astro template + a CSV/JSON data file → generates N pages at build time.
 See `WEBFLOW_PROGRAMMATIC_SEO_BRIEF.md` for the kolo crypto-card example (~41 pages across 5 languages).
 
+### 4.6 Custom 404 page — **REQUIRED**
+
+Vercel's default 404 (`404 NOT_FOUND` on a white page) is ugly and breaks brand. Add a branded one.
+
+Drop `src/pages/404.astro` with vanilla HTML/CSS — **no Webflow CSS dependency** so it loads even when the rest of the site's CSS fails. For multilingual sites, detect language from `window.location.pathname` in inline JS and translate copy + link prefixes.
+
+See the kolo implementation at `src/pages/404.astro` — copy and adjust copy/links/logo path.
+
+### 4.7 Sitemap — **REQUIRED for SEO**
+
+```bash
+npm install @astrojs/sitemap
+```
+
+In `astro.config.mjs`:
+```js
+import sitemap from '@astrojs/sitemap';
+
+export default defineConfig({
+  site: 'https://your-site.com',  // must be set
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes('/migration-status'),  // hide admin
+      i18n: {
+        defaultLocale: 'en',
+        locales: { en: 'en-US', ua: 'uk-UA', ru: 'ru-RU' },  // adjust
+      },
+    }),
+  ],
+});
+```
+
+Generates `sitemap-index.xml` + `sitemap-0.xml` at build time. Each locale's pages are flagged as alternates of each other (better SEO than independent sitemaps).
+
+### 4.8 robots.txt — **REQUIRED**
+
+`public/robots.txt` (static file, deployed as-is):
+```
+User-agent: *
+Allow: /
+Disallow: /migration-status/
+
+# Block AI training crawlers — drop these lines if you want surfaced in ChatGPT/Claude/Perplexity
+User-agent: GPTBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://your-site.com/sitemap-index.xml
+```
+
+### 4.9 Aggressive cache headers via `vercel.json` — **HIGH-IMPACT QUICK WIN**
+
+By default Vercel sends `cache-control: max-age=0, must-revalidate` for every asset, forcing browsers to re-validate on every page load. For Webflow CDN assets (which are content-addressed via hash in the filename — they never change at the same URL), this murders LCP.
+
+Add `vercel.json` at repo root:
+```json
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/cdn/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:woff2?|ttf|otf|eot|svg|png|jpg|jpeg|webp|avif|gif|ico|mp4|webm))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
+```
+
+Measured impact on kolo: LCP `28.4s → 6.2s` (matches the original Webflow CDN performance). HTML routes keep Vercel's default short-cache + revalidate behaviour — the override only targets fingerprinted static assets.
+
+### 4.10 Default OG / SEO fallbacks in `WebflowPage.astro`
+
+Many scraped pages (quizzes, legal pages) don't ship `og:image` / `meta description` from Webflow. Their social previews look broken when shared. Inject site-wide defaults at render time:
+
+```astro
+---
+// inside WebflowPage.astro frontmatter, after extracting headHtml
+const DEFAULT_OG_IMAGE = '/cdn/.../homepage_og_image.png';
+const DEFAULT_DESCRIPTION = 'Site tagline, ~140 chars.';
+const DEFAULT_OG_TITLE = 'Brand — short title';
+
+const has = (re) => re.test(headHtml);
+const fallbacks = [];
+if (!has(/<meta[^>]+name=["']description["']/i))
+  fallbacks.push(`<meta name="description" content="${DEFAULT_DESCRIPTION}"/>`);
+if (!has(/<meta[^>]+property=["']og:image["']/i))
+  fallbacks.push(`<meta property="og:image" content="${DEFAULT_OG_IMAGE}"/>`);
+// ...same for og:title, og:description, og:type, twitter:card, twitter:image, twitter:title, twitter:description
+
+if (fallbacks.length) headHtml += '\n' + fallbacks.join('\n');
+---
+```
+
+Pages with curated metadata are untouched — the fallback only fires when the tag is missing. Measured impact on kolo: 66 pages got og:image, 63 got descriptions; audit went from 4/12 → 6/12 checklist items, page issues 486 → 107.
+
 ---
 
 ## Repeating this for a new site (quick reference)
@@ -463,8 +574,10 @@ After the first migration, the repeatable steps boil down to:
 5. (5 min) `npm run self-host-cdn` && verify dev server still renders. (Phase 4.3 — do this NOW for new sites, not later. The sooner you cut the source CDN dependency, the lower the risk that you forget before going live.)
 6. (5 min) Push to GitHub, import into Vercel, click Deploy.
 7. (5 min) Smoke-test the Vercel URL.
+8. (15 min) Pre-launch SEO essentials — copy `src/pages/404.astro`, `public/robots.txt`, `vercel.json`; install `@astrojs/sitemap`; add default OG fallbacks to `WebflowPage.astro`. (Phase 4.6–4.10.)
+9. (5 min) `npm run audit` and inspect `/migration-status` — verify health score is reasonable before going live.
 
-**Total: ~40 min for a new mirror.** First time is slower because of the auth setup.
+**Total: ~60 min for a new mirror with launch-ready quality.** First time is slower because of the auth setup.
 
 ---
 
@@ -481,6 +594,10 @@ After the first migration, the repeatable steps boil down to:
 | Quotes break in zsh: `git add src/pages/[lang]/foo` | zsh expands `[lang]` as a glob | Quote: `git add 'src/pages/[lang]/foo'` |
 | Source site has `Last-Modified` Webflow comment that breaks our diff | Webflow build artifact | Cosmetic, ignore — our scraper already strips it |
 | **Page renders unstyled (default serif fonts, no layout) after self-hosting** | SRI hash on `<link>` no longer matches because we rewrote URLs inside the CSS file | `self-host-cdn.mjs` strips `integrity`/`crossorigin` from tags pointing to `/cdn/` — make sure that step ran. DevTools → Console will show *Failed to find a valid digest* errors |
+| **Whole sections render without background — white text on white** | Self-host regex stopped at `)` and truncated URLs like `bg iban (2).avif` before the extension; HTML ended up pointing at `/cdn/.../bg_20iban_20_2).avif` (literal `)`) while disk has `_2_.avif` | Use **two regexes** in self-host: HTML attributes allow `)` inside the URL (stops only at quote), CSS `url()` stops at `)`. See section 4.3 of self-host-cdn.mjs. Visible 404s in DevTools → Network tab |
+| **LCP 20+ seconds in Lighthouse** | Vercel's default `cache-control: max-age=0, must-revalidate` forces browser to re-validate every asset every page load | Add `vercel.json` with `Cache-Control: public, max-age=31536000, immutable` for `/cdn/` paths — see Phase 4.9. Webflow CDN URLs are content-addressed so safe to cache forever |
+| **Pages missing og:image or meta description in audit** | Webflow doesn't ship those tags on quiz/legal pages | Add default fallbacks in `WebflowPage.astro` (Phase 4.10). Only fires when the tag is missing, so curated metadata stays |
+| **Audit shows wrong numbers after a fix** | `audit-migration.mjs` reads `src/_scraped/*.html` (raw, pre-render) by default, not the built `dist/` (post-fallback) | Run `npm run build` before `npm run audit`. The script auto-prefers `dist/` if it exists |
 
 ---
 

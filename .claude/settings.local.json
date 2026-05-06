@@ -11,7 +11,17 @@
       "Bash(git commit -m 'Default OG/SEO fallbacks in WebflowPage layout *)",
       "Bash(git push *)",
       "Bash(npm install *)",
-      "Bash(git commit -m 'Add custom 404 page, sitemap-index.xml, robots.txt *)"
+      "Bash(git commit -m 'Add custom 404 page, sitemap-index.xml, robots.txt *)",
+      "Bash(curl -sI https://kolo-seven.vercel.app/robots.txt)",
+      "Bash(npx -y lighthouse https://kolo-seven.vercel.app/ --output=json --output-path=/tmp/lh-mobile.json --chrome-flags=\"--headless --no-sandbox\" --quiet --form-factor=mobile --screen-emulation.disabled)",
+      "Read(//private/tmp/**)",
+      "Bash(node -e \"const r=require\\('/tmp/lh-mobile.json'\\); console.log\\('Performance:', Math.round\\(r.categories.performance.score*100\\)\\); console.log\\('Accessibility:', Math.round\\(r.categories.accessibility.score*100\\)\\); console.log\\('Best Practices:', Math.round\\(r.categories['best-practices'].score*100\\)\\); console.log\\('SEO:', Math.round\\(r.categories.seo.score*100\\)\\);\")",
+      "Bash(npx -y lighthouse https://kolo-seven.vercel.app/ --output=json --output-path=/tmp/lh-desktop.json --chrome-flags=\"--headless --no-sandbox\" --quiet --preset=desktop)",
+      "Bash(node -e \"const r=require\\('/tmp/lh-desktop.json'\\); console.log\\('Performance:', Math.round\\(r.categories.performance.score*100\\)\\); console.log\\('Accessibility:', Math.round\\(r.categories.accessibility.score*100\\)\\); console.log\\('Best Practices:', Math.round\\(r.categories['best-practices'].score*100\\)\\); console.log\\('SEO:', Math.round\\(r.categories.seo.score*100\\)\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(npx -y lighthouse https://kolo.xyz/ --output=json --output-path=/tmp/lh-orig.json --chrome-flags=\"--headless --no-sandbox\" --quiet --form-factor=mobile --screen-emulation.disabled)",
+      "Bash(git commit -m 'Add vercel.json with immutable cache headers for /cdn/ + static assets *)",
+      "Bash(git commit -m 'Document recent additions in playbook + skill *)"
     ]
   }
 }

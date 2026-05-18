@@ -42,9 +42,17 @@ const INCLUDE_BLOG = args.get('include-blog') === true;
 const REFRESH = args.get('refresh') === true;
 const CONCURRENCY = Number(args.get('concurrency') || 6);
 
-const SKIP_PATTERNS = INCLUDE_BLOG
-  ? []
-  : [/^\/blog\b/, /^\/ru\/blog\b/, /^\/ua\/blog\b/];
+// Always skipped on kolo.xyz: /ua/* and /ru/* main pages are
+// untranslated duplicates of the English content (verified by comparing
+// /ua/buy vs /buy headings — both English). Drop them at scrape time.
+// Blog paths (/ua/blog/*, /ru/blog/*) DO have real translated content
+// and are NOT in this list — they're handled by the blog rules below.
+const SKIP_PATTERNS_ALWAYS = [/^\/(ua|ru)\/(?!blog).*/, /^\/(ua|ru)$/];
+
+const SKIP_PATTERNS = [
+  ...SKIP_PATTERNS_ALWAYS,
+  ...(INCLUDE_BLOG ? [] : [/^\/blog\b/, /^\/ru\/blog\b/, /^\/ua\/blog\b/]),
+];
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) kolo-mirror/1.0';
 

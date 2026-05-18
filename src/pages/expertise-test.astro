@@ -1,0 +1,58 @@
+---
+// Test page for the Expertise section. Spacers above/below let us scroll
+// into and out of the pinned block so the horizontal-scroll behavior is
+// visible exactly like on atolldigital.com.
+import ExpertiseSection from '../components/ExpertiseSection.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Expertise section — preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #091423;
+      color: #fff;
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .preview-spacer {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+      opacity: 0.55;
+    }
+    .preview-spacer p {
+      max-width: 520px;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    .preview-spacer code {
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-spacer">
+    <p>Scroll down ↓ to enter the pinned <code>ExpertiseSection</code>. The cards row should slide horizontally as you keep scrolling vertically. On screens narrower than 1024px the section falls back to a stacked vertical layout.</p>
+  </div>
+
+  <ExpertiseSection />
+
+  <div class="preview-spacer">
+    <p>You're past the section. The pin released and normal vertical scroll resumed.</p>
+  </div>
+</body>
+</html>

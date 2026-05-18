@@ -1,0 +1,451 @@
+---
+// Expertise section — accordion-stack copy of atolldigital.com homepage block.
+// Pin the inner viewport on desktop; while scrolling, each card (except the
+// last "Services" CTA) collapses its width from FULL_VW to COLLAPSED_VW and
+// fades its description out. This makes earlier cards turn into thin spines
+// stacked at the left edge while the next card slides into place — same look
+// as the atoll site (their main.js, lines ~1669-1693, GSAP timeline of
+// `tl.to(card, {width: space_accord_process, ease:'none'})`).
+//
+// Mobile (< 1024px) falls back to a stacked vertical layout, no pin.
+
+const FULL_VW = 34.236;
+const COLLAPSED_VW = 9.6527;
+---
+
+<section
+  class="expertise-section"
+  data-expertise
+  data-full-vw={FULL_VW}
+  data-collapsed-vw={COLLAPSED_VW}
+>
+  <div class="expertise-pin">
+    <header class="expertise-header">
+      <div class="expertise-eyebrow">Expertise</div>
+      <h2 class="expertise-h2">Helping businesses stand out with end-to-end website creation.</h2>
+    </header>
+
+    <div class="expertise-track">
+      <div class="expertise-row">
+
+        <article class="expertise-card" data-card>
+          <div class="expertise-card-top">
+            <div class="expertise-card-meta">
+              <div class="expertise-card-eyebrow">DESIGN</div>
+              <div class="expertise-card-icon">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M30.6171 3.56917C27.6112 1.71518 24.07 0.645508 20.279 0.645508C16.4913 0.645508 12.953 1.71334 9.94873 3.56438V9.87879C12.6062 7.26092 16.254 5.64551 20.279 5.64551C24.3077 5.64551 27.9583 7.26379 30.6164 9.88576L30.6171 3.56917ZM30.6292 9.89844C33.3279 12.5669 35 16.2714 35 20.3664C35 24.4612 33.3281 28.1655 30.6297 30.834H36.9957C38.8993 27.8005 40 24.212 40 20.3664C40 16.5207 38.8992 12.9321 36.9955 9.89844L30.6292 9.89844ZM30.612 37.1668L30.6113 30.8521C27.9536 33.4711 24.3051 35.0874 20.279 35.0874C16.254 35.0874 12.6062 33.4719 9.94873 30.8541V37.1685C12.953 39.0195 16.4913 40.0874 20.279 40.0874C24.0679 40.0874 27.6071 39.0189 30.612 37.1668ZM9.93164 30.8364V37.1672L3.59912 37.166C1.74514 34.1601 0.675476 30.6189 0.675476 26.8279C0.675476 23.0402 1.7433 19.5018 3.59434 16.4976L9.91171 16.4976C7.29384 19.155 5.67847 22.8029 5.67847 26.8279C5.67847 30.8566 7.29675 34.5072 9.91872 37.1653L9.93164 30.8364ZM3.5775 16.4855L9.89233 16.4862C7.27345 19.1438 5.65466 22.7951 5.65466 26.8259C5.65466 30.8546 7.27294 34.5051 9.89492 37.1633L3.5775 37.1641C1.71939 34.1572 0.645508 30.6135 0.645508 26.8198C0.645508 23.0282 1.71755 19.4861 3.5775 16.4855Z" fill="#E6E8EA"/>
+                </svg>
+              </div>
+            </div>
+            <div class="expertise-card-title">Design</div>
+          </div>
+          <p class="expertise-card-desc" data-desc>Unique, thoughtfully designed<br/>interfaces to reinforce your business authority.</p>
+        </article>
+
+        <article class="expertise-card" data-card>
+          <div class="expertise-card-top">
+            <div class="expertise-card-meta">
+              <div class="expertise-card-eyebrow">CODE</div>
+              <div class="expertise-card-icon">
+                <svg width="49" height="38" viewBox="0 0 49 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M31 3.00009C32.7626 3.00009 34.7324 3.00012 36.345 3.00012C37.9101 3.00012 39.1759 4.26886 39.1539 5.83376C39.1164 8.48721 39.0498 11.618 39.0498 14.2323L44.7596 19L39.0498 23.7677V32.1665C39.0498 33.7314 37.782 35 36.2171 35C34.5457 35 32.5449 35 31 35" stroke="#E6E8EA" stroke-width="5.1515"/>
+                  <path d="M18.7598 3.00009C16.9971 3.00009 15.0274 3.00012 13.4148 3.00012C11.8497 3.00012 10.5838 4.26886 10.6059 5.83376C10.6433 8.48721 10.7099 11.618 10.7099 14.2323L5.00021 19L10.7099 23.7677V32.1665C10.7099 33.7314 11.9778 35 13.5427 35C15.2141 35 17.2149 35 18.7598 35" stroke="#E6E8EA" stroke-width="5.1515"/>
+                </svg>
+              </div>
+            </div>
+            <div class="expertise-card-title">Code</div>
+          </div>
+          <p class="expertise-card-desc" data-desc>User-friendly back offices<br/>to make content management a breeze.</p>
+        </article>
+
+        <article class="expertise-card" data-card>
+          <div class="expertise-card-top">
+            <div class="expertise-card-meta">
+              <div class="expertise-card-eyebrow">ENGAGE</div>
+              <div class="expertise-card-icon">
+                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0869 21.0879V29.376C11.8726 28.4452 8.55482 25.1275 7.62391 20.9132L15.914 20.9132L11.1385 16.0871H7.62379C8.55455 11.8727 11.8724 8.55471 16.0869 7.62385V16.0867L20.9168 16.0904L20.9082 25.9604L16.0869 21.0879ZM16.0869 37V33.8646C13.6082 33.4784 11.3233 32.5068 9.37813 31.0957L7.16627 33.3075L3.75371 29.895L5.95598 27.6927C4.51684 25.7322 3.52622 23.422 3.13534 20.9132H0V16.0871H3.13526C3.52093 13.6113 4.4907 11.3288 5.89924 9.38496L3.73193 7.21765L7.14449 3.80509L9.30037 5.96097C11.2623 4.51908 13.5751 3.52661 16.0869 3.1353V0H20.913V3.1353C23.4218 3.52614 25.732 4.51674 27.6925 5.95587L29.9166 3.73176L33.3292 7.14432L31.0956 9.37797C32.5068 11.3232 33.4789 13.6079 33.865 16.0871H37V20.9132H33.865C33.4779 23.4253 32.5025 25.7383 31.0584 27.7008L33.2693 29.9117L29.8568 33.3243L27.6447 31.1122C25.6951 32.524 23.412 33.4926 20.913 33.8646V37H16.0869Z" fill="#E6E8EA"/>
+                </svg>
+              </div>
+            </div>
+            <div class="expertise-card-title">Engage</div>
+          </div>
+          <p class="expertise-card-desc" data-desc>Engaging user experiences<br/>that turn visitors into customers.</p>
+        </article>
+
+        <article class="expertise-card" data-card>
+          <div class="expertise-card-top">
+            <div class="expertise-card-meta">
+              <div class="expertise-card-eyebrow">EXPAND</div>
+              <div class="expertise-card-icon">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2109 11.3574H35.2655L35.2655 11.4249L35.3633 11.3271L39.5215 15.4853L39.4275 15.5794L39.4275 36.7168H33.5469V21.4733L33.5801 21.4258L29.4224 17.2681L29.4524 17.238L14.2109 17.238V11.3574ZM29.4219 27.3661L29.4275 27.3581V41.3506L23.5469 41.3506V31.544L23.6152 31.4463L19.457 27.2881L19.457 35.5498L14.7207 40.2861L10.5625 36.1279L19.4524 27.238L9.67969 27.238V21.3574H25.2636V21.4268L29.4219 17.2686L29.4219 27.3661Z" fill="#E6E8EA"/>
+                </svg>
+              </div>
+            </div>
+            <div class="expertise-card-title">Expand</div>
+          </div>
+          <p class="expertise-card-desc" data-desc>Scalable websites built<br/>to grow alongside your business.</p>
+        </article>
+
+        <article class="expertise-card expertise-card--cta" data-card data-card-cta>
+          <div class="expertise-cta-title">Services</div>
+          <div class="expertise-cta-bottom">
+            <a href="#" class="expertise-cta-btn">
+              <span>Learn More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .expertise-section {
+    background: #091423;
+    color: #fff;
+    position: relative;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .expertise-pin { position: relative; }
+  .expertise-row { display: flex; }
+  .expertise-card { box-sizing: border-box; }
+  .expertise-h2 { font-weight: 500; }
+
+  /* ---------- Mobile (< 1024px): stacked, no pin, no animation ---------- */
+  @media (max-width: 1023px) {
+    .expertise-header {
+      padding: 60px 20px 40px;
+    }
+    .expertise-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+      opacity: 0.75;
+      margin-bottom: 32px;
+    }
+    .expertise-h2 {
+      font-size: clamp(32px, 8vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    .expertise-track {
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .expertise-row {
+      flex-direction: column;
+    }
+    .expertise-card {
+      width: 100%;
+      padding: 24px 20px 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: auto;
+    }
+    .expertise-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .expertise-card-meta { display: flex; flex-direction: column; gap: 16px; }
+    .expertise-card-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .expertise-card-icon svg { width: 36px; height: auto; }
+    .expertise-card-title {
+      font-size: 56px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: right;
+    }
+    .expertise-card-desc {
+      font-size: 16px;
+      line-height: 1.35;
+      margin: 24px 0 0;
+      opacity: 0.85;
+    }
+    .expertise-card--cta {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .expertise-cta-title {
+      font-size: 76px;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      font-weight: 500;
+    }
+    .expertise-cta-bottom { margin-top: 32px; }
+  }
+
+  /* ---------- Desktop (>= 1024px): pinned + per-card width collapse ---------- */
+  @media (min-width: 1024px) {
+    .expertise-pin {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .expertise-header {
+      padding: clamp(40px, 5.5vw, 80px) clamp(20px, 2.4vw, 40px) 0;
+      flex-shrink: 0;
+    }
+    .expertise-eyebrow {
+      font-size: clamp(11px, 0.97vw, 14px);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+      opacity: 0.75;
+      margin-bottom: clamp(16px, 1.5vw, 22px);
+    }
+    .expertise-h2 {
+      font-size: clamp(40px, 5.5vw, 80px);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin: 0;
+      max-width: 92%;
+    }
+
+    .expertise-track {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      min-height: 0;
+    }
+    .expertise-row {
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+
+    .expertise-card {
+      flex: 0 0 auto;
+      width: 34.236vw;
+      padding: 1.4vw 1.4vw 2.875vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 1px solid rgba(255,255,255,0.15);
+      overflow: hidden;
+      min-height: 27.58vw;
+    }
+    .expertise-card:first-child { border-left: 0; }
+
+    .expertise-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1vw;
+    }
+    .expertise-card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1.94vw;
+      flex-shrink: 0;
+    }
+    .expertise-card-eyebrow {
+      font-size: clamp(11px, 0.97vw, 14px);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .expertise-card-icon svg {
+      width: 2.78vw;
+      max-width: 56px;
+      height: auto;
+      display: block;
+    }
+    .expertise-card-title {
+      font-size: 5vw;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-top: -0.477vw;
+    }
+    .expertise-card-desc {
+      font-size: clamp(14px, 1.18vw, 18px);
+      line-height: 1.35;
+      margin: 3.47vw 0 0;
+      width: 26vw;          /* fixed: don't reflow when parent card narrows */
+      flex-shrink: 0;
+      opacity: 0.85;
+    }
+
+    .expertise-card--cta {
+      width: auto;
+      padding: 1.4vw 4.86vw 2.875vw 1.4vw;
+      justify-content: space-between;
+      overflow: visible;
+    }
+    .expertise-cta-title {
+      font-size: 9.72vw;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-top: -0.97vw;
+    }
+    .expertise-cta-bottom {
+      margin-top: 3.47vw;
+      max-width: 23.26vw;
+      margin-left: auto;
+    }
+    .expertise-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 11.74vw;
+      padding: 0.9vw 1.7vw;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-size: clamp(11px, 0.83vw, 13px);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      justify-content: center;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .expertise-cta-btn:hover {
+      background: #fff;
+      color: #091423;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .expertise-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      min-width: 169px;
+      justify-content: center;
+    }
+  }
+</style>
+
+<script>
+  // Accordion-stack engine. Mirrors atolldigital.com main.js (process_block):
+  //   gsap.set(process_block, { height: (cards / 1.5) * vh })
+  //   for each card except the last: tl.to(card, { width: 9.65vw }) + fade desc.
+  // We replicate it without GSAP: section grows tall, inner pin sticks for one
+  // viewport, and per-card width interpolates with scroll progress.
+  const init = () => {
+    const sections = document.querySelectorAll<HTMLElement>('[data-expertise]');
+
+    sections.forEach((section) => {
+      const cards = Array.from(section.querySelectorAll<HTMLElement>('[data-card]'));
+      if (cards.length < 2) return;
+
+      const FULL_VW = parseFloat(section.dataset.fullVw || '34.236');
+      const COLLAPSED_VW = parseFloat(section.dataset.collapsedVw || '9.6527');
+
+      let ticking = false;
+
+      const isDesktop = () => window.matchMedia('(min-width: 1024px)').matches;
+
+      const reset = () => {
+        cards.forEach((card) => {
+          card.style.width = '';
+          const desc = card.querySelector<HTMLElement>('[data-desc]');
+          if (desc) desc.style.opacity = '';
+        });
+        section.style.height = '';
+      };
+
+      const measure = () => {
+        if (!isDesktop()) {
+          reset();
+          return;
+        }
+        const vh = window.innerHeight;
+        section.style.height = ((cards.length / 1.5) * vh) + 'px';
+      };
+
+      const update = () => {
+        ticking = false;
+        if (!isDesktop()) return;
+
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const pinDistance = section.offsetHeight - vh;
+        if (pinDistance <= 0) return;
+
+        const raw = -rect.top / pinDistance;
+        const progress = raw < 0 ? 0 : raw > 1 ? 1 : raw;
+
+        const collapsing = cards.length - 1; // last card never shrinks
+        const step = 1 / collapsing;
+        const fullPx = (FULL_VW / 100) * window.innerWidth;
+        const collPx = (COLLAPSED_VW / 100) * window.innerWidth;
+
+        cards.forEach((card, i) => {
+          if (i >= collapsing) {
+            card.style.width = '';
+            return;
+          }
+          const segStart = i * step;
+          let p = (progress - segStart) / step;
+          p = p < 0 ? 0 : p > 1 ? 1 : p;
+          const w = fullPx + (collPx - fullPx) * p;
+          card.style.width = w.toFixed(2) + 'px';
+          const desc = card.querySelector<HTMLElement>('[data-desc]');
+          if (desc) desc.style.opacity = String(1 - p);
+        });
+      };
+
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(update);
+      };
+
+      const onResize = () => {
+        measure();
+        update();
+      };
+
+      measure();
+      update();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onResize);
+      window.addEventListener('load', onResize);
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>

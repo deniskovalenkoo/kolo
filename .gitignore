@@ -26,3 +26,11 @@ pnpm-debug.log*
 
 # scraper artifacts
 scripts/.cache/
+
+# Claude Code runtime artefacts — these are per-machine and contain
+# worktree gitlinks / task locks / local settings that shouldn't be
+# shared across collaborators.
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+.claude/launch.json
+.claude/settings.local.json
